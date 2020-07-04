@@ -1,0 +1,24 @@
+[submodule "Formats"]
+	path = Formats
+	url = https://github.com/horsicq/Formats.git
+[submodule "StaticScan"]
+	path = StaticScan
+	url = https://github.com/horsicq/StaticScan.git
+[submodule "SpecAbstract"]
+	path = SpecAbstract
+	url = https://github.com/horsicq/SpecAbstract.git
+[submodule "XArchive"]
+	path = XArchive
+	url = https://github.com/horsicq/XArchive.git
+[submodule "XDEX"]
+	path = XDEX
+	url = https://github.com/horsicq/XDEX.git
+[submodule "XOptions"]
+	path = XOptions
+	url = https://github.com/horsicq/XOptions.git
+[submodule "XStyles"]
+	path = XStyles
+	url = https://github.com/horsicq/XStyles.git
+[submodule "XTranslation"]
+	path = XTranslation
+	url = https://github.com/horsicq/XTranslation.git
