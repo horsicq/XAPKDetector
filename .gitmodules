@@ -31,3 +31,27 @@
 [submodule "XCapstone"]
 	path = XCapstone
 	url = https://github.com/horsicq/XCapstone.git
+[submodule "Controls"]
+	path = Controls
+	url = https://github.com/horsicq/Controls.git
+[submodule "FormatDialogs"]
+	path = FormatDialogs
+	url = https://github.com/horsicq/FormatDialogs.git
+[submodule "FormatWidgets"]
+	path = FormatWidgets
+	url = https://github.com/horsicq/FormatWidgets.git
+[submodule "QHexView"]
+	path = QHexView
+	url = https://github.com/horsicq/QHexView.git
+[submodule "XEntropyWidget"]
+	path = XEntropyWidget
+	url = https://github.com/horsicq/XEntropyWidget.git
+[submodule "XMemoryMapWidget"]
+	path = XMemoryMapWidget
+	url = https://github.com/horsicq/XMemoryMapWidget.git
+[submodule "XQwt"]
+	path = XQwt
+	url = https://github.com/horsicq/XQwt.git
+[submodule "nfd_widget"]
+	path = nfd_widget
+	url = https://github.com/horsicq/nfd_widget.git
