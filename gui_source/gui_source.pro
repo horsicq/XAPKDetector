@@ -11,14 +11,12 @@ SOURCES +=\
         guimainwindow.cpp \
     dialogabout.cpp \
     main_gui.cpp \
-    dialogoptions.cpp \
-    dialogdirectoryscan.cpp
+    dialogoptions.cpp
 
 HEADERS  += guimainwindow.h \
     ../global.h \
     dialogabout.h \
-    dialogoptions.h \
-    dialogdirectoryscan.h
+    dialogoptions.h
 
 FORMS    += guimainwindow.ui \
     dialogabout.ui \
@@ -26,9 +24,19 @@ FORMS    += guimainwindow.ui \
     dialogdirectoryscan.ui
 
 
-!contains(XCONFIG, formresult) {
-    XCONFIG += formresult
-    include(../StaticScan/formresult.pri)
+!contains(XCONFIG, archive_widget) {
+    XCONFIG += archive_widget
+    include(../../_mylibs/archive_widget/archive_widget.pri)
+}
+
+!contains(XCONFIG, nfd_widget) {
+    XCONFIG += nfd_widget
+    include(../../_mylibs/nfd_widget/nfd_widget.pri)
+}
+
+!contains(XCONFIG, allformatwidgets) {
+    XCONFIG += allformatwidgets
+    include(../../_mylibs/FormatWidgets/allformatwidgets.pri)
 }
 
 !contains(XCONFIG, xoptions) {

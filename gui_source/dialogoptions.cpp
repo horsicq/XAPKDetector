@@ -29,9 +29,7 @@ DialogOptions::DialogOptions(QWidget *parent, NFD::OPTIONS *pOptions) :
 
     this->pOptions=pOptions;
 
-    ui->checkBoxDeepScan->setChecked(pOptions->bDeepScan);
     ui->checkBoxScanAfterOpen->setChecked(pOptions->bScanAfterOpen);
-    ui->checkBoxRecursiveScan->setChecked(pOptions->bRecursiveScan);
     ui->checkBoxSaveLastDirectory->setChecked(pOptions->bSaveLastDirectory);
 
     ui->checkBoxStayOnTop->setChecked(pOptions->bStayOnTop);
@@ -52,9 +50,6 @@ void DialogOptions::loadOptions(NFD::OPTIONS *pOptions)
     QSettings settings(QApplication::applicationDirPath()+QDir::separator()+"nfd.ini",QSettings::IniFormat);
 
     pOptions->bScanAfterOpen=settings.value("ScanAfterOpen",true).toBool();
-    pOptions->bRecursiveScan=settings.value("RecursiveScan",true).toBool();
-    pOptions->bDeepScan=settings.value("DeepScan",true).toBool();
-    pOptions->bHeristicScan=settings.value("HeristicScan",true).toBool();
     pOptions->bSaveLastDirectory=settings.value("SaveLastDirectory",true).toBool();
     pOptions->sLastDirectory=settings.value("LastDirectory","").toString();
 
@@ -74,9 +69,6 @@ void DialogOptions::saveOptions(NFD::OPTIONS *pOptions)
     QSettings settings(QApplication::applicationDirPath()+QDir::separator()+"nfd.ini",QSettings::IniFormat);
 
     settings.setValue("ScanAfterOpen",pOptions->bScanAfterOpen);
-    settings.setValue("RecursiveScan",pOptions->bRecursiveScan);
-    settings.setValue("DeepScan",pOptions->bDeepScan);
-    settings.setValue("HeristicScan",pOptions->bHeristicScan);
     settings.setValue("SaveLastDirectory",pOptions->bSaveLastDirectory);
     settings.setValue("LastDirectory",pOptions->sLastDirectory);
 
@@ -135,9 +127,7 @@ bool DialogOptions::setContextState(QString sType, bool bState)
 #endif
 void DialogOptions::on_pushButtonOK_clicked()
 {
-    pOptions->bDeepScan=ui->checkBoxDeepScan->isChecked();
     pOptions->bScanAfterOpen=ui->checkBoxScanAfterOpen->isChecked();
-    pOptions->bRecursiveScan=ui->checkBoxRecursiveScan->isChecked();
     pOptions->bSaveLastDirectory=ui->checkBoxSaveLastDirectory->isChecked();
     pOptions->bStayOnTop=ui->checkBoxStayOnTop->isChecked();
 #ifdef WIN32

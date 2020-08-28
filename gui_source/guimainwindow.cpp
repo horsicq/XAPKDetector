@@ -36,7 +36,7 @@ GuiMainWindow::GuiMainWindow(QWidget *parent) :
 
     if(QCoreApplication::arguments().count()>1)
     {
-        _scan(QCoreApplication::arguments().at(1));
+        handleFile(QCoreApplication::arguments().at(1));
     }
 }
 
@@ -47,35 +47,15 @@ GuiMainWindow::~GuiMainWindow()
     delete ui;
 }
 
-void GuiMainWindow::scanFile(QString sFileName)
+void GuiMainWindow::_handleFile(QString sFileName)
 {
     if(sFileName!="")
     {
-        SpecAbstract::SCAN_RESULT scanResult={0};
-
-        SpecAbstract::SCAN_OPTIONS options={0};
-
-        options.bRecursiveScan=ui->checkBoxRecursiveScan->isChecked();
-        options.bDeepScan=ui->checkBoxDeepScan->isChecked();
-        options.bHeuristicScan=ui->checkBoxHeuristicScan->isChecked();
-
-        DialogStaticScan ds(this);
-        ds.setData(sFileName,&options,&scanResult);
-        ds.exec();
-
-        if(nfdOptions.bSaveLastDirectory)
-        {
-            QFileInfo fi(sFileName);
-            nfdOptions.sLastDirectory=fi.absolutePath();
-        }
-
-        QString sSaveDirectory=nfdOptions.sLastDirectory+QDir::separator()+"result"; // mb TODO
-
-        ui->widgetResult->setData(scanResult,sSaveDirectory);
+        ui->widgetArchive->setData(sFileName);
     }
 }
 
-void GuiMainWindow::_scan(QString sName)
+void GuiMainWindow::handleFile(QString sName)
 {
     QFileInfo fi(sName);
 
@@ -83,14 +63,7 @@ void GuiMainWindow::_scan(QString sName)
     {
         ui->lineEditFileName->setText(sName);
         
-        scanFile(sName);
-    }
-    else if(fi.isDir())
-    {
-        DialogDirectoryScan dds(this,&nfdOptions,sName);
-        dds.exec();
-
-        adjust();
+        _handleFile(sName);
     }
 }
 
@@ -113,12 +86,12 @@ void GuiMainWindow::on_pushButtonOpenFile_clicked()
     QString sFileName=QFileDialog::getOpenFileName(this,tr("Open file")+QString("..."),sDirectory,tr("All files")+QString(" (*)"));
 
     if(!sFileName.isEmpty())
-    {
-        ui->lineEditFileName->setText(sFileName);
+    { 
+        handleFile(sFileName);
     
         if(nfdOptions.bScanAfterOpen)
         {
-            _scan(sFileName);
+            // TODO
         }
     }
 }
@@ -127,7 +100,8 @@ void GuiMainWindow::on_pushButtonScan_clicked()
 {
     QString sFileName=ui->lineEditFileName->text().trimmed();
 
-    _scan(sFileName);
+    // TODO
+//    handleFile(sFileName);
 }
 
 void GuiMainWindow::on_pushButtonAbout_clicked()
@@ -163,7 +137,7 @@ void GuiMainWindow::dropEvent(QDropEvent *event)
 
             if(nfdOptions.bScanAfterOpen)
             {
-                _scan(sFileName);
+                handleFile(sFileName);
             }
         }
     }
@@ -192,18 +166,20 @@ void GuiMainWindow::adjust()
     }
     setWindowFlags(wf);
 
-    ui->checkBoxDeepScan->setChecked(nfdOptions.bDeepScan);
-    ui->checkBoxRecursiveScan->setChecked(nfdOptions.bRecursiveScan);
-    ui->checkBoxHeuristicScan->setChecked(nfdOptions.bHeristicScan);
-
     show();
 }
 
-void GuiMainWindow::on_pushButtonDirectoryScan_clicked()
+void GuiMainWindow::on_pushButtonHex_clicked()
 {
-    DialogDirectoryScan dds(this,&nfdOptions,"");
 
-    dds.exec();
+}
 
-    adjust();
+void GuiMainWindow::on_pushButtonStrings_clicked()
+{
+
+}
+
+void GuiMainWindow::on_pushButtonHash_clicked()
+{
+
 }

@@ -26,10 +26,8 @@
 #include <QFileDialog>
 #include <QDragEnterEvent>
 #include <QMimeData>
-#include "dialogstaticscan.h"
 #include "dialogabout.h"
 #include "dialogoptions.h"
-#include "dialogdirectoryscan.h"
 
 namespace Ui
 {
@@ -45,15 +43,17 @@ public:
     ~GuiMainWindow() override;
 
 private slots:
-    void scanFile(QString sFileName);
-    void _scan(QString sName);
+    void _handleFile(QString sFileName);
+    void handleFile(QString sName);
     void on_pushButtonScan_clicked();
     void on_pushButtonExit_clicked();
     void on_pushButtonOpenFile_clicked();
     void on_pushButtonAbout_clicked();
     void on_pushButtonOptions_clicked();
     void adjust();
-    void on_pushButtonDirectoryScan_clicked();
+    void on_pushButtonHex_clicked();
+    void on_pushButtonStrings_clicked();
+    void on_pushButtonHash_clicked();
 
 protected:
     void dragEnterEvent(QDragEnterEvent *event) override;
