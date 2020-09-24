@@ -123,11 +123,11 @@ void GuiMainWindow::dragMoveEvent(QDragMoveEvent *event)
 
 void GuiMainWindow::dropEvent(QDropEvent *event)
 {
-    const QMimeData* mimeData=event->mimeData();
+    const QMimeData *pMimeData=event->mimeData();
 
-    if(mimeData->hasUrls())
+    if(pMimeData->hasUrls())
     {
-        QList<QUrl> urlList=mimeData->urls();
+        QList<QUrl> urlList=pMimeData->urls();
 
         if(urlList.count())
         {
@@ -171,15 +171,68 @@ void GuiMainWindow::adjust()
 
 void GuiMainWindow::on_pushButtonHex_clicked()
 {
+    QString sFileName=ui->lineEditFileName->text().trimmed();
 
+    QFile file;
+    file.setFileName(sFileName);
+
+    if(file.open(QIODevice::ReadOnly))
+    {
+        DialogHex dialogHex(this,&file);
+
+        dialogHex.exec();
+
+        file.close();
+    }
 }
 
 void GuiMainWindow::on_pushButtonStrings_clicked()
 {
+    QString sFileName=ui->lineEditFileName->text().trimmed();
 
+    QFile file;
+    file.setFileName(sFileName);
+
+    if(file.open(QIODevice::ReadOnly))
+    {
+        DialogSearchStrings dialogSearchStrings(this,&file,nullptr,true);
+
+        dialogSearchStrings.exec();
+
+        file.close();
+    }
 }
 
 void GuiMainWindow::on_pushButtonHash_clicked()
 {
+    QString sFileName=ui->lineEditFileName->text().trimmed();
 
+    QFile file;
+    file.setFileName(sFileName);
+
+    if(file.open(QIODevice::ReadOnly))
+    {
+        DialogHash dialogHash(this,&file);
+
+        dialogHash.exec();
+
+        file.close();
+    }
+}
+
+void GuiMainWindow::on_pushButtonEntropy_clicked()
+{
+    QString sFileName=ui->lineEditFileName->text().trimmed();
+
+    QFile file;
+    file.setFileName(sFileName);
+
+    if(file.open(QIODevice::ReadOnly))
+    {
+        DialogEntropy dialogEntropy(this,&file);
+
+        dialogEntropy.exec();
+
+        file.close();
+    }
 }

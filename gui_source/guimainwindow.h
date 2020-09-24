@@ -54,6 +54,7 @@ private slots:
     void on_pushButtonHex_clicked();
     void on_pushButtonStrings_clicked();
     void on_pushButtonHash_clicked();
+    void on_pushButtonEntropy_clicked();
 
 protected:
     void dragEnterEvent(QDragEnterEvent *event) override;
