@@ -28,6 +28,7 @@
 #include <QMimeData>
 #include "dialogabout.h"
 #include "dialogoptions.h"
+#include "xoptions.h"
 
 namespace Ui
 {
@@ -43,8 +44,7 @@ public:
     ~GuiMainWindow() override;
 
 private slots:
-    void _handleFile(QString sFileName);
-    void handleFile(QString sName);
+    void handleFile(QString sFileName);
     void on_pushButtonScan_clicked();
     void on_pushButtonExit_clicked();
     void on_pushButtonOpenFile_clicked();
@@ -55,6 +55,7 @@ private slots:
     void on_pushButtonStrings_clicked();
     void on_pushButtonHash_clicked();
     void on_pushButtonEntropy_clicked();
+    void scanFile(QString sFileName);
 
 protected:
     void dragEnterEvent(QDragEnterEvent *event) override;
@@ -63,7 +64,7 @@ protected:
 
 private:
     Ui::GuiMainWindow *ui;
-    NFD::OPTIONS nfdOptions;
+    XOptions xOptions;
 };
 
 #endif // GUIMAINWINDOW_H
