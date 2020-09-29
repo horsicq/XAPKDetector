@@ -5,7 +5,7 @@ include(../build.pri)
 
 CONFIG += c++11
 
-TARGET = nfdc
+TARGET = xadc
 CONFIG += console
 CONFIG -= app_bundle
 
