@@ -10,7 +10,7 @@ TRANSLATIONS = \
     translation/xad_es.ts \
     translation/xad_fr.ts \
     translation/xad_pt_BR.ts \
-    translation/xad_zh.ko \
+    translation/xad_ko.ts \
     translation/xad_zh.ts \
     translation/xad_zh_TW.ts
 
