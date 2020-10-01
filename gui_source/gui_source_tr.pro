@@ -1,5 +1,4 @@
 TRANSLATIONS = \
-    translation/xad_en.ts \
     translation/xad_it.ts \
     translation/xad_ar.ts \
     translation/xad_de.ts \
