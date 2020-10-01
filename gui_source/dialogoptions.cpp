@@ -32,6 +32,9 @@ DialogOptions::DialogOptions(QWidget *parent, XOptions *pOptions) :
     pOptions->setCheckBox(ui->checkBoxScanAfterOpen,XOptions::ID_SCANAFTEROPEN);
     pOptions->setCheckBox(ui->checkBoxStayOnTop,XOptions::ID_STAYONTOP);
     pOptions->setCheckBox(ui->checkBoxSaveLastDirectory,XOptions::ID_SAVELASTDIRECTORY);
+    pOptions->setComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
+    pOptions->setComboBox(ui->comboBoxQss,XOptions::ID_QSS);
+    pOptions->setComboBox(ui->comboBoxLanguage,XOptions::ID_LANG);
 
 #ifdef WIN32
     ui->checkBoxContext->setChecked(pOptions->checkContext(X_APPLICATIONNAME,"*"));
@@ -50,6 +53,9 @@ void DialogOptions::on_pushButtonOK_clicked()
     pOptions->getCheckBox(ui->checkBoxScanAfterOpen,XOptions::ID_SCANAFTEROPEN);
     pOptions->getCheckBox(ui->checkBoxSaveLastDirectory,XOptions::ID_SAVELASTDIRECTORY);
     pOptions->getCheckBox(ui->checkBoxStayOnTop,XOptions::ID_STAYONTOP);
+    pOptions->getComboBox(ui->comboBoxStyle,XOptions::ID_STYLE);
+    pOptions->getComboBox(ui->comboBoxQss,XOptions::ID_QSS);
+    pOptions->getComboBox(ui->comboBoxLanguage,XOptions::ID_LANG);
 
 #ifdef WIN32
     if(pOptions->checkContext(X_APPLICATIONNAME,"*")!=ui->checkBoxContext->isChecked())
@@ -64,6 +70,11 @@ void DialogOptions::on_pushButtonOK_clicked()
         }
     }
 #endif
+
+    if(pOptions->isRestartNeeded())
+    {
+        QMessageBox::information(this,tr("Information"),tr("Please restart the application"));
+    }
 
     this->close();
 }

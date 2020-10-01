@@ -23,6 +23,7 @@
 
 #include <QDialog>
 #include <QSettings>
+#include <QMessageBox>
 #include <QDir>
 #include "xoptions.h"
 #include "../global.h"

@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 #ifdef Q_OS_MAC
 #ifndef QT_DEBUG
 	QString sLibraryPath=QString(argv[0]);
-	sLibraryPath=sLibraryPath.remove("MacOS/nfd")+"PlugIns";
+    sLibraryPath=sLibraryPath.remove("MacOS/xad")+"PlugIns";
     QCoreApplication::setLibraryPaths(QStringList(sLibraryPath));
 #endif
 #endif
@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationVersion(X_APPLICATIONVERSION);
 
     QApplication a(argc, argv);
-    QApplication::setStyle(QStyleFactory::create("Fusion"));
+    XOptions::adjustApplicationView(X_OPTIONSFILE,X_APPLICATIONFILENAME);
 
     GuiMainWindow w;
     w.show();

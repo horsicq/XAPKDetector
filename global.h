@@ -28,5 +28,6 @@
 #define X_ORGANIZATIONNAME "NTInfo"
 #define X_ORGANIZATIONDOMAIN "ntinfo.biz"
 #define X_OPTIONSFILE "xad.ini"
+#define X_APPLICATIONFILENAME "xad"
 
 #endif // _GLOBAL_H
