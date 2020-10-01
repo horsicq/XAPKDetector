@@ -52,6 +52,7 @@ cd ..
 mkdir %SOURCE_PATH%\release\%BUILD_NAME%
 mkdir %SOURCE_PATH%\release\%BUILD_NAME%\
 mkdir %SOURCE_PATH%\release\%BUILD_NAME%\platforms
+mkdir %SOURCE_PATH%\release\%BUILD_NAME%\lang
 
 copy %SOURCE_PATH%\build\release\%GUIEXE% %SOURCE_PATH%\release\%BUILD_NAME%\
 copy %SOURCE_PATH%\build\release\%CONEXE% %SOURCE_PATH%\release\%BUILD_NAME%\
