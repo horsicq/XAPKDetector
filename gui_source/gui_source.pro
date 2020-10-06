@@ -39,6 +39,11 @@ FORMS    += guimainwindow.ui \
     include(../FormatWidgets/allformatwidgets.pri)
 }
 
+!contains(XCONFIG, dexwidget) {
+    XCONFIG += dexwidget
+    include(../../_mylibs/FormatWidgets/DEX/dexwidget.pri)
+}
+
 !contains(XCONFIG, xoptions) {
     XCONFIG += xoptions
     include(../XOptions/xoptions.pri)
