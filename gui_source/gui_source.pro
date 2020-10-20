@@ -6,6 +6,7 @@ TARGET = xad
 TEMPLATE = app
 
 include(../build.pri)
+XCONFIG += use_dex
 
 SOURCES +=\
         guimainwindow.cpp \

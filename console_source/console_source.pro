@@ -2,6 +2,7 @@ QT += core
 QT -= gui
 
 include(../build.pri)
+XCONFIG += use_dex
 
 CONFIG += c++11
 
