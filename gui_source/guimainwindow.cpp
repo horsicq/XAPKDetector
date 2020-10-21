@@ -21,8 +21,8 @@
 #include "guimainwindow.h"
 #include "ui_guimainwindow.h"
 
-GuiMainWindow::GuiMainWindow(QWidget *parent) :
-    QMainWindow(parent),
+GuiMainWindow::GuiMainWindow(QWidget *pParent) :
+    QMainWindow(pParent),
     ui(new Ui::GuiMainWindow)
 {
     ui->setupUi(this);
@@ -113,19 +113,19 @@ void GuiMainWindow::on_pushButtonAbout_clicked()
     di.exec();
 }
 
-void GuiMainWindow::dragEnterEvent(QDragEnterEvent *event)
+void GuiMainWindow::dragEnterEvent(QDragEnterEvent *pEvent)
 {
-    event->acceptProposedAction();
+    pEvent->acceptProposedAction();
 }
 
-void GuiMainWindow::dragMoveEvent(QDragMoveEvent *event)
+void GuiMainWindow::dragMoveEvent(QDragMoveEvent *pEvent)
 {
-    event->acceptProposedAction();
+    pEvent->acceptProposedAction();
 }
 
-void GuiMainWindow::dropEvent(QDropEvent *event)
+void GuiMainWindow::dropEvent(QDropEvent *pEvent)
 {
-    const QMimeData *pMimeData=event->mimeData();
+    const QMimeData *pMimeData=pEvent->mimeData();
 
     if(pMimeData->hasUrls())
     {

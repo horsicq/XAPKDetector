@@ -40,7 +40,7 @@ class GuiMainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit GuiMainWindow(QWidget *parent = nullptr);
+    explicit GuiMainWindow(QWidget *pParent=nullptr);
     ~GuiMainWindow() override;
 
 private slots:
@@ -58,9 +58,9 @@ private slots:
     void scanFile(QString sFileName);
 
 protected:
-    void dragEnterEvent(QDragEnterEvent *event) override;
-    void dragMoveEvent(QDragMoveEvent *event) override;
-    void dropEvent(QDropEvent *event) override;
+    void dragEnterEvent(QDragEnterEvent *pEvent) override;
+    void dragMoveEvent(QDragMoveEvent *pEvent) override;
+    void dropEvent(QDropEvent *pEvent) override;
 
 private:
     Ui::GuiMainWindow *ui;
