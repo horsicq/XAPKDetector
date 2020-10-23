@@ -44,6 +44,12 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
     listIDs.append(XOptions::ID_LASTDIRECTORY);
 
     xOptions.setValueIDs(listIDs);
+
+//    QMap<XOptions::ID,QVariant> mapDefaultValues;
+//    mapDefaultValues.insert(XOptions::ID_QSS,"");
+
+//    xOptions.setDefaultValues(mapDefaultValues);
+
     xOptions.load();
     adjust();
 
