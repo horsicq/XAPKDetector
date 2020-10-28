@@ -31,6 +31,8 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
 
     setAcceptDrops(true);
 
+    fwOptions={};
+
     xOptions.setName(X_OPTIONSFILE);
 
     QList<XOptions::ID> listIDs;
@@ -74,7 +76,7 @@ void GuiMainWindow::handleFile(QString sFileName)
     {
         ui->lineEditFileName->setText(sFileName);
         
-        ui->widgetArchive->setData(sFileName);
+        ui->widgetArchive->setData(sFileName,&fwOptions);
 
         if(xOptions.isScanAfterOpen())
         {

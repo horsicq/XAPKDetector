@@ -28,6 +28,7 @@
 #include <QMimeData>
 #include "dialogabout.h"
 #include "dialogoptions.h"
+#include "archive_widget.h"
 #include "xoptions.h"
 
 namespace Ui
@@ -65,6 +66,7 @@ protected:
 private:
     Ui::GuiMainWindow *ui;
     XOptions xOptions;
+    FW_DEF::OPTIONS fwOptions;
 };
 
 #endif // GUIMAINWINDOW_H
