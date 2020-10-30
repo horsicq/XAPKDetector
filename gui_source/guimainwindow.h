@@ -57,6 +57,7 @@ private slots:
     void on_pushButtonHash_clicked();
     void on_pushButtonEntropy_clicked();
     void scanFile(QString sFileName);
+    void on_pushButtonClassesDex_clicked();
 
 protected:
     void dragEnterEvent(QDragEnterEvent *pEvent) override;
