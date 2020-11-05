@@ -8,6 +8,22 @@
         <translation type="unfinished">Formato</translation>
     </message>
     <message>
+        <source>Type</source>
+        <translation type="unfinished">Tipo</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation type="unfinished">Filtro</translation>
+    </message>
+    <message>
+        <source>Tree</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Open</source>
         <translation type="unfinished"></translation>
     </message>
@@ -26,6 +42,14 @@
     <message>
         <source>Hash</source>
         <translation type="unfinished">Impronta</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation type="unfinished">Copia</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>Nome file</translation>
     </message>
     <message>
         <source>Dump</source>
@@ -67,6 +91,44 @@
     </message>
 </context>
 <context>
+    <name>DEXSectionHeaderWidget</name>
+    <message>
+        <source>Readonly</source>
+        <translation type="unfinished">Sola lettura</translation>
+    </message>
+</context>
+<context>
+    <name>DEXWidget</name>
+    <message>
+        <source>Reload</source>
+        <translation type="unfinished">Ricarica</translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation type="unfinished">Sola lettura</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation type="unfinished">Filtro</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation type="unfinished">Stringhe</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation type="unfinished">Mappa della memoria</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation type="unfinished">Entropia</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation type="unfinished">Scansione euristica</translation>
+    </message>
+</context>
+<context>
     <name>DialogAbout</name>
     <message>
         <source>About</source>
@@ -75,6 +137,13 @@
     <message>
         <source>OK</source>
         <translation type="unfinished">OK</translation>
+    </message>
+</context>
+<context>
+    <name>DialogArchive</name>
+    <message>
+        <source>Archive</source>
+        <translation type="unfinished">Archivio</translation>
     </message>
 </context>
 <context>
@@ -456,7 +525,7 @@
     </message>
     <message>
         <source>Language</source>
-        <translation>Lingua</translation>
+        <translation type="unfinished">Lingua</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1103,8 +1172,8 @@
         <translation type="unfinished">Entropia</translation>
     </message>
     <message>
-        <source>Detect</source>
-        <translation>Rileva</translation>
+        <source>Heuristic scan</source>
+        <translation type="unfinished">Scansione euristica</translation>
     </message>
     <message>
         <source>Segments</source>
@@ -1347,7 +1416,7 @@
     </message>
     <message>
         <source>Filter</source>
-        <translation>Filtro</translation>
+        <translation type="unfinished">Filtro</translation>
     </message>
     <message>
         <source>Save</source>
@@ -1405,8 +1474,12 @@
         <translation>Voce di archivio</translation>
     </message>
     <message>
-        <source>Archive</source>
-        <translation>Archivio</translation>
+        <source>obfuscator</source>
+        <translation>Offuscatore</translation>
+    </message>
+    <message>
+        <source>Tool</source>
+        <translation>Strumento</translation>
     </message>
     <message>
         <source>Certificate</source>
@@ -1419,6 +1492,10 @@
     <message>
         <source>Converter</source>
         <translation>Convertitore</translation>
+    </message>
+    <message>
+        <source>Cryptor</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Database</source>
@@ -1461,6 +1538,10 @@
         <translation>Assemblatore</translation>
     </message>
     <message>
+        <source>Language</source>
+        <translation type="unfinished">Lingua</translation>
+    </message>
+    <message>
         <source>Library</source>
         <translation type="unfinished">Libreria</translation>
     </message>
@@ -1473,16 +1554,8 @@
         <translation>Compressore</translation>
     </message>
     <message>
-        <source>obfuscator</source>
-        <translation>Offuscatore</translation>
-    </message>
-    <message>
         <source>Packer</source>
         <translation>Impacchettatore</translation>
-    </message>
-    <message>
-        <source>Tool</source>
-        <translation>Strumento</translation>
     </message>
     <message>
         <source>Protector</source>
@@ -1529,6 +1602,10 @@
         <translation type="unfinished">Stringa</translation>
     </message>
     <message>
+        <source>Archive</source>
+        <translation type="unfinished">Archivio</translation>
+    </message>
+    <message>
         <source>Resources</source>
         <translation type="unfinished">Risorse</translation>
     </message>
@@ -1563,10 +1640,40 @@
     </message>
 </context>
 <context>
+    <name>XBinary</name>
+    <message>
+        <source>Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Document</source>
+        <translation type="unfinished">Documenti</translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation type="unfinished">Immagine</translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation type="unfinished">Archivio</translation>
+    </message>
+</context>
+<context>
     <name>XComboBoxEx</name>
     <message>
         <source>Flags</source>
         <translation>Bandiere</translation>
+    </message>
+</context>
+<context>
+    <name>XDEX</name>
+    <message>
+        <source>Header</source>
+        <translation type="unfinished">Intestazione</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation type="unfinished">Copertura</translation>
     </message>
 </context>
 <context>

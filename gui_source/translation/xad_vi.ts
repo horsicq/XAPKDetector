@@ -8,6 +8,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Type</source>
+        <translation type="unfinished">Loại</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation type="unfinished">Bộ lọc</translation>
+    </message>
+    <message>
+        <source>Tree</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Open</source>
         <translation>Mở</translation>
     </message>
@@ -26,6 +42,14 @@
     <message>
         <source>Hash</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation type="unfinished">Sao chép</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>Tên tập tin</translation>
     </message>
     <message>
         <source>Dump</source>
@@ -67,6 +91,44 @@
     </message>
 </context>
 <context>
+    <name>DEXSectionHeaderWidget</name>
+    <message>
+        <source>Readonly</source>
+        <translation type="unfinished">Chỉ đọc</translation>
+    </message>
+</context>
+<context>
+    <name>DEXWidget</name>
+    <message>
+        <source>Reload</source>
+        <translation type="unfinished">Tải lại</translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation type="unfinished">Chỉ đọc</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation type="unfinished">Bộ lọc</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation type="unfinished">Chuỗi</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation type="unfinished">Sơ đồ bộ nhớ</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation type="unfinished">Entropy</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation type="unfinished">Quét phỏng đoán</translation>
+    </message>
+</context>
+<context>
     <name>DialogAbout</name>
     <message>
         <source>About</source>
@@ -75,6 +137,13 @@
     <message>
         <source>OK</source>
         <translation type="unfinished">OK</translation>
+    </message>
+</context>
+<context>
+    <name>DialogArchive</name>
+    <message>
+        <source>Archive</source>
+        <translation type="unfinished">Bản ghi lưu trữ</translation>
     </message>
 </context>
 <context>
@@ -456,7 +525,7 @@
     </message>
     <message>
         <source>Language</source>
-        <translation>Ngôn ngữ</translation>
+        <translation type="unfinished">Ngôn ngữ</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1103,8 +1172,8 @@
         <translation type="unfinished">Entropy</translation>
     </message>
     <message>
-        <source>Detect</source>
-        <translation>Phát hiện</translation>
+        <source>Heuristic scan</source>
+        <translation type="unfinished">Quét phỏng đoán</translation>
     </message>
     <message>
         <source>Segments</source>
@@ -1347,7 +1416,7 @@
     </message>
     <message>
         <source>Filter</source>
-        <translation>Bộ lọc</translation>
+        <translation type="unfinished">Bộ lọc</translation>
     </message>
     <message>
         <source>Save</source>
@@ -1405,7 +1474,11 @@
         <translation>Bản ghi lưu trữ</translation>
     </message>
     <message>
-        <source>Archive</source>
+        <source>obfuscator</source>
+        <translation>trình làm rối</translation>
+    </message>
+    <message>
+        <source>Tool</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1418,6 +1491,10 @@
     </message>
     <message>
         <source>Converter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cryptor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1461,6 +1538,10 @@
         <translation>Trình kết hợp</translation>
     </message>
     <message>
+        <source>Language</source>
+        <translation type="unfinished">Ngôn ngữ</translation>
+    </message>
+    <message>
         <source>Library</source>
         <translation type="unfinished">Thư viện</translation>
     </message>
@@ -1473,15 +1554,7 @@
         <translation>bộ nén</translation>
     </message>
     <message>
-        <source>obfuscator</source>
-        <translation>trình làm rối</translation>
-    </message>
-    <message>
         <source>Packer</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Tool</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1529,6 +1602,10 @@
         <translation type="unfinished">Chuỗi</translation>
     </message>
     <message>
+        <source>Archive</source>
+        <translation type="unfinished">Bản ghi lưu trữ</translation>
+    </message>
+    <message>
         <source>Resources</source>
         <translation type="unfinished">Tài nguyên</translation>
     </message>
@@ -1563,10 +1640,40 @@
     </message>
 </context>
 <context>
+    <name>XBinary</name>
+    <message>
+        <source>Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Document</source>
+        <translation type="unfinished">Tài liệu</translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation type="unfinished">Hình ảnh</translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation type="unfinished">Bản ghi lưu trữ</translation>
+    </message>
+</context>
+<context>
     <name>XComboBoxEx</name>
     <message>
         <source>Flags</source>
         <translation>Cờ</translation>
+    </message>
+</context>
+<context>
+    <name>XDEX</name>
+    <message>
+        <source>Header</source>
+        <translation type="unfinished">Tiêu đề</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation type="unfinished">Xếp chồng</translation>
     </message>
 </context>
 <context>

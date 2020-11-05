@@ -8,6 +8,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Type</source>
+        <translation type="unfinished">Typ</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tree</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Open</source>
         <translation type="unfinished"></translation>
     </message>
@@ -26,6 +42,14 @@
     <message>
         <source>Hash</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation type="unfinished">Kopieren</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>Dateinamen</translation>
     </message>
     <message>
         <source>Dump</source>
@@ -67,6 +91,44 @@
     </message>
 </context>
 <context>
+    <name>DEXSectionHeaderWidget</name>
+    <message>
+        <source>Readonly</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>DEXWidget</name>
+    <message>
+        <source>Reload</source>
+        <translation type="unfinished">Neu laden</translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation type="unfinished">Entropie</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>DialogAbout</name>
     <message>
         <source>About</source>
@@ -75,6 +137,13 @@
     <message>
         <source>OK</source>
         <translation type="unfinished">OK</translation>
+    </message>
+</context>
+<context>
+    <name>DialogArchive</name>
+    <message>
+        <source>Archive</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -456,7 +525,7 @@
     </message>
     <message>
         <source>Language</source>
-        <translation>Sprache</translation>
+        <translation type="unfinished">Sprache</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1103,7 +1172,7 @@
         <translation type="unfinished">Entropie</translation>
     </message>
     <message>
-        <source>Detect</source>
+        <source>Heuristic scan</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1405,7 +1474,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Archive</source>
+        <source>obfuscator</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tool</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1418,6 +1491,10 @@
     </message>
     <message>
         <source>Converter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cryptor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1461,6 +1538,10 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Language</source>
+        <translation type="unfinished">Sprache</translation>
+    </message>
+    <message>
         <source>Library</source>
         <translation type="unfinished">Bibliotheken</translation>
     </message>
@@ -1473,15 +1554,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>obfuscator</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Packer</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Tool</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1529,6 +1602,10 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Archive</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Resources</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1563,10 +1640,40 @@
     </message>
 </context>
 <context>
+    <name>XBinary</name>
+    <message>
+        <source>Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation type="unfinished">Image</translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>XComboBoxEx</name>
     <message>
         <source>Flags</source>
         <translation>Flags</translation>
+    </message>
+</context>
+<context>
+    <name>XDEX</name>
+    <message>
+        <source>Header</source>
+        <translation type="unfinished">Header</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation type="unfinished">Overlay</translation>
     </message>
 </context>
 <context>

@@ -1,11 +1,10 @@
 set VS_PATH="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community"
-set QT_PATH=C:\Qt\5.12.8\msvc2017
+set QT_PATH=C:\Qt\5.15.1\msvc2019
 set SEVENZIP_PATH="C:\Program Files\7-Zip"
 
 set BUILD_NAME=xapkdetector_win32_portable
 set SOURCE_PATH=%~dp0
 mkdir %SOURCE_PATH%\build
-mkdir %SOURCE_PATH%\build\loader
 mkdir %SOURCE_PATH%\release
 set /p RELEASE_VERSION=<%SOURCE_PATH%\release_version.txt
 
@@ -67,8 +66,8 @@ copy %QT_PATH%\plugins\imageformats\qtiff.dll %SOURCE_PATH%\release\%BUILD_NAME%
 copy %QT_PATH%\plugins\imageformats\qico.dll %SOURCE_PATH%\release\%BUILD_NAME%\imageformats\
 copy %QT_PATH%\plugins\imageformats\qgif.dll %SOURCE_PATH%\release\%BUILD_NAME%\imageformats\
 
-copy %VS_PATH%\VC\Redist\MSVC\14.16.27012\x86\Microsoft.VC141.CRT\msvcp140.dll %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %VS_PATH%\VC\Redist\MSVC\14.16.27012\x86\Microsoft.VC141.CRT\vcruntime140.dll %SOURCE_PATH%\release\%BUILD_NAME%\
+copy %VS_PATH%\VC\Redist\MSVC\14.27.29016\x86\Microsoft.VC142.CRT\msvcp140.dll %SOURCE_PATH%\release\%BUILD_NAME%\
+copy %VS_PATH%\VC\Redist\MSVC\14.27.29016\x86\Microsoft.VC142.CRT\vcruntime140.dll %SOURCE_PATH%\release\%BUILD_NAME%\
 
 xcopy %SOURCE_PATH%\XStyles\qss %SOURCE_PATH%\release\%BUILD_NAME%\qss /E /I
 

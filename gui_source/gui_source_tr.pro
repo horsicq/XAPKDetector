@@ -13,6 +13,9 @@ TRANSLATIONS = \
     translation/xad_zh.ts \
     translation/xad_zh_TW.ts
 
+RESOURCES += \
+    resources.qrc
+
 FORMS += \
     ../FormatDialogs/dialogdump.ui \
     ../FormatDialogs/dialogdumpprocess.ui \
@@ -24,6 +27,9 @@ FORMS += \
     ../FormatDialogs/dialogtextinfo.ui \
     ../FormatWidgets/Binary/binarywidget.ui \
     ../FormatWidgets/Binary/dialogbinary.ui \
+    ../FormatWidgets/DEX/dexsectionheaderwidget.ui \
+    ../FormatWidgets/DEX/dexwidget.ui \
+    ../FormatWidgets/DEX/dialogdex.ui \
     ../FormatWidgets/ELF/dialogelf.ui \
     ../FormatWidgets/ELF/elfsectionheaderwidget.ui \
     ../FormatWidgets/ELF/elfwidget.ui \
@@ -69,6 +75,7 @@ FORMS += \
     ../XMemoryMapWidget/dialogmemorymap.ui \
     ../XMemoryMapWidget/xmemorymapwidget.ui \
     ../archive_widget/archive_widget.ui \
+    ../archive_widget/dialogarchive.ui \
     ../archive_widget/dialogcreateviewmodel.ui \
     ../archive_widget/dialogshowimage.ui \
     ../archive_widget/dialogshowtext.ui \
@@ -98,6 +105,11 @@ HEADERS += \
     ../FormatWidgets/Binary/binary_defs.h \
     ../FormatWidgets/Binary/binarywidget.h \
     ../FormatWidgets/Binary/dialogbinary.h \
+    ../FormatWidgets/DEX/dex_defs.h \
+    ../FormatWidgets/DEX/dexprocessdata.h \
+    ../FormatWidgets/DEX/dexsectionheaderwidget.h \
+    ../FormatWidgets/DEX/dexwidget.h \
+    ../FormatWidgets/DEX/dialogdex.h \
     ../FormatWidgets/ELF/dialogelf.h \
     ../FormatWidgets/ELF/elf_defs.h \
     ../FormatWidgets/ELF/elfprocessdata.h \
@@ -174,6 +186,8 @@ HEADERS += \
     ../XArchive/xsevenzip.h \
     ../XArchive/xzip.h \
     ../XCapstone/xcapstone.h \
+    ../XDEX/xandroidbinary.h \
+    ../XDEX/xandroidbinary_def.h \
     ../XDEX/xdex.h \
     ../XDEX/xdex_def.h \
     ../XDisasm/dialogasmsignature.h \
@@ -196,6 +210,7 @@ HEADERS += \
     ../XOptions/xoptions.h \
     ../archive_widget/archive_widget.h \
     ../archive_widget/createviewmodelprocess.h \
+    ../archive_widget/dialogarchive.h \
     ../archive_widget/dialogcreateviewmodel.h \
     ../archive_widget/dialogshowimage.h \
     ../archive_widget/dialogshowtext.h \
@@ -226,6 +241,11 @@ SOURCES += \
     ../FormatWidgets/Binary/binary_defs.cpp \
     ../FormatWidgets/Binary/binarywidget.cpp \
     ../FormatWidgets/Binary/dialogbinary.cpp \
+    ../FormatWidgets/DEX/dex_defs.cpp \
+    ../FormatWidgets/DEX/dexprocessdata.cpp \
+    ../FormatWidgets/DEX/dexsectionheaderwidget.cpp \
+    ../FormatWidgets/DEX/dexwidget.cpp \
+    ../FormatWidgets/DEX/dialogdex.cpp \
     ../FormatWidgets/ELF/dialogelf.cpp \
     ../FormatWidgets/ELF/elf_defs.cpp \
     ../FormatWidgets/ELF/elfprocessdata.cpp \
@@ -295,6 +315,7 @@ SOURCES += \
     ../XArchive/xsevenzip.cpp \
     ../XArchive/xzip.cpp \
     ../XCapstone/xcapstone.cpp \
+    ../XDEX/xandroidbinary.cpp \
     ../XDEX/xdex.cpp \
     ../XDisasm/dialogasmsignature.cpp \
     ../XDisasm/dialogdisasm.cpp \
@@ -316,6 +337,7 @@ SOURCES += \
     ../XOptions/xoptions.cpp \
     ../archive_widget/archive_widget.cpp \
     ../archive_widget/createviewmodelprocess.cpp \
+    ../archive_widget/dialogarchive.cpp \
     ../archive_widget/dialogcreateviewmodel.cpp \
     ../archive_widget/dialogshowimage.cpp \
     ../archive_widget/dialogshowtext.cpp \
@@ -329,4 +351,6 @@ SOURCES += \
     main_gui.cpp \
     ../nfd_widget/nfd_widget.cpp \
     ../winloader_source/winloader.cpp
+
+
 

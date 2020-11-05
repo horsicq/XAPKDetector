@@ -8,6 +8,22 @@
         <translation type="unfinished">형식</translation>
     </message>
     <message>
+        <source>Type</source>
+        <translation type="unfinished">유형</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation type="unfinished">필터</translation>
+    </message>
+    <message>
+        <source>Tree</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Open</source>
         <translation>열기</translation>
     </message>
@@ -26,6 +42,14 @@
     <message>
         <source>Hash</source>
         <translation type="unfinished">해시</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation type="unfinished">복사</translation>
+    </message>
+    <message>
+        <source>File name</source>
+        <translation>파일 이름</translation>
     </message>
     <message>
         <source>Dump</source>
@@ -67,6 +91,44 @@
     </message>
 </context>
 <context>
+    <name>DEXSectionHeaderWidget</name>
+    <message>
+        <source>Readonly</source>
+        <translation type="unfinished">읽기 전용</translation>
+    </message>
+</context>
+<context>
+    <name>DEXWidget</name>
+    <message>
+        <source>Reload</source>
+        <translation type="unfinished">재호출</translation>
+    </message>
+    <message>
+        <source>Readonly</source>
+        <translation type="unfinished">읽기 전용</translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation type="unfinished">필터</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation type="unfinished">문자열</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation type="unfinished">메모리 맵</translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation type="unfinished">엔트로피</translation>
+    </message>
+    <message>
+        <source>Heuristic scan</source>
+        <translation type="unfinished">휴리스틱 검색</translation>
+    </message>
+</context>
+<context>
     <name>DialogAbout</name>
     <message>
         <source>About</source>
@@ -75,6 +137,13 @@
     <message>
         <source>OK</source>
         <translation type="unfinished">확인</translation>
+    </message>
+</context>
+<context>
+    <name>DialogArchive</name>
+    <message>
+        <source>Archive</source>
+        <translation type="unfinished">아카이브</translation>
     </message>
 </context>
 <context>
@@ -456,7 +525,7 @@
     </message>
     <message>
         <source>Language</source>
-        <translation>언어</translation>
+        <translation type="unfinished">언어</translation>
     </message>
     <message>
         <source>OK</source>
@@ -1103,8 +1172,8 @@
         <translation type="unfinished">엔트로피</translation>
     </message>
     <message>
-        <source>Detect</source>
-        <translation>감지</translation>
+        <source>Heuristic scan</source>
+        <translation type="unfinished">휴리스틱 검색</translation>
     </message>
     <message>
         <source>Segments</source>
@@ -1347,7 +1416,7 @@
     </message>
     <message>
         <source>Filter</source>
-        <translation>필터</translation>
+        <translation type="unfinished">필터</translation>
     </message>
     <message>
         <source>Save</source>
@@ -1405,8 +1474,12 @@
         <translation>아카이브 레코드</translation>
     </message>
     <message>
-        <source>Archive</source>
-        <translation>아카이브</translation>
+        <source>obfuscator</source>
+        <translation>난독화기</translation>
+    </message>
+    <message>
+        <source>Tool</source>
+        <translation>도구</translation>
     </message>
     <message>
         <source>Certificate</source>
@@ -1419,6 +1492,10 @@
     <message>
         <source>Converter</source>
         <translation>변환기</translation>
+    </message>
+    <message>
+        <source>Cryptor</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Database</source>
@@ -1461,6 +1538,10 @@
         <translation>병합기</translation>
     </message>
     <message>
+        <source>Language</source>
+        <translation type="unfinished">언어</translation>
+    </message>
+    <message>
         <source>Library</source>
         <translation type="unfinished">라이브러리</translation>
     </message>
@@ -1473,16 +1554,8 @@
         <translation>압축기</translation>
     </message>
     <message>
-        <source>obfuscator</source>
-        <translation>난독화기</translation>
-    </message>
-    <message>
         <source>Packer</source>
         <translation>패커</translation>
-    </message>
-    <message>
-        <source>Tool</source>
-        <translation>도구</translation>
     </message>
     <message>
         <source>Protector</source>
@@ -1529,6 +1602,10 @@
         <translation type="unfinished">문자열</translation>
     </message>
     <message>
+        <source>Archive</source>
+        <translation type="unfinished">아카이브</translation>
+    </message>
+    <message>
         <source>Resources</source>
         <translation type="unfinished">리소스</translation>
     </message>
@@ -1563,10 +1640,40 @@
     </message>
 </context>
 <context>
+    <name>XBinary</name>
+    <message>
+        <source>Text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Document</source>
+        <translation type="unfinished">문서</translation>
+    </message>
+    <message>
+        <source>Image</source>
+        <translation type="unfinished">이미지</translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation type="unfinished">아카이브</translation>
+    </message>
+</context>
+<context>
     <name>XComboBoxEx</name>
     <message>
         <source>Flags</source>
         <translation>Flags</translation>
+    </message>
+</context>
+<context>
+    <name>XDEX</name>
+    <message>
+        <source>Header</source>
+        <translation type="unfinished">헤더</translation>
+    </message>
+    <message>
+        <source>Overlay</source>
+        <translation type="unfinished">오버레이</translation>
     </message>
 </context>
 <context>
