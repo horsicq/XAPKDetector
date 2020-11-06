@@ -16,6 +16,11 @@ set CONEXE=xadc.exe
 set ZIP_NAME=%BUILD_NAME%_%RELEASE_VERSION%
 set RES_FILE=rsrc
 
+del %SOURCE_PATH%\XArchive\.qmake.stash
+del %SOURCE_PATH%\build_libs\.qmake.stash
+del %SOURCE_PATH%\gui_source\.qmake.stash
+del %SOURCE_PATH%\console_source\.qmake.stash
+
 cd build_libs
 %QT_PATH%\bin\qmake.exe build_libs.pro -r -spec %QT_SPEC% "CONFIG+=release"
 

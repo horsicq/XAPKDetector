@@ -40,10 +40,10 @@ mkdir -p release/$BUILD_NAME/base/platforms
 mkdir -p release/$BUILD_NAME/base/imageformats
 
 cp -R $QT_PATH/plugins/platforms/libqxcb.so                     $SOURCE_PATH/release/$BUILD_NAME/base/platforms/
-cp -R $QT_PATH/plugins/imageformats/qjpeg.so                    $SOURCE_PATH/release/$BUILD_NAME/base/imageformats/
-cp -R $QT_PATH/plugins/imageformats/qtiff.so                    $SOURCE_PATH/release/$BUILD_NAME/base/imageformats/
-cp -R $QT_PATH/plugins/imageformats/qico.so                     $SOURCE_PATH/release/$BUILD_NAME/base/imageformats/
-cp -R $QT_PATH/plugins/imageformats/qgif.so                     $SOURCE_PATH/release/$BUILD_NAME/base/imageformats/
+cp -R $QT_PATH/plugins/imageformats/libqjpeg.so                 $SOURCE_PATH/release/$BUILD_NAME/base/imageformats/
+cp -R $QT_PATH/plugins/imageformats/libqtiff.so                 $SOURCE_PATH/release/$BUILD_NAME/base/imageformats/
+cp -R $QT_PATH/plugins/imageformats/libqico.so                  $SOURCE_PATH/release/$BUILD_NAME/base/imageformats/
+cp -R $QT_PATH/plugins/imageformats/libqgif.so                  $SOURCE_PATH/release/$BUILD_NAME/base/imageformats/
 
 cp -R $SOURCE_PATH/build/release/xad                            $SOURCE_PATH/release/$BUILD_NAME/base/
 cp -R $SOURCE_PATH/build/release/xadc                           $SOURCE_PATH/release/$BUILD_NAME/base/

@@ -95,10 +95,10 @@ copyplugin platforms libqcocoa
 copyplugin platforms libqminimal
 copyplugin platforms libqoffscreen
 
-copyplugin imageformats qjpeg
-copyplugin imageformats qtiff
-copyplugin imageformats qico
-copyplugin imageformats qgif
+copyplugin imageformats libqjpeg
+copyplugin imageformats libqtiff
+copyplugin imageformats libqico
+copyplugin imageformats libqgif
 
 mkdir -p $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang
 
