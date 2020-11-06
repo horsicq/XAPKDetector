@@ -4,6 +4,15 @@
 
 XAPKDetector is APK/DEX detector for Windows, Linux and MacOS.
 
+- Heuristic scan
+- String viewer
+- Hex viewer
+- Entropy viewer
+- Hash viewer
+- ELF viewer
+- DEX raw viewer
+
+
 ![alt text](https://github.com/horsicq/XAPKDetector/blob/master/mascots/version.jpg "Mascot")
 
 There are two versions of  program.
