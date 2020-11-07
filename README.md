@@ -4,6 +4,8 @@
 
 XAPKDetector is APK/DEX detector for Windows, Linux and MacOS.
 
+XAPKDetector shows an information about build tools, libraries and protection of APK/DEX files
+
 - Heuristic scan
 - String viewer
 - Hex viewer
@@ -25,6 +27,8 @@ There are two versions of  program.
 ![alt text](https://github.com/horsicq/XAPKDetector/blob/master/docs/3.png "3")
 ![alt text](https://github.com/horsicq/XAPKDetector/blob/master/docs/4.png "4")
 ![alt text](https://github.com/horsicq/XAPKDetector/blob/master/docs/5.png "5")
+![alt text](https://github.com/horsicq/XAPKDetector/blob/master/docs/6.png "6")
+![alt text](https://github.com/horsicq/XAPKDetector/blob/master/docs/7.png "7")
 
 How to build on Linux
 =======

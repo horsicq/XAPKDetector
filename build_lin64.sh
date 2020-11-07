@@ -71,16 +71,16 @@ mv $SOURCE_PATH/release/$BUILD_NAME/base/libicudata.so.56.1                 $SOU
 mkdir -p $SOURCE_PATH/release/$BUILD_NAME/base/lang
 cp -Rf $SOURCE_PATH/XStyles/qss/ $SOURCE_PATH/release/$BUILD_NAME/base/qss/
 
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_de.ts -qm    $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/xad_de.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_ja.ts -qm    $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/xad_ja.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_pl.ts -qm    $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/xad_pl.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_pt_BR.ts -qm $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/xad_pt_BR.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_fr.ts -qm    $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/xad_fr.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_ru.ts -qm    $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/xad_ru.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_vi.ts -qm    $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/xad_vi.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_zh.ts -qm    $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/xad_zh.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_zh_TW.ts -qm $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/xad_zh_TW.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_ko.ts -qm    $SOURCE_PATH/release/$BUILD_NAME/base/lang/Resources/lang/xad_ko.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_de.ts -qm    $SOURCE_PATH/release/$BUILD_NAME/base/lang/xad_de.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_ja.ts -qm    $SOURCE_PATH/release/$BUILD_NAME/base/lang/xad_ja.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_pl.ts -qm    $SOURCE_PATH/release/$BUILD_NAME/base/lang/xad_pl.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_pt_BR.ts -qm $SOURCE_PATH/release/$BUILD_NAME/base/lang/xad_pt_BR.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_fr.ts -qm    $SOURCE_PATH/release/$BUILD_NAME/base/lang/xad_fr.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_ru.ts -qm    $SOURCE_PATH/release/$BUILD_NAME/base/lang/xad_ru.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_vi.ts -qm    $SOURCE_PATH/release/$BUILD_NAME/base/lang/xad_vi.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_zh.ts -qm    $SOURCE_PATH/release/$BUILD_NAME/base/lang/xad_zh.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_zh_TW.ts -qm $SOURCE_PATH/release/$BUILD_NAME/base/lang/xad_zh_TW.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_ko.ts -qm    $SOURCE_PATH/release/$BUILD_NAME/base/lang/xad_ko.qm
 
 echo "#!/bin/sh" >> release/$BUILD_NAME/xad.sh
 echo "CWD=\$(dirname \$0)" >> release/$BUILD_NAME/xad.sh

@@ -7,9 +7,7 @@ SOURCE_PATH=$PWD
 BUILD_NAME=xapkdetector_mac_portable
 GUIEXE=xad
 CONEXE=xadc
-
 cd $SOURCE_PATH
-
 rm -rf build
 
 function makeproject
