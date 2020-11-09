@@ -7,6 +7,7 @@ TEMPLATE = app
 
 include(../build.pri)
 XCONFIG += use_dex
+XCONFIG += use_archive
 
 SOURCES +=\
         guimainwindow.cpp \
