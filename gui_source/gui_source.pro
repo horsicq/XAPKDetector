@@ -6,24 +6,24 @@ TARGET = xad
 TEMPLATE = app
 
 include(../build.pri)
-XCONFIG += use_dex
-XCONFIG += use_archive
 
 SOURCES +=\
         guimainwindow.cpp \
-    dialogabout.cpp \
-    main_gui.cpp \
-    dialogoptions.cpp
+        dialogabout.cpp \
+        main_gui.cpp \
+        dialogoptions.cpp
 
-HEADERS  += guimainwindow.h \
-    ../global.h \
-    dialogabout.h \
-    dialogoptions.h
+HEADERS  += \
+        guimainwindow.h \
+        ../global.h \
+        dialogabout.h \
+        dialogoptions.h
 
-FORMS    += guimainwindow.ui \
-    dialogabout.ui \
-    dialogoptions.ui \
-    dialogdirectoryscan.ui
+FORMS    += \
+        guimainwindow.ui \
+        dialogabout.ui \
+        dialogoptions.ui \
+        dialogdirectoryscan.ui
 
 
 !contains(XCONFIG, archive_widget) {
@@ -39,11 +39,6 @@ FORMS    += guimainwindow.ui \
 !contains(XCONFIG, allformatwidgets) {
     XCONFIG += allformatwidgets
     include(../FormatWidgets/allformatwidgets.pri)
-}
-
-!contains(XCONFIG, dexwidget) {
-    XCONFIG += dexwidget
-    include(../FormatWidgets/DEX/dexwidget.pri)
 }
 
 !contains(XCONFIG, xoptions) {
