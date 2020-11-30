@@ -81,6 +81,7 @@ $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_vi.ts -qm    $SOU
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_zh.ts -qm    $SOURCE_PATH/release/$BUILD_NAME/base/lang/xad_zh.qm
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_zh_TW.ts -qm $SOURCE_PATH/release/$BUILD_NAME/base/lang/xad_zh_TW.qm
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_ko.ts -qm    $SOURCE_PATH/release/$BUILD_NAME/base/lang/xad_ko.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_tr.ts -qm    $SOURCE_PATH/release/$BUILD_NAME/base/lang/xad_tr.qm
 
 echo "#!/bin/sh" >> release/$BUILD_NAME/xad.sh
 echo "CWD=\$(dirname \$0)" >> release/$BUILD_NAME/xad.sh

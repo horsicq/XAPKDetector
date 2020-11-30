@@ -112,6 +112,7 @@ $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_vi.ts -qm  $SOURC
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_zh.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/xad_zh.qm
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_zh_TW.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/xad_zh_TW.qm
 $QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_ko.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/xad_ko.qm
+$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_tr.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/xad_tr.qm
 
 rm -rf $SOURCE_PATH/release/${BUILD_NAME}_${RELEASE_VERSION}.dmg
 hdiutil create -format UDBZ -quiet -srcfolder $SOURCE_PATH/release/$BUILD_NAME $SOURCE_PATH/release/${BUILD_NAME}_${RELEASE_VERSION}.dmg

@@ -88,6 +88,7 @@ xcopy %SOURCE_PATH%\XStyles\qss %SOURCE_PATH%\release\%BUILD_NAME%\qss /E /I
 %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xad_zh_TW.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xad_zh_TW.qm
 %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xad_it.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xad_it.qm
 %QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xad_ko.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xad_ko.qm
+%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xad_tr.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xad_tr.qm
 
 cd %SOURCE_PATH%\release
 if exist %ZIP_NAME%.zip del %ZIP_NAME%.zip
