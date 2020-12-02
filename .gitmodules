@@ -58,3 +58,6 @@
 [submodule "archive_widget"]
 	path = archive_widget
 	url = https://github.com/horsicq/archive_widget.git
+[submodule "XHexView"]
+	path = XHexView
+	url = https://github.com/horsicq/XHexView.git
