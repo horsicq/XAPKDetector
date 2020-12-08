@@ -12,7 +12,8 @@ TRANSLATIONS = \
     translation/xad_ko.ts \
     translation/xad_zh.ts \
     translation/xad_zh_TW.ts\
-    translation/xad_tr.ts
+    translation/xad_tr.ts\
+    translation/xad_he.ts
 
 RESOURCES += \
     resources.qrc
