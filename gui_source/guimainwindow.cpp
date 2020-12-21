@@ -179,7 +179,7 @@ void GuiMainWindow::on_pushButtonHex_clicked()
 
         if(file.open(QIODevice::ReadOnly))
         {
-            DialogHex dialogHex(this,&file);
+            DialogHexView dialogHex(this,&file);
 
             dialogHex.exec();
 
