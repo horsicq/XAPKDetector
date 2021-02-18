@@ -78,7 +78,7 @@ void GuiMainWindow::handleFile(QString sFileName)
     {
         ui->lineEditFileName->setText(sFileName);
         
-        ui->widgetArchive->setData(sFileName,&fwOptions);
+        ui->widgetArchive->setData(sFileName,fwOptions);
 
         ui->pushButtonClassesDex->setEnabled(XArchives::isArchiveRecordPresent(sFileName,"classes.dex"));
 
@@ -199,7 +199,8 @@ void GuiMainWindow::on_pushButtonStrings_clicked()
 
         if(file.open(QIODevice::ReadOnly))
         {
-            DialogSearchStrings dialogSearchStrings(this,&file,nullptr,true);
+            SearchStringsWidget::OPTIONS options={};
+            DialogSearchStrings dialogSearchStrings(this,&file,options,true);
 
             dialogSearchStrings.exec();
 
@@ -287,7 +288,7 @@ void GuiMainWindow::on_pushButtonClassesDex_clicked()
 
                     DialogDEX dialogDEX(this);
 
-                    dialogDEX.setData(&file,&fwOptions);
+                    dialogDEX.setData(&file,fwOptions);
 
                     dialogDEX.exec();
 
