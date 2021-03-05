@@ -45,7 +45,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
     listIDs.append(XOptions::ID_SCANAFTEROPEN);
     listIDs.append(XOptions::ID_STAYONTOP);
     listIDs.append(XOptions::ID_SAVELASTDIRECTORY);
-    listIDs.append(XOptions::ID_LASTDIRECTORY);
+    listIDs.append(XOptions::ID_SEARCHSIGNATURESPATH);
 
     xOptions.setValueIDs(listIDs);
 
@@ -56,6 +56,8 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
 
     xOptions.load();
     adjust();
+
+    // TODO XShortcuts
 
     if(QCoreApplication::arguments().count()>1)
     {
@@ -179,7 +181,10 @@ void GuiMainWindow::on_pushButtonHex_clicked()
 
         if(file.open(QIODevice::ReadOnly))
         {
-            DialogHexView dialogHex(this,&file);
+            XHexView::OPTIONS options={};
+            options.sSignaturesPath=xOptions.getSearchSignaturesPath();
+
+            DialogHexView dialogHex(this,&file,options);
 
             dialogHex.exec();
 
