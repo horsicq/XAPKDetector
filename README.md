@@ -3,9 +3,9 @@
 [![GitHub All Releases](https://img.shields.io/github/downloads/horsicq/XAPKDetector/total.svg)](https://github.com/horsicq/XAPKDetector/releases)
 [![gitlocalized ](https://gitlocalize.com/repo/4736/whole_project/badge.svg)](https://gitlocalize.com/repo/4736/whole_project?utm_source=badge)
 
-XAPKDetector is Android/APK/DEX detector for Windows, Linux and MacOS.
+**XAPKDetector** is Android/APK/DEX detector for Windows, Linux and MacOS.
 
-XAPKDetector shows an information about build tools, libraries and protection of APK/DEX files
+**XAPKDetector** shows an information about build tools, libraries and protection of APK/DEX files
 
 - Heuristic scan
 - String viewer
