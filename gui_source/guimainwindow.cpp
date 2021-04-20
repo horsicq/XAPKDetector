@@ -1,4 +1,4 @@
-// Copyright (c) 2020 hors<horsicq@gmail.com>
+// Copyright (c) 2020-2021 hors<horsicq@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -27,7 +27,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
 {
     ui->setupUi(this);
 
-    setWindowTitle(QString("%1 v%2").arg(X_APPLICATIONNAME).arg(X_APPLICATIONVERSION));
+    setWindowTitle(QString("%1 v%2").arg(X_APPLICATIONDISPLAYNAME).arg(X_APPLICATIONVERSION));
 
     setAcceptDrops(true);
 
@@ -205,6 +205,9 @@ void GuiMainWindow::on_pushButtonStrings_clicked()
         if(file.open(QIODevice::ReadOnly))
         {
             SearchStringsWidget::OPTIONS options={};
+            options.bAnsi=true;
+            options.bUnicode=true;
+
             DialogSearchStrings dialogSearchStrings(this,&file,options,true);
 
             dialogSearchStrings.exec();

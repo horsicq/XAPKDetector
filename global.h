@@ -23,11 +23,12 @@
 
 #include <QString>
 
-#define X_APPLICATIONNAME "XAPKDetector"
+#define X_APPLICATIONDISPLAYNAME "XAPKDetector"
+#define X_APPLICATIONNAME "xapkdetector"
 #define X_APPLICATIONVERSION "0.02"
 #define X_ORGANIZATIONNAME "NTInfo"
 #define X_ORGANIZATIONDOMAIN "ntinfo.biz"
-#define X_OPTIONSFILE "xad.ini"
-#define X_APPLICATIONFILENAME "xad"
+#define X_OPTIONSFILE "xapkd.ini"
+#define X_APPLICATIONFILENAME "xapkd"
 
 #endif // _GLOBAL_H
