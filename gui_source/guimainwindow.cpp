@@ -80,7 +80,7 @@ void GuiMainWindow::handleFile(QString sFileName)
     {
         ui->lineEditFileName->setText(sFileName);
         
-        ui->widgetArchive->setData(sFileName,fwOptions);
+        ui->widgetArchive->setData(sFileName,fwOptions,QSet<XBinary::FT>(),this);
 
         ui->pushButtonClassesDex->setEnabled(XArchives::isArchiveRecordPresent(sFileName,"classes.dex"));
 
@@ -228,7 +228,7 @@ void GuiMainWindow::on_pushButtonHash_clicked()
 
         if(file.open(QIODevice::ReadOnly))
         {
-            DialogHash dialogHash(this,&file);
+            DialogHash dialogHash(this,&file,XBinary::FT_UNKNOWN);
 
             dialogHash.exec();
 
