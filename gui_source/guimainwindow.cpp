@@ -80,7 +80,7 @@ void GuiMainWindow::handleFile(QString sFileName)
     {
         ui->lineEditFileName->setText(sFileName);
         
-        ui->widgetArchive->setData(sFileName,fwOptions,QSet<XBinary::FT>(),this);
+        ui->widgetArchive->setFileName(sFileName,fwOptions,QSet<XBinary::FT>(),this);
 
         ui->pushButtonClassesDex->setEnabled(XArchives::isArchiveRecordPresent(sFileName,"classes.dex"));
 
