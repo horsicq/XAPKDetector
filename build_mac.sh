@@ -1,124 +1,53 @@
 #!/bin/sh -x
-QT_PATH=$HOME/Qt/5.15.1/clang_64
-RELEASE_VERSION=$(cat "release_version.txt")
-echo $RELEASE_VERSION
-SOURCE_PATH=$PWD
+export QMAKE_PATH=$HOME/Qt/5.15.2/clang_64/bin/qmake
 
-BUILD_NAME=xapkdetector_mac_portable
-GUIEXE=xad
-CONEXE=xadc
-cd $SOURCE_PATH
-rm -rf build
+export X_SOURCE_PATH=$PWD
+export X_BUILD_NAME=xapkdetector_mac_portable
+export X_RELEASE_VERSION=$(cat "release_version.txt")
 
-function makeproject
-{
-    cd $SOURCE_PATH/$1
-    
-    $QT_PATH/bin/qmake $1.pro -spec macx-clang CONFIG+=x86_64
-    make -f Makefile clean
-    make -f Makefile
+source build_tools/mac.sh
 
-    rm -rf Makefile
-    rm -rf Makefile.Release
-    rm -rf Makefile.Debug
-    rm -rf object_script.*     
+check_file $QMAKE_PATH
 
-    cd $SOURCE_PATH
-}
+if [ -z "$X_ERROR" ]; then
+    make_init
+    make_build "$X_SOURCE_PATH/xapkdetector_source.pro"
+    cd "$X_SOURCE_PATH/gui_source"
+    make_translate "gui_source_tr.pro" xad
+    cd "$X_SOURCE_PATH"
 
-makeproject build_libs
-makeproject gui_source
-makeproject console_source
+    check_file "$X_SOURCE_PATH/build/release/xadc"
+    check_file "$X_SOURCE_PATH/build/release/xad.app/Contents/MacOS/xad"
+    if [ -z "$X_ERROR" ]; then
+        cp -R "$X_SOURCE_PATH/build/release/xad.app"    "$X_SOURCE_PATH/release/$X_BUILD_NAME"
+        cp -R "$X_SOURCE_PATH/build/release/xadc"       "$X_SOURCE_PATH/release/$X_BUILD_NAME/xad.app/Contents/MacOS/"
 
-mkdir -p release
-rm -rf release/$BUILD_NAME
-mkdir -p release/$BUILD_NAME
+        mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/xad.app/Contents/Resources/signatures
+        cp -R $X_SOURCE_PATH/signatures/crypto.db       $X_SOURCE_PATH/release/$X_BUILD_NAME/xad.app/Contents/Resources/signatures
+        cp -Rf $X_SOURCE_PATH/XStyles/qss               $X_SOURCE_PATH/release/$X_BUILD_NAME/xad.app/Contents/Resources/
 
-cp -R $SOURCE_PATH/build/release/$GUIEXE.app               $SOURCE_PATH/release/$BUILD_NAME
-cp -R $SOURCE_PATH/build/release/$CONEXE                  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/MacOS/
-mkdir $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/PlugIns
+        fiximport "$X_SOURCE_PATH/build/release/xad.app/Contents/MacOS/xad"
+        fiximport "$X_SOURCE_PATH/build/release/xad.app/Contents/MacOS/xadc"
 
-function fixlibrary
-{
-    install_name_tool -change @rpath/$1.framework/Versions/5/$1 @executable_path/../Frameworks/$1.framework/Versions/5/$1  $2    
-}
+        deploy_qt_library QtWidgets xad
+        deploy_qt_library QtGui xad
+        deploy_qt_library QtCore xad
+        deploy_qt_library QtDBus xad
+        deploy_qt_library QtPrintSupport xad
+        deploy_qt_library QtSvg xad
+        deploy_qt_library QtOpenGL xad
+        deploy_qt_library QtConcurrent xad
 
-function fiximport
-{
-    fixlibrary QtWidgets $1
-    fixlibrary QtGui $1
-    fixlibrary QtCore $1  
-	fixlibrary QtDBus $1
-	fixlibrary QtPrintSupport $1
-	fixlibrary QtSvg $1
-    fixlibrary QtOpenGL $1
-    fixlibrary QtConcurrent $1
-}
+        deploy_qt_plugin platforms libqcocoa xad
+        deploy_qt_plugin platforms libqminimal xad
+        deploy_qt_plugin platforms libqoffscreen xad
+        
+        deploy_qt_plugin imageformats qjpeg xad
+        deploy_qt_plugin imageformats qtiff xad
+        deploy_qt_plugin imageformats qico xad
+        deploy_qt_plugin imageformats qgif xad
 
-function copylibrary
-{
-    mkdir $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Frameworks
-    mkdir $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Frameworks/$1.framework
-    mkdir $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Frameworks/$1.framework/Versions
-    mkdir $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Frameworks/$1.framework/Versions/5
-    
-    cp -R $QT_PATH/lib/$1.framework/Versions/5/$1 $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Frameworks/$1.framework/Versions/5
-    
-    install_name_tool -id @executable_path/../Frameworks/$1.framework/Versions/5/$1 $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Frameworks/$1.framework/Versions/5/$1
-    fiximport $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Frameworks/$1.framework/Versions/5/$1
-}
-
-function copyplugin
-{
-    mkdir $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/PlugIns/$1/
-    cp -R $QT_PATH/plugins/$1/$2.dylib $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/PlugIns/$1/
-    
-    install_name_tool -id @executable_path/../PlugIns/$1/$2.dylib $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/PlugIns/$1/$2.dylib
-    fiximport $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/PlugIns/$1/$2.dylib
-}
-
-fiximport $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/MacOS/$GUIEXE
-fiximport $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/MacOS/$CONEXE
-
-copylibrary QtWidgets
-copylibrary QtGui
-copylibrary QtCore
-copylibrary QtDBus
-copylibrary QtPrintSupport
-copylibrary QtSvg
-copylibrary QtOpenGL
-copylibrary QtConcurrent
-
-copyplugin platforms libqcocoa
-copyplugin platforms libqminimal
-copyplugin platforms libqoffscreen
-
-copyplugin imageformats libqjpeg
-copyplugin imageformats libqtiff
-copyplugin imageformats libqico
-copyplugin imageformats libqgif
-
-mkdir -p $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang
-
-cp -Rf $SOURCE_PATH/XStyles/qss $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/
-
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_de.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/xad_de.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_ja.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/xad_ja.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_pl.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/xad_pl.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_pl_BR.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/xad_pt_BR.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_fr.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/xad_fr.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_ru.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/xad_ru.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_vi.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/xad_vi.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_zh.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/xad_zh.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_zh_TW.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/xad_zh_TW.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_ko.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/xad_ko.qm
-$QT_PATH/bin/lrelease  $SOURCE_PATH/gui_source/translation/xad_tr.ts -qm  $SOURCE_PATH/release/$BUILD_NAME/$GUIEXE.app/Contents/Resources/lang/xad_tr.qm
-
-rm -rf $SOURCE_PATH/release/${BUILD_NAME}_${RELEASE_VERSION}.dmg
-hdiutil create -format UDBZ -quiet -srcfolder $SOURCE_PATH/release/$BUILD_NAME $SOURCE_PATH/release/${BUILD_NAME}_${RELEASE_VERSION}.dmg
-cd $SOURCE_PATH/release/
-zip -r $SOURCE_PATH/release/${BUILD_NAME}_${RELEASE_VERSION}.zip ${BUILD_NAME}
-
-rm -rf $SOURCE_PATH/release/$BUILD_NAME
-
-
+        make_release
+        make_clear
+    fi
+fi

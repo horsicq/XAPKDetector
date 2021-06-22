@@ -1,98 +1,53 @@
-set VS_PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community"
-set QT_PATH=C:\Qt\5.15.1\msvc2019_64
-set SEVENZIP_PATH="C:\Program Files\7-Zip"
+set VSVARS_PATH="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars64.bat"
+set QMAKE_PATH="C:\Qt\5.15.2\msvc2019_64\bin\qmake.exe"
+set SEVENZIP_PATH="C:\Program Files\7-Zip\7z.exe"
 
-set BUILD_NAME=xapkdetector_win64_portable
-set SOURCE_PATH=%~dp0
-mkdir %SOURCE_PATH%\build
-mkdir %SOURCE_PATH%\release
-set /p RELEASE_VERSION=<%SOURCE_PATH%\release_version.txt
+set X_SOURCE_PATH=%~dp0
+set X_BUILD_NAME=xapkdetector_win64_portable
+set /p X_RELEASE_VERSION=<%X_SOURCE_PATH%\release_version.txt
 
-set QT_PATH=%QT_PATH%
-call %VS_PATH%\VC\Auxiliary\Build\vcvars64.bat
-set GUIEXE=xad.exe
-set CONEXE=xadc.exe
-set ZIP_NAME=%BUILD_NAME%_%RELEASE_VERSION%
-set RES_FILE=rsrc
+call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %VSVARS_PATH%
+call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %QMAKE_PATH%
+call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %SEVENZIP_PATH%
 
-del %SOURCE_PATH%\XArchive\.qmake.stash
-del %SOURCE_PATH%\build_libs\.qmake.stash
-del %SOURCE_PATH%\gui_source\.qmake.stash
-del %SOURCE_PATH%\console_source\.qmake.stash
+IF NOT [%X_ERROR%] == [] goto exit
 
-cd build_libs
-%QT_PATH%\bin\qmake.exe build_libs.pro -r -spec win32-msvc "CONFIG+=release"
+call %X_SOURCE_PATH%\build_tools\windows.cmd make_init
+call %X_SOURCE_PATH%\build_tools\windows.cmd make_build %X_SOURCE_PATH%\xapkdetector_source.pro
 
-nmake Makefile.Release clean
-nmake
-del Makefile
-del Makefile.Release
-del Makefile.Debug
+cd %X_SOURCE_PATH%\gui_source
+call %X_SOURCE_PATH%\build_tools\windows.cmd make_translate gui_source_tr.pro 
+cd %X_SOURCE_PATH%
 
-cd ..
+call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\xad.exe
 
-cd gui_source
-%QT_PATH%\bin\qmake.exe gui_source.pro -r -spec win32-msvc "CONFIG+=release"
+IF NOT [%X_ERROR%] == [] goto exit
 
-nmake Makefile.Release clean
-nmake
-del Makefile
-del Makefile.Release
-del Makefile.Debug
+call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\xadc.exe
 
-cd ..
+IF NOT [%X_ERROR%] == [] goto exit
 
-cd console_source
-%QT_PATH%\bin\qmake.exe console_source.pro -r -spec win32-msvc "CONFIG+=release"
+mkdir %X_SOURCE_PATH%\release\%X_BUILD_NAME%\signatures
 
-nmake Makefile.Release clean
-nmake
-del Makefile
-del Makefile.Release
-del Makefile.Debug
+copy %X_SOURCE_PATH%\build\release\xad.exe %X_SOURCE_PATH%\release\%X_BUILD_NAME%\
+copy %X_SOURCE_PATH%\build\release\xadc.exe %X_SOURCE_PATH%\release\%X_BUILD_NAME%\
+xcopy %X_SOURCE_PATH%\XStyles\qss %X_SOURCE_PATH%\release\%X_BUILD_NAME%\qss /E /I
+xcopy %X_SOURCE_PATH%\signatures\crypto.db %X_SOURCE_PATH%\release\%X_BUILD_NAME%\signatures\
 
-cd ..
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Widgets
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Gui
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Core
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5OpenGL
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Svg
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_library Qt5Widgets
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_plugin platforms qwindows
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_plugin imageformats qjpeg
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_plugin imageformats qtiff
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_plugin imageformats qico
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_qt_plugin imageformats qgif
+call %X_SOURCE_PATH%\build_tools\windows.cmd deploy_vc_redist
 
-mkdir %SOURCE_PATH%\release\%BUILD_NAME%
-mkdir %SOURCE_PATH%\release\%BUILD_NAME%\platforms
-mkdir %SOURCE_PATH%\release\%BUILD_NAME%\imageformats
-mkdir %SOURCE_PATH%\release\%BUILD_NAME%\lang
+call %X_SOURCE_PATH%\build_tools\windows.cmd make_release
 
-copy %SOURCE_PATH%\build\release\%GUIEXE% %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %SOURCE_PATH%\build\release\%CONEXE% %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %QT_PATH%\bin\Qt5Widgets.dll %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %QT_PATH%\bin\Qt5Gui.dll %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %QT_PATH%\bin\Qt5Core.dll %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %QT_PATH%\bin\Qt5Svg.dll %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %QT_PATH%\bin\Qt5OpenGL.dll %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %QT_PATH%\plugins\platforms\qwindows.dll %SOURCE_PATH%\release\%BUILD_NAME%\platforms\
-copy %QT_PATH%\plugins\imageformats\qjpeg.dll %SOURCE_PATH%\release\%BUILD_NAME%\imageformats\
-copy %QT_PATH%\plugins\imageformats\qtiff.dll %SOURCE_PATH%\release\%BUILD_NAME%\imageformats\
-copy %QT_PATH%\plugins\imageformats\qico.dll %SOURCE_PATH%\release\%BUILD_NAME%\imageformats\
-copy %QT_PATH%\plugins\imageformats\qgif.dll %SOURCE_PATH%\release\%BUILD_NAME%\imageformats\
-
-copy %VS_PATH%\VC\Redist\MSVC\14.27.29016\x64\Microsoft.VC142.CRT\msvcp140.dll %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %VS_PATH%\VC\Redist\MSVC\14.27.29016\x64\Microsoft.VC142.CRT\vcruntime140.dll %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %VS_PATH%\VC\Redist\MSVC\14.27.29016\x64\Microsoft.VC142.CRT\msvcp140_1.dll %SOURCE_PATH%\release\%BUILD_NAME%\
-copy %VS_PATH%\VC\Redist\MSVC\14.27.29016\x64\Microsoft.VC142.CRT\vcruntime140_1.dll %SOURCE_PATH%\release\%BUILD_NAME%\
-
-xcopy %SOURCE_PATH%\XStyles\qss %SOURCE_PATH%\release\%BUILD_NAME%\qss /E /I
-
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xad_de.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xad_de.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xad_ja.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xad_ja.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xad_pl.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xad_pl.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xad_pt_BR.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xad_pt_BR.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xad_fr.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xad_fr.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xad_ru.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xad_ru.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xad_vi.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xad_vi.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xad_zh.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xad_zh.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xad_zh_TW.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xad_zh_TW.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xad_it.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xad_it.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xad_ko.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xad_ko.qm
-%QT_PATH%\bin\lrelease.exe %SOURCE_PATH%\gui_source\translation\xad_tr.ts -qm %SOURCE_PATH%\release\%BUILD_NAME%\lang\xad_tr.qm
-
-cd %SOURCE_PATH%\release
-if exist %ZIP_NAME%.zip del %ZIP_NAME%.zip
-%SEVENZIP_PATH%\7z.exe a %ZIP_NAME%.zip %BUILD_NAME%\*
-rmdir /s /q %SOURCE_PATH%\release\%BUILD_NAME%
-cd ..
+:exit
+call %X_SOURCE_PATH%\build_tools\windows.cmd make_clear
