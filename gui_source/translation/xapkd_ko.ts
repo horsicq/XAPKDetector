@@ -25,11 +25,15 @@
     </message>
     <message>
         <source>Open</source>
-        <translation>열기</translation>
+        <translation type="unfinished">열기</translation>
     </message>
     <message>
         <source>Scan</source>
         <translation type="unfinished">검색</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Strings</source>
@@ -48,12 +52,12 @@
         <translation type="unfinished">복사</translation>
     </message>
     <message>
-        <source>File name</source>
+        <source>Filename</source>
         <translation>파일 이름</translation>
     </message>
     <message>
-        <source>Dump</source>
-        <translation type="unfinished">덤프</translation>
+        <source>Dump to file</source>
+        <translation type="unfinished">파일로 덤프</translation>
     </message>
     <message>
         <source>Save file</source>
@@ -112,6 +116,10 @@
         <translation type="unfinished">필터</translation>
     </message>
     <message>
+        <source>Hex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Strings</source>
         <translation type="unfinished">문자열</translation>
     </message>
@@ -144,6 +152,14 @@
     <message>
         <source>Archive</source>
         <translation type="unfinished">아카이브</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">열기</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation type="unfinished">닫기</translation>
     </message>
 </context>
 <context>
@@ -201,6 +217,17 @@
     </message>
 </context>
 <context>
+    <name>DialogDemangle</name>
+    <message>
+        <source>Demangle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation type="unfinished">확인</translation>
+    </message>
+</context>
+<context>
     <name>DialogDirectoryScan</name>
     <message>
         <source>Directory scan</source>
@@ -208,7 +235,7 @@
     </message>
     <message>
         <source>Directory</source>
-        <translation type="unfinished">디렉터리 검색</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Subdirectories</source>
@@ -403,8 +430,8 @@
         <translation type="unfinished">값</translation>
     </message>
     <message>
-        <source>File offset</source>
-        <translation type="unfinished">파일 오프셋</translation>
+        <source>Offset</source>
+        <translation type="unfinished">오프셋</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
@@ -467,12 +494,23 @@
         <translation type="unfinished">와일드카드</translation>
     </message>
     <message>
+        <source>Scan</source>
+        <translation type="unfinished">검색</translation>
+    </message>
+    <message>
         <source>Copy</source>
         <translation type="unfinished">복사</translation>
     </message>
     <message>
         <source>OK</source>
         <translation type="unfinished">확인</translation>
+    </message>
+</context>
+<context>
+    <name>DialogHexView</name>
+    <message>
+        <source>Close</source>
+        <translation type="unfinished">닫기</translation>
     </message>
 </context>
 <context>
@@ -495,6 +533,91 @@
     <message>
         <source>Close</source>
         <translation type="unfinished">닫기</translation>
+    </message>
+</context>
+<context>
+    <name>DialogMultiDisasm</name>
+    <message>
+        <source>Disasm</source>
+        <translation type="unfinished">Disasm</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation type="unfinished">닫기</translation>
+    </message>
+</context>
+<context>
+    <name>DialogMultiDisasmSignature</name>
+    <message>
+        <source>Signature</source>
+        <translation type="unfinished">서명</translation>
+    </message>
+    <message>
+        <source>Spaces</source>
+        <translation type="unfinished">공백</translation>
+    </message>
+    <message>
+        <source>Upper</source>
+        <translation type="unfinished">위쪽</translation>
+    </message>
+    <message>
+        <source>Wildcard</source>
+        <translation type="unfinished">와일드카드</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation type="unfinished">검색</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation type="unfinished">복사</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation type="unfinished">확인</translation>
+    </message>
+    <message>
+        <source>Relative virtual address</source>
+        <translation type="unfinished">상대적 가상 주소(RVA)</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation type="unfinished">주소</translation>
+    </message>
+    <message>
+        <source>Bytes</source>
+        <translation type="unfinished">Bytes</translation>
+    </message>
+    <message>
+        <source>Opcode</source>
+        <translation type="unfinished">Opcode</translation>
+    </message>
+</context>
+<context>
+    <name>DialogMultiSearchProcess</name>
+    <message>
+        <source>Search</source>
+        <translation type="unfinished">검색</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="unfinished">취소</translation>
+    </message>
+    <message>
+        <source>Search strings</source>
+        <translation>문자열 검색</translation>
+    </message>
+    <message>
+        <source>Search signatures</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Create view model</source>
+        <translation type="unfinished">보기 모델 만들기</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">오류</translation>
     </message>
 </context>
 <context>
@@ -622,6 +745,17 @@
     </message>
 </context>
 <context>
+    <name>DialogSearchSignatures</name>
+    <message>
+        <source>Signatures</source>
+        <translation type="unfinished">서명</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation type="unfinished">닫기</translation>
+    </message>
+</context>
+<context>
     <name>DialogSearchStrings</name>
     <message>
         <source>Strings</source>
@@ -633,29 +767,49 @@
     </message>
 </context>
 <context>
-    <name>DialogSearchStringsProcess</name>
+    <name>DialogSectionHeader</name>
     <message>
-        <source>Search strings</source>
-        <translation>문자열 검색</translation>
+        <source>Section</source>
+        <translation type="unfinished">섹션</translation>
+    </message>
+</context>
+<context>
+    <name>DialogShortcuts</name>
+    <message>
+        <source>Shortcuts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Filter</source>
+        <translation type="unfinished">필터</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation type="unfinished">지우기</translation>
     </message>
     <message>
         <source>Cancel</source>
         <translation type="unfinished">취소</translation>
     </message>
     <message>
-        <source>Create view model</source>
-        <translation type="unfinished">보기 모델 만들기</translation>
+        <source>OK</source>
+        <translation type="unfinished">확인</translation>
     </message>
     <message>
-        <source>Error</source>
-        <translation type="unfinished">오류</translation>
+        <source>Group</source>
+        <translation type="unfinished"></translation>
     </message>
-</context>
-<context>
-    <name>DialogSectionHeader</name>
     <message>
-        <source>Section</source>
-        <translation type="unfinished">섹션</translation>
+        <source>Name</source>
+        <translation type="unfinished">이름</translation>
+    </message>
+    <message>
+        <source>Shortcut</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot set shortcut</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -758,8 +912,8 @@
         <translation type="unfinished">재호출</translation>
     </message>
     <message>
-        <source>Readonly</source>
-        <translation type="unfinished">읽기 전용</translation>
+        <source>Disasm</source>
+        <translation type="unfinished">Disasm</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -778,8 +932,28 @@
         <translation type="unfinished">휴리스틱 검색</translation>
     </message>
     <message>
+        <source>Readonly</source>
+        <translation type="unfinished">읽기 전용</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation type="unfinished">서명</translation>
+    </message>
+    <message>
         <source>Edit</source>
         <translation type="unfinished">편집</translation>
+    </message>
+    <message>
+        <source>Demangle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation type="unfinished">헤더</translation>
     </message>
 </context>
 <context>
@@ -878,7 +1052,7 @@
     </message>
     <message>
         <source>Export</source>
-        <translation>내보내기</translation>
+        <translation type="unfinished">내보내기</translation>
     </message>
     <message>
         <source>Import</source>
@@ -910,7 +1084,7 @@
     </message>
     <message>
         <source>Libraries</source>
-        <translation type="unfinished">라이브러리</translation>
+        <translation>라이브러리</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -1012,6 +1186,17 @@
     </message>
 </context>
 <context>
+    <name>InvWidget</name>
+    <message>
+        <source>Hex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation type="unfinished">Disasm</translation>
+    </message>
+</context>
+<context>
     <name>LESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
@@ -1027,6 +1212,14 @@
     <message>
         <source>Readonly</source>
         <translation type="unfinished">읽기 전용</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation type="unfinished">Disasm</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -1054,6 +1247,36 @@
     </message>
 </context>
 <context>
+    <name>MACHOFATWidget</name>
+    <message>
+        <source>Form</source>
+        <translation type="unfinished">형식</translation>
+    </message>
+</context>
+<context>
+    <name>MACHProcessData</name>
+    <message>
+        <source>Name</source>
+        <translation type="unfinished">이름</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation type="unfinished">오프셋</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation type="unfinished">주소</translation>
+    </message>
+    <message>
+        <source>Opcode</source>
+        <translation type="unfinished">Opcode</translation>
+    </message>
+    <message>
+        <source>Value</source>
+        <translation type="unfinished">값</translation>
+    </message>
+</context>
+<context>
     <name>MACHSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
@@ -1067,8 +1290,12 @@
         <translation type="unfinished">재호출</translation>
     </message>
     <message>
-        <source>Readonly</source>
-        <translation type="unfinished">읽기 전용</translation>
+        <source>Hex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation type="unfinished">Disasm</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -1087,6 +1314,18 @@
         <translation type="unfinished">휴리스틱 검색</translation>
     </message>
     <message>
+        <source>Readonly</source>
+        <translation type="unfinished">읽기 전용</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation type="unfinished">해시</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation type="unfinished">서명</translation>
+    </message>
+    <message>
         <source>Commands</source>
         <translation type="unfinished">주석</translation>
     </message>
@@ -1099,16 +1338,72 @@
         <translation type="unfinished">섹션</translation>
     </message>
     <message>
-        <source>Libraries</source>
-        <translation type="unfinished">라이브러리</translation>
+        <source>Rebase</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Type</source>
-        <translation type="unfinished">유형</translation>
+        <source>Binding</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Library</source>
-        <translation type="unfinished">라이브러리</translation>
+        <source>Weak binding</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Lazy binding</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation type="unfinished">내보내기</translation>
+    </message>
+    <message>
+        <source>String table</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Symbol table</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Table of contents</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Modules</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>External references</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Indirect symbols</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Local relocation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Functions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Data in code</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Header</source>
+        <translation type="unfinished">헤더</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="unfinished">편집</translation>
+    </message>
+    <message>
+        <source>Demangle</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1120,6 +1415,14 @@
     <message>
         <source>Readonly</source>
         <translation type="unfinished">읽기 전용</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation type="unfinished">Disasm</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -1143,6 +1446,33 @@
     </message>
 </context>
 <context>
+    <name>MultiSearch</name>
+    <message>
+        <source>Address</source>
+        <translation type="unfinished">주소</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation type="unfinished">오프셋</translation>
+    </message>
+    <message>
+        <source>Size</source>
+        <translation type="unfinished">크기</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation type="unfinished">유형</translation>
+    </message>
+    <message>
+        <source>String</source>
+        <translation type="unfinished">문자열</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation type="unfinished">이름</translation>
+    </message>
+</context>
+<context>
     <name>NESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
@@ -1158,6 +1488,14 @@
     <message>
         <source>Readonly</source>
         <translation type="unfinished">읽기 전용</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation type="unfinished">Disasm</translation>
     </message>
     <message>
         <source>Strings</source>
@@ -1202,14 +1540,6 @@
         <source>Scan</source>
         <translation type="unfinished">검색</translation>
     </message>
-    <message>
-        <source>Stop</source>
-        <translation>중지</translation>
-    </message>
-    <message>
-        <source>msec</source>
-        <translation type="unfinished">msec</translation>
-    </message>
 </context>
 <context>
     <name>PEProcessData</name>
@@ -1230,6 +1560,10 @@
     <message>
         <source>Reload</source>
         <translation type="unfinished">재호출</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Disasm</source>
@@ -1256,6 +1590,14 @@
         <translation type="unfinished">읽기 전용</translation>
     </message>
     <message>
+        <source>Show valid</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation type="unfinished">서명</translation>
+    </message>
+    <message>
         <source>Sections</source>
         <translation type="unfinished">섹션</translation>
     </message>
@@ -1274,6 +1616,10 @@
     <message>
         <source>Header</source>
         <translation type="unfinished">헤더</translation>
+    </message>
+    <message>
+        <source>Demangle</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1314,38 +1660,6 @@
         <translation type="unfinished">덤프 저장</translation>
     </message>
     <message>
-        <source>Dump to file</source>
-        <translation type="unfinished">파일로 덤프</translation>
-    </message>
-    <message>
-        <source>Signature</source>
-        <translation type="unfinished">서명</translation>
-    </message>
-    <message>
-        <source>Find</source>
-        <translation>찾기</translation>
-    </message>
-    <message>
-        <source>Find next</source>
-        <translation>다음 찾기</translation>
-    </message>
-    <message>
-        <source>Select</source>
-        <translation>선택</translation>
-    </message>
-    <message>
-        <source>Select all</source>
-        <translation>모두 선택</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation type="unfinished">복사</translation>
-    </message>
-    <message>
-        <source>Copy as hex</source>
-        <translation>헥사로 복사</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation type="unfinished">오류</translation>
     </message>
@@ -1370,7 +1684,7 @@
     </message>
     <message>
         <source>Write error</source>
-        <translation>쓰기 오류</translation>
+        <translation type="unfinished">쓰기 오류</translation>
     </message>
     <message>
         <source>Cannot open file</source>
@@ -1378,34 +1692,62 @@
     </message>
 </context>
 <context>
-    <name>SearchStrings</name>
-    <message>
-        <source>Maximum</source>
-        <translation>최대</translation>
-    </message>
-    <message>
-        <source>Read error</source>
-        <translation type="unfinished">읽기 오류</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation type="unfinished">주소</translation>
-    </message>
-    <message>
-        <source>Offset</source>
-        <translation type="unfinished">오프셋</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation type="unfinished">크기</translation>
-    </message>
+    <name>SearchSignaturesWidget</name>
     <message>
         <source>Type</source>
         <translation type="unfinished">유형</translation>
     </message>
     <message>
-        <source>String</source>
-        <translation type="unfinished">문자열</translation>
+        <source>Endianness</source>
+        <translation type="unfinished">엔디언</translation>
+    </message>
+    <message>
+        <source>File</source>
+        <translation type="unfinished">파일</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation type="unfinished">검색</translation>
+    </message>
+    <message>
+        <source>Save</source>
+        <translation type="unfinished">저장</translation>
+    </message>
+    <message>
+        <source>Save file</source>
+        <translation type="unfinished">파일 저장</translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation type="unfinished">서명</translation>
+    </message>
+    <message>
+        <source>Text files</source>
+        <translation type="unfinished">텍스트 파일</translation>
+    </message>
+    <message>
+        <source>All files</source>
+        <translation type="unfinished">모든 파일</translation>
+    </message>
+    <message>
+        <source>Copy name</source>
+        <translation type="unfinished">헥사로 복사</translation>
+    </message>
+    <message>
+        <source>Copy signature</source>
+        <translation type="unfinished">서명</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation type="unfinished">주소 복사</translation>
+    </message>
+    <message>
+        <source>Copy offset</source>
+        <translation type="unfinished">오프셋 복사</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1432,7 +1774,7 @@
     </message>
     <message>
         <source>Text files</source>
-        <translation>텍스트 파일</translation>
+        <translation type="unfinished">텍스트 파일</translation>
     </message>
     <message>
         <source>All files</source>
@@ -1440,26 +1782,34 @@
     </message>
     <message>
         <source>Copy string</source>
-        <translation>문자열 복사</translation>
+        <translation type="unfinished">문자열 복사</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>주소 복사</translation>
+        <translation type="unfinished">주소 복사</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>오프셋 복사</translation>
+        <translation type="unfinished">오프셋 복사</translation>
     </message>
     <message>
         <source>Copy size</source>
-        <translation>크기 복사</translation>
+        <translation type="unfinished">크기 복사</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Demangle</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SpecAbstract</name>
     <message>
         <source>Unknown</source>
-        <translation>알 수 없음</translation>
+        <translation type="unfinished">알 수 없음</translation>
     </message>
     <message>
         <source>Header</source>
@@ -1543,7 +1893,7 @@
     </message>
     <message>
         <source>Library</source>
-        <translation type="unfinished">라이브러리</translation>
+        <translation>라이브러리</translation>
     </message>
     <message>
         <source>Linker</source>
@@ -1552,6 +1902,10 @@
     <message>
         <source>compressor</source>
         <translation>압축기</translation>
+    </message>
+    <message>
+        <source>Operation system</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Packer</source>
@@ -1609,6 +1963,10 @@
         <source>Resources</source>
         <translation type="unfinished">리소스</translation>
     </message>
+    <message>
+        <source>Type</source>
+        <translation type="unfinished">유형</translation>
+    </message>
 </context>
 <context>
     <name>StaticScan</name>
@@ -1647,7 +2005,7 @@
     </message>
     <message>
         <source>Document</source>
-        <translation type="unfinished">문서</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Image</source>
@@ -1656,6 +2014,18 @@
     <message>
         <source>Archive</source>
         <translation type="unfinished">아카이브</translation>
+    </message>
+    <message>
+        <source>Read error</source>
+        <translation type="unfinished">읽기 오류</translation>
+    </message>
+    <message>
+        <source>Maximum</source>
+        <translation>최대</translation>
+    </message>
+    <message>
+        <source>Write error</source>
+        <translation type="unfinished">쓰기 오류</translation>
     </message>
 </context>
 <context>
@@ -1674,6 +2044,39 @@
     <message>
         <source>Overlay</source>
         <translation type="unfinished">오버레이</translation>
+    </message>
+</context>
+<context>
+    <name>XDemangle</name>
+    <message>
+        <source>Unknown</source>
+        <translation type="unfinished">알 수 없음</translation>
+    </message>
+    <message>
+        <source>Automatic</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>XDemangleWidget</name>
+    <message>
+        <source>Mode</source>
+        <translation type="unfinished">모드</translation>
+    </message>
+</context>
+<context>
+    <name>XDeviceTableView</name>
+    <message>
+        <source>Raw data</source>
+        <translation type="unfinished">로우 데이터</translation>
+    </message>
+    <message>
+        <source>Save dump</source>
+        <translation type="unfinished">덤프 저장</translation>
+    </message>
+    <message>
+        <source>Nothing found</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1697,6 +2100,101 @@
     <message>
         <source>Opcode</source>
         <translation type="unfinished">Opcode</translation>
+    </message>
+</context>
+<context>
+    <name>XDisasmView</name>
+    <message>
+        <source>Address</source>
+        <translation type="unfinished">주소</translation>
+    </message>
+    <message>
+        <source>Offset</source>
+        <translation type="unfinished">오프셋</translation>
+    </message>
+    <message>
+        <source>Bytes</source>
+        <translation type="unfinished">Bytes</translation>
+    </message>
+    <message>
+        <source>Opcode</source>
+        <translation type="unfinished">Opcode</translation>
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Invalid opcode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Go to address</source>
+        <translation type="unfinished">주소로 이동</translation>
+    </message>
+    <message>
+        <source>Go to offset</source>
+        <translation type="unfinished">오프셋 복사</translation>
+    </message>
+    <message>
+        <source>Go to entry point</source>
+        <translation type="unfinished">진입 지점</translation>
+    </message>
+    <message>
+        <source>Dump to file</source>
+        <translation type="unfinished">파일로 덤프</translation>
+    </message>
+    <message>
+        <source>Hex signature</source>
+        <translation type="unfinished">서명</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation type="unfinished">서명</translation>
+    </message>
+    <message>
+        <source>Find</source>
+        <translation type="unfinished">찾기</translation>
+    </message>
+    <message>
+        <source>Find next</source>
+        <translation type="unfinished">다음 찾기</translation>
+    </message>
+    <message>
+        <source>Select all</source>
+        <translation type="unfinished">모두 선택</translation>
+    </message>
+    <message>
+        <source>Copy as hex</source>
+        <translation type="unfinished">헥사로 복사</translation>
+    </message>
+    <message>
+        <source>Copy cursor offset</source>
+        <translation type="unfinished">오프셋 복사</translation>
+    </message>
+    <message>
+        <source>Copy cursor address</source>
+        <translation type="unfinished">주소 복사</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Go to</source>
+        <translation type="unfinished">이동</translation>
+    </message>
+    <message>
+        <source>Select</source>
+        <translation type="unfinished">선택</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation type="unfinished">복사</translation>
+    </message>
+    <message>
+        <source>Relative address</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1876,6 +2374,106 @@
     </message>
 </context>
 <context>
+    <name>XHexEdit</name>
+    <message>
+        <source>Offset</source>
+        <translation type="unfinished">오프셋</translation>
+    </message>
+</context>
+<context>
+    <name>XHexView</name>
+    <message>
+        <source>Address</source>
+        <translation type="unfinished">주소</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Symbols</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Go to offset</source>
+        <translation type="unfinished">오프셋 복사</translation>
+    </message>
+    <message>
+        <source>Go to address</source>
+        <translation type="unfinished">주소로 이동</translation>
+    </message>
+    <message>
+        <source>Dump to file</source>
+        <translation type="unfinished">파일로 덤프</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation type="unfinished">서명</translation>
+    </message>
+    <message>
+        <source>Find</source>
+        <translation type="unfinished">찾기</translation>
+    </message>
+    <message>
+        <source>Find next</source>
+        <translation type="unfinished">다음 찾기</translation>
+    </message>
+    <message>
+        <source>Select all</source>
+        <translation type="unfinished">모두 선택</translation>
+    </message>
+    <message>
+        <source>Copy as hex</source>
+        <translation type="unfinished">헥사로 복사</translation>
+    </message>
+    <message>
+        <source>Copy cursor offset</source>
+        <translation type="unfinished">오프셋 복사</translation>
+    </message>
+    <message>
+        <source>Copy cursor address</source>
+        <translation type="unfinished">주소 복사</translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation type="unfinished">Disasm</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation type="unfinished">메모리 맵</translation>
+    </message>
+    <message>
+        <source>Go to</source>
+        <translation type="unfinished">이동</translation>
+    </message>
+    <message>
+        <source>Select</source>
+        <translation type="unfinished">선택</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation type="unfinished">복사</translation>
+    </message>
+</context>
+<context>
+    <name>XHexViewWidget</name>
+    <message>
+        <source>Form</source>
+        <translation type="unfinished">형식</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">오류</translation>
+    </message>
+</context>
+<context>
+    <name>XLineEditHEX</name>
+    <message>
+        <source>Copy</source>
+        <translation type="unfinished">복사</translation>
+    </message>
+</context>
+<context>
     <name>XMACH</name>
     <message>
         <source>Segment</source>
@@ -1945,6 +2543,25 @@
     </message>
 </context>
 <context>
+    <name>XMultiDisasmWidget</name>
+    <message>
+        <source>Form</source>
+        <translation type="unfinished">형식</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation type="unfinished">유형</translation>
+    </message>
+    <message>
+        <source>Mode</source>
+        <translation type="unfinished">모드</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation type="unfinished">오류</translation>
+    </message>
+</context>
+<context>
     <name>XPE</name>
     <message>
         <source>Header</source>
@@ -1961,6 +2578,169 @@
     <message>
         <source>Cannot open file</source>
         <translation type="unfinished">파일을 열 수 없습니다</translation>
+    </message>
+</context>
+<context>
+    <name>XShortcuts</name>
+    <message>
+        <source>Unknown</source>
+        <translation type="unfinished">알 수 없음</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation type="unfinished">복사</translation>
+    </message>
+    <message>
+        <source>Copy string</source>
+        <translation type="unfinished">문자열 복사</translation>
+    </message>
+    <message>
+        <source>Copy offset</source>
+        <translation type="unfinished">오프셋 복사</translation>
+    </message>
+    <message>
+        <source>Copy size</source>
+        <translation type="unfinished">크기 복사</translation>
+    </message>
+    <message>
+        <source>Hex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Demangle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Copy name</source>
+        <translation type="unfinished">헥사로 복사</translation>
+    </message>
+    <message>
+        <source>Copy signature</source>
+        <translation type="unfinished">서명</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation type="unfinished">주소 복사</translation>
+    </message>
+    <message>
+        <source>Dump to file</source>
+        <translation type="unfinished">파일로 덤프</translation>
+    </message>
+    <message>
+        <source>Go to address</source>
+        <translation type="unfinished">주소로 이동</translation>
+    </message>
+    <message>
+        <source>Go to offset</source>
+        <translation type="unfinished">오프셋 복사</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation type="unfinished">서명</translation>
+    </message>
+    <message>
+        <source>Find</source>
+        <translation type="unfinished">찾기</translation>
+    </message>
+    <message>
+        <source>Find next</source>
+        <translation type="unfinished">다음 찾기</translation>
+    </message>
+    <message>
+        <source>Select all</source>
+        <translation type="unfinished">모두 선택</translation>
+    </message>
+    <message>
+        <source>Copy as hex</source>
+        <translation type="unfinished">헥사로 복사</translation>
+    </message>
+    <message>
+        <source>Copy cursor offset</source>
+        <translation type="unfinished">오프셋 복사</translation>
+    </message>
+    <message>
+        <source>Copy cursor address</source>
+        <translation type="unfinished">주소 복사</translation>
+    </message>
+    <message>
+        <source>Disasm</source>
+        <translation type="unfinished">Disasm</translation>
+    </message>
+    <message>
+        <source>Memory map</source>
+        <translation type="unfinished">메모리 맵</translation>
+    </message>
+    <message>
+        <source>Go to entry point</source>
+        <translation type="unfinished">진입 지점</translation>
+    </message>
+    <message>
+        <source>Hex signature</source>
+        <translation type="unfinished">서명</translation>
+    </message>
+    <message>
+        <source>Run</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Set breakpoint</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Step into</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Step over</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Stop</source>
+        <translation>중지</translation>
+    </message>
+    <message>
+        <source>Copy filename</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Entropy</source>
+        <translation type="unfinished">엔트로피</translation>
+    </message>
+    <message>
+        <source>Hash</source>
+        <translation type="unfinished">해시</translation>
+    </message>
+    <message>
+        <source>Open</source>
+        <translation type="unfinished">열기</translation>
+    </message>
+    <message>
+        <source>Scan</source>
+        <translation type="unfinished">검색</translation>
+    </message>
+    <message>
+        <source>Strings</source>
+        <translation type="unfinished">문자열</translation>
+    </message>
+    <message>
+        <source>Action</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Signatures</source>
+        <translation type="unfinished">서명</translation>
+    </message>
+    <message>
+        <source>Debugger</source>
+        <translation>디버거</translation>
+    </message>
+    <message>
+        <source>Archive</source>
+        <translation type="unfinished">아카이브</translation>
+    </message>
+    <message>
+        <source>Table</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

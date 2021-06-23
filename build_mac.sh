@@ -13,39 +13,39 @@ if [ -z "$X_ERROR" ]; then
     make_init
     make_build "$X_SOURCE_PATH/xapkdetector_source.pro"
     cd "$X_SOURCE_PATH/gui_source"
-    make_translate "gui_source_tr.pro" xad
+    make_translate "gui_source_tr.pro" xapkd
     cd "$X_SOURCE_PATH"
 
-    check_file "$X_SOURCE_PATH/build/release/xadc"
-    check_file "$X_SOURCE_PATH/build/release/xad.app/Contents/MacOS/xad"
+    check_file "$X_SOURCE_PATH/build/release/xapkdc"
+    check_file "$X_SOURCE_PATH/build/release/xapkd.app/Contents/MacOS/xapkd"
     if [ -z "$X_ERROR" ]; then
-        cp -R "$X_SOURCE_PATH/build/release/xad.app"    "$X_SOURCE_PATH/release/$X_BUILD_NAME"
-        cp -R "$X_SOURCE_PATH/build/release/xadc"       "$X_SOURCE_PATH/release/$X_BUILD_NAME/xad.app/Contents/MacOS/"
+        cp -R "$X_SOURCE_PATH/build/release/xapkd.app"    "$X_SOURCE_PATH/release/$X_BUILD_NAME"
+        cp -R "$X_SOURCE_PATH/build/release/xapkdc"       "$X_SOURCE_PATH/release/$X_BUILD_NAME/xapkd.app/Contents/MacOS/"
 
-        mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/xad.app/Contents/Resources/signatures
-        cp -R $X_SOURCE_PATH/signatures/crypto.db       $X_SOURCE_PATH/release/$X_BUILD_NAME/xad.app/Contents/Resources/signatures
-        cp -Rf $X_SOURCE_PATH/XStyles/qss               $X_SOURCE_PATH/release/$X_BUILD_NAME/xad.app/Contents/Resources/
+        mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/xapkd.app/Contents/Resources/signatures
+        cp -R $X_SOURCE_PATH/signatures/crypto.db       $X_SOURCE_PATH/release/$X_BUILD_NAME/xapkd.app/Contents/Resources/signatures
+        cp -Rf $X_SOURCE_PATH/XStyles/qss               $X_SOURCE_PATH/release/$X_BUILD_NAME/xapkd.app/Contents/Resources/
 
-        fiximport "$X_SOURCE_PATH/build/release/xad.app/Contents/MacOS/xad"
-        fiximport "$X_SOURCE_PATH/build/release/xad.app/Contents/MacOS/xadc"
+        fiximport "$X_SOURCE_PATH/build/release/xapkd.app/Contents/MacOS/xapkd"
+        fiximport "$X_SOURCE_PATH/build/release/xapkd.app/Contents/MacOS/xapkdc"
 
-        deploy_qt_library QtWidgets xad
-        deploy_qt_library QtGui xad
-        deploy_qt_library QtCore xad
-        deploy_qt_library QtDBus xad
-        deploy_qt_library QtPrintSupport xad
-        deploy_qt_library QtSvg xad
-        deploy_qt_library QtOpenGL xad
-        deploy_qt_library QtConcurrent xad
+        deploy_qt_library QtWidgets xapkd
+        deploy_qt_library QtGui xapkd
+        deploy_qt_library QtCore xapkd
+        deploy_qt_library QtDBus xapkd
+        deploy_qt_library QtPrintSupport xapkd
+        deploy_qt_library QtSvg xapkd
+        deploy_qt_library QtOpenGL xapkd
+        deploy_qt_library QtConcurrent xapkd
 
-        deploy_qt_plugin platforms libqcocoa xad
-        deploy_qt_plugin platforms libqminimal xad
-        deploy_qt_plugin platforms libqoffscreen xad
+        deploy_qt_plugin platforms libqcocoa xapkd
+        deploy_qt_plugin platforms libqminimal xapkd
+        deploy_qt_plugin platforms libqoffscreen xapkd
         
-        deploy_qt_plugin imageformats qjpeg xad
-        deploy_qt_plugin imageformats qtiff xad
-        deploy_qt_plugin imageformats qico xad
-        deploy_qt_plugin imageformats qgif xad
+        deploy_qt_plugin imageformats qjpeg xapkd
+        deploy_qt_plugin imageformats qtiff xapkd
+        deploy_qt_plugin imageformats qico xapkd
+        deploy_qt_plugin imageformats qgif xapkd
 
         make_release
         make_clear

@@ -19,18 +19,18 @@ cd %X_SOURCE_PATH%\gui_source
 call %X_SOURCE_PATH%\build_tools\windows.cmd make_translate gui_source_tr.pro 
 cd %X_SOURCE_PATH%
 
-call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\xad.exe
+call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\xapkd.exe
 
 IF NOT [%X_ERROR%] == [] goto exit
 
-call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\xadc.exe
+call %X_SOURCE_PATH%\build_tools\windows.cmd check_file %X_SOURCE_PATH%\build\release\xapkdc.exe
 
 IF NOT [%X_ERROR%] == [] goto exit
 
 mkdir %X_SOURCE_PATH%\release\%X_BUILD_NAME%\signatures
 
-copy %X_SOURCE_PATH%\build\release\xad.exe %X_SOURCE_PATH%\release\%X_BUILD_NAME%\
-copy %X_SOURCE_PATH%\build\release\xadc.exe %X_SOURCE_PATH%\release\%X_BUILD_NAME%\
+copy %X_SOURCE_PATH%\build\release\xapkd.exe %X_SOURCE_PATH%\release\%X_BUILD_NAME%\
+copy %X_SOURCE_PATH%\build\release\xapkdc.exe %X_SOURCE_PATH%\release\%X_BUILD_NAME%\
 xcopy %X_SOURCE_PATH%\XStyles\qss %X_SOURCE_PATH%\release\%X_BUILD_NAME%\qss /E /I /Y
 xcopy %X_SOURCE_PATH%\signatures\crypto.db %X_SOURCE_PATH%\release\%X_BUILD_NAME%\signatures\ /Y
 

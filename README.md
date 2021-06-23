@@ -20,8 +20,8 @@
 
 There are two versions of  program.
 
-**xad** - GUI version
-**xadc** - console version.
+**xapkd** - GUI version
+**xapkc** - console version.
 
 ![alt text](https://github.com/horsicq/XAPKDetector/blob/master/docs/1.png "1")
 ![alt text](https://github.com/horsicq/XAPKDetector/blob/master/docs/2.png "2")
@@ -83,4 +83,4 @@ Edit build_win64.bat ( check VS_PATH,  SEVENZIP_PATH, QT_PATH variables)
 
 Run build_win64.bat
 
-![alt text](https://github.com/horsicq/XAPKDetector/blob/master/mascots/xad.jpg "Mascot")
+![alt text](https://github.com/horsicq/XAPKDetector/blob/master/mascots/xapkd.png" Mascot")
