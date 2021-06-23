@@ -16,7 +16,7 @@
 - DEX raw viewer
 
 
-![alt text](https://github.com/horsicq/XAPKDetector/blob/master/mascots/version.jpg "Mascot")
+![alt text](https://github.com/horsicq/XAPKDetector/blob/master/mascots/version.png "Mascot")
 
 There are two versions of  program.
 
@@ -83,4 +83,4 @@ Edit build_win64.bat ( check VS_PATH,  SEVENZIP_PATH, QT_PATH variables)
 
 Run build_win64.bat
 
-![alt text](https://github.com/horsicq/XAPKDetector/blob/master/mascots/xapkd.png" Mascot")
+![alt text](https://github.com/horsicq/XAPKDetector/blob/master/mascots/xapkd.png "Mascot")
