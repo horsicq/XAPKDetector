@@ -35,7 +35,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
 
     ui->pushButtonClassesDex->setEnabled(false);
 
-    xOptions.setName(X_OPTIONSFILE);
+    g_xOptions.setName(X_OPTIONSFILE);
 
     QList<XOptions::ID> listIDs;
 
@@ -47,17 +47,22 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
     listIDs.append(XOptions::ID_SAVELASTDIRECTORY);
     listIDs.append(XOptions::ID_SEARCHSIGNATURESPATH);
 
-    xOptions.setValueIDs(listIDs);
+    g_xOptions.setValueIDs(listIDs);
+    g_xOptions.load();
 
-//    QMap<XOptions::ID,QVariant> mapDefaultValues;
-//    mapDefaultValues.insert(XOptions::ID_QSS,"");
+    g_xShortcuts.setName(X_SHORTCUTSFILE);
+    g_xShortcuts.setNative(g_xOptions.isNative());
 
-//    xOptions.setDefaultValues(mapDefaultValues);
+    g_xShortcuts.addGroup(XShortcuts::ID_STRINGS);
+    g_xShortcuts.addGroup(XShortcuts::ID_SIGNATURES);
+    g_xShortcuts.addGroup(XShortcuts::ID_HEX);
+    g_xShortcuts.addGroup(XShortcuts::ID_DISASM);
+    g_xShortcuts.addGroup(XShortcuts::ID_ARCHIVE);
+    g_xShortcuts.load();
 
-    xOptions.load();
     adjust();
 
-    // TODO XShortcuts
+    ui->widgetArchive->setShortcuts(&g_xShortcuts);
 
     if(QCoreApplication::arguments().count()>1)
     {
@@ -67,7 +72,8 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
 
 GuiMainWindow::~GuiMainWindow()
 {
-    xOptions.save();
+    g_xOptions.save();
+    g_xShortcuts.save();
 
     delete ui;
 }
@@ -84,12 +90,12 @@ void GuiMainWindow::handleFile(QString sFileName)
 
         ui->pushButtonClassesDex->setEnabled(XArchives::isArchiveRecordPresent(sFileName,"classes.dex"));
 
-        if(xOptions.isScanAfterOpen())
+        if(g_xOptions.isScanAfterOpen())
         {
             scanFile(sFileName);
         }
 
-        xOptions.setLastDirectory(sFileName);
+        g_xOptions.setLastDirectory(sFileName);
     }
 }
 
@@ -100,7 +106,7 @@ void GuiMainWindow::on_pushButtonExit_clicked()
 
 void GuiMainWindow::on_pushButtonOpenFile_clicked()
 {
-    QString sDirectory=xOptions.getLastDirectory();
+    QString sDirectory=g_xOptions.getLastDirectory();
 
     QString sFileName=QFileDialog::getOpenFileName(this,tr("Open file")+QString("..."),sDirectory,tr("All files")+QString(" (*)"));
 
@@ -125,6 +131,17 @@ void GuiMainWindow::on_pushButtonAbout_clicked()
     DialogAbout di(this);
 
     di.exec();
+}
+
+void GuiMainWindow::on_pushButtonShortcuts_clicked()
+{
+    DialogShortcuts dialogShortcuts(this);
+
+    dialogShortcuts.setData(&g_xShortcuts);
+
+    dialogShortcuts.exec();
+
+    adjust();
 }
 
 void GuiMainWindow::dragEnterEvent(QDragEnterEvent *pEvent)
@@ -158,7 +175,7 @@ void GuiMainWindow::dropEvent(QDropEvent *pEvent)
 
 void GuiMainWindow::on_pushButtonOptions_clicked()
 {
-    DialogOptions dialogOptions(this,&xOptions);
+    DialogOptions dialogOptions(this,&g_xOptions);
 
     dialogOptions.exec();
 
@@ -167,7 +184,7 @@ void GuiMainWindow::on_pushButtonOptions_clicked()
 
 void GuiMainWindow::adjust()
 {
-    xOptions.adjustStayOnTop(this);
+    g_xOptions.adjustStayOnTop(this);
 }
 
 void GuiMainWindow::on_pushButtonHex_clicked()
@@ -182,9 +199,10 @@ void GuiMainWindow::on_pushButtonHex_clicked()
         if(file.open(QIODevice::ReadOnly))
         {
             XHexView::OPTIONS options={};
-            options.sSignaturesPath=xOptions.getSearchSignaturesPath();
+            options.sSignaturesPath=g_xOptions.getSearchSignaturesPath();
 
             DialogHexView dialogHex(this,&file,options);
+            dialogHex.setShortcuts(&g_xShortcuts);
 
             dialogHex.exec();
 
@@ -209,6 +227,7 @@ void GuiMainWindow::on_pushButtonStrings_clicked()
             options.bUnicode=true;
 
             DialogSearchStrings dialogSearchStrings(this,&file,options,true);
+            dialogSearchStrings.setShortcuts(&g_xShortcuts);
 
             dialogSearchStrings.exec();
 
@@ -229,6 +248,7 @@ void GuiMainWindow::on_pushButtonHash_clicked()
         if(file.open(QIODevice::ReadOnly))
         {
             DialogHash dialogHash(this,&file,XBinary::FT_UNKNOWN);
+            dialogHash.setShortcuts(&g_xShortcuts);
 
             dialogHash.exec();
 
@@ -249,6 +269,7 @@ void GuiMainWindow::on_pushButtonEntropy_clicked()
         if(file.open(QIODevice::ReadOnly))
         {
             DialogEntropy dialogEntropy(this,&file);
+            dialogEntropy.setShortcuts(&g_xShortcuts);
 
             dialogEntropy.exec();
 
@@ -265,6 +286,7 @@ void GuiMainWindow::scanFile(QString sFileName)
     if(file.open(QIODevice::ReadOnly))
     {
         DialogStaticScan dialogStaticScan(this,&file,true);
+        //dialogStaticScan.setShortcuts(&g_xShortcuts);
 
         dialogStaticScan.exec();
 
@@ -295,7 +317,7 @@ void GuiMainWindow::on_pushButtonClassesDex_clicked()
                     fwOptions.sTitle="classes.dex";
 
                     DialogDEX dialogDEX(this);
-
+                    dialogDEX.setShortcuts(&g_xShortcuts);
                     dialogDEX.setData(&file,fwOptions);
 
                     dialogDEX.exec();

@@ -30,5 +30,6 @@
 #define X_ORGANIZATIONDOMAIN "ntinfo.biz"
 #define X_OPTIONSFILE "xapkd.ini"
 #define X_APPLICATIONFILENAME "xapkd"
+#define X_SHORTCUTSFILE "shortcuts.ini"
 
 #endif // _GLOBAL_H

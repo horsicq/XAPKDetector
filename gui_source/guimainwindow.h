@@ -28,6 +28,7 @@
 #include <QMimeData>
 #include "dialogabout.h"
 #include "dialogoptions.h"
+#include "dialogshortcuts.h"
 #include "archive_widget.h"
 #include "xoptions.h"
 
@@ -50,6 +51,7 @@ private slots:
     void on_pushButtonExit_clicked();
     void on_pushButtonOpenFile_clicked();
     void on_pushButtonAbout_clicked();
+    void on_pushButtonShortcuts_clicked();
     void on_pushButtonOptions_clicked();
     void adjust();
     void on_pushButtonHex_clicked();
@@ -66,7 +68,8 @@ protected:
 
 private:
     Ui::GuiMainWindow *ui;
-    XOptions xOptions;
+    XOptions g_xOptions;
+    XShortcuts g_xShortcuts;
     FW_DEF::OPTIONS fwOptions;
 };
 
