@@ -7,6 +7,8 @@ TEMPLATE = app
 
 include(../build.pri)
 
+CONFIG += c++11
+
 SOURCES +=\
         guimainwindow.cpp \
         dialogabout.cpp \
