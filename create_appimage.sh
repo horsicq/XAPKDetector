@@ -19,7 +19,7 @@ cp -f $X_SOURCE_PATH/signatures/crypto.db                           $X_SOURCE_PA
 cd $X_SOURCE_PATH/release
 
 linuxdeployqt $X_SOURCE_PATH/release/appDir/usr/share/applications/xapkd.desktop -appimage -always-overwrite
-mv *.AppImage xapkd_${X_RELEASE_VERSION}.AppImage
+#mv *.AppImage xapkd_${X_RELEASE_VERSION}.AppImage
 
 cd $X_SOURCE_PATH
 
