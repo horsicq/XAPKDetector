@@ -1,6 +1,7 @@
 #!/bin/bash -x
 export X_SOURCE_PATH=$PWD
 export X_RELEASE_VERSION=$(cat "release_version.txt")
+export VERSION=$X_RELEASE_VERSION
 
 source build_tools/linux.sh
 
