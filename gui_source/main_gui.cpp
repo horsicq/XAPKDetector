@@ -41,7 +41,21 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationVersion(X_APPLICATIONVERSION);
 
     QApplication a(argc, argv);
-    XOptions::adjustApplicationView(X_OPTIONSFILE,X_APPLICATIONFILENAME);
+
+    XOptions xOptions;
+
+    xOptions.setName(X_OPTIONSFILE);
+
+    QList<XOptions::ID> listIDs;
+
+    listIDs.append(XOptions::ID_STYLE);
+    listIDs.append(XOptions::ID_LANG);
+    listIDs.append(XOptions::ID_QSS);
+
+    xOptions.setValueIDs(listIDs);
+    xOptions.load();
+
+    XOptions::adjustApplicationView(X_APPLICATIONNAME,&xOptions);
 
     GuiMainWindow w;
     w.show();
