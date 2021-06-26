@@ -226,7 +226,8 @@ void GuiMainWindow::on_pushButtonStrings_clicked()
             options.bAnsi=true;
             options.bUnicode=true;
 
-            DialogSearchStrings dialogSearchStrings(this,&file,options,true);
+            DialogSearchStrings dialogSearchStrings(this);
+            dialogSearchStrings.setData(&file,options,true);
             dialogSearchStrings.setShortcuts(&g_xShortcuts);
 
             dialogSearchStrings.exec();
@@ -247,7 +248,8 @@ void GuiMainWindow::on_pushButtonHash_clicked()
 
         if(file.open(QIODevice::ReadOnly))
         {
-            DialogHash dialogHash(this,&file,XBinary::FT_UNKNOWN);
+            DialogHash dialogHash(this);
+            dialogHash.setData(&file,XBinary::FT_UNKNOWN);
             dialogHash.setShortcuts(&g_xShortcuts);
 
             dialogHash.exec();
@@ -268,7 +270,8 @@ void GuiMainWindow::on_pushButtonEntropy_clicked()
 
         if(file.open(QIODevice::ReadOnly))
         {
-            DialogEntropy dialogEntropy(this,&file);
+            DialogEntropy dialogEntropy(this);
+            dialogEntropy.setData(&file);
             dialogEntropy.setShortcuts(&g_xShortcuts);
 
             dialogEntropy.exec();
@@ -285,7 +288,8 @@ void GuiMainWindow::scanFile(QString sFileName)
 
     if(file.open(QIODevice::ReadOnly))
     {
-        DialogStaticScan dialogStaticScan(this,&file,true);
+        DialogStaticScan dialogStaticScan(this);
+        dialogStaticScan.setData(&file,true);
         //dialogStaticScan.setShortcuts(&g_xShortcuts);
 
         dialogStaticScan.exec();
