@@ -34,6 +34,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
     fwOptions={};
 
     ui->pushButtonClassesDex->setEnabled(false);
+    ui->pushButtonSignature->setEnabled(false);
 
     g_xOptions.setName(X_OPTIONSFILE);
 
@@ -89,6 +90,7 @@ void GuiMainWindow::handleFile(QString sFileName)
         ui->widgetArchive->setFileName(sFileName,fwOptions,QSet<XBinary::FT>(),this);
 
         ui->pushButtonClassesDex->setEnabled(XArchives::isArchiveRecordPresent(sFileName,"classes.dex"));
+        ui->pushButtonSignature->setEnabled(XArchives::isSigned(sFileName));
 
         if(g_xOptions.isScanAfterOpen())
         {
@@ -196,7 +198,7 @@ void GuiMainWindow::on_pushButtonHex_clicked()
         QFile file;
         file.setFileName(sFileName);
 
-        if(file.open(QIODevice::ReadOnly))
+        if(XBinary::tryToOpen(&file))
         {
             XHexView::OPTIONS options={};
             options.sSignaturesPath=g_xOptions.getSearchSignaturesPath();
@@ -328,6 +330,44 @@ void GuiMainWindow::on_pushButtonClassesDex_clicked()
 
                     file.close();
                 }
+            }
+        }
+    }
+}
+
+void GuiMainWindow::on_pushButtonSignature_clicked()
+{
+    QString sFileName=ui->lineEditFileName->text().trimmed();
+
+    if(sFileName!="")
+    {
+        XBinary::OFFSETSIZE os=XArchives::getSignOS(sFileName);
+
+        if(os.nSize)
+        {
+            QFile file;
+            file.setFileName(sFileName);
+
+            if(XBinary::tryToOpen(&file))
+            {
+                SubDevice sd(&file,os.nOffset,os.nSize);
+
+                if(XBinary::tryToOpen(&sd))
+                {
+                    XHexView::OPTIONS options={};
+                    options.sSignaturesPath=g_xOptions.getSearchSignaturesPath();
+                    options.sTitle=tr("Signature");
+                    options.nStartAddress=os.nOffset;
+
+                    DialogHexView dialogHex(this,&sd,options);
+                    dialogHex.setShortcuts(&g_xShortcuts);
+
+                    dialogHex.exec();
+
+                    sd.close();
+                }
+
+                file.close();
             }
         }
     }

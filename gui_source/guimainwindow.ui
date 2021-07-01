@@ -92,6 +92,13 @@
           </spacer>
          </item>
          <item>
+          <widget class="QPushButton" name="pushButtonSignature">
+           <property name="text">
+            <string>Signature</string>
+           </property>
+          </widget>
+         </item>
+         <item>
           <widget class="QPushButton" name="pushButtonHex">
            <property name="text">
             <string notr="true">Hex</string>
