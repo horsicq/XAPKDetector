@@ -13,6 +13,6 @@ RUN apt-get install --quiet --assume-yes \
       qtscript5-dev \
       qttools5-dev-tools
 
-RUN git clone --recursive https://github.com/horsicq/XAPKDEtector.git
+RUN git clone --recursive https://github.com/horsicq/XAPKDetector.git
 
-RUN cd XAPKDEtector &&  bash -x build_dpkg.sh && bash -x install.sh
+RUN cd XAPKDetector &&  bash -x build_dpkg.sh && bash -x install.sh
