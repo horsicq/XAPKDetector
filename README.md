@@ -37,7 +37,7 @@ git clone --recursive https://github.com/horsicq/XAPKDetector.git
 
 cd XAPKDetector
 
-*docker build . *
+**docker build .**
 
 How to build on Linux(Debian package)
 =======
