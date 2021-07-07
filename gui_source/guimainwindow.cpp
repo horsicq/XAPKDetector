@@ -90,7 +90,7 @@ void GuiMainWindow::handleFile(QString sFileName)
         ui->widgetArchive->setFileName(sFileName,fwOptions,QSet<XBinary::FT>(),this);
 
         ui->pushButtonClassesDex->setEnabled(XArchives::isArchiveRecordPresent(sFileName,"classes.dex"));
-        ui->pushButtonSignature->setEnabled(XArchives::isSigned(sFileName));
+        ui->pushButtonSignature->setEnabled(XFormats::isSigned(sFileName));
 
         if(g_xOptions.isScanAfterOpen())
         {
@@ -341,7 +341,7 @@ void GuiMainWindow::on_pushButtonSignature_clicked()
 
     if(sFileName!="")
     {
-        XBinary::OFFSETSIZE os=XArchives::getSignOS(sFileName);
+        XBinary::OFFSETSIZE os=XFormats::getSignOS(sFileName);
 
         if(os.nSize)
         {
