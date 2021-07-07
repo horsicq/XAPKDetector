@@ -15,11 +15,4 @@ RUN apt-get install --quiet --assume-yes \
 
 RUN git clone --recursive https://github.com/horsicq/XAPKDEtector.git
 
-RUN cd DIE-engine &&  bash -x build_dpkg.sh && bash -x install.sh
-
-# RUN
-FROM ${image}
-
-ENTRYPOINT ["gosu", "nobody", "/usr/bin/xapkdc"]
-
-CMD ["--help"]
+RUN cd XAPKDEtector &&  bash -x build_dpkg.sh && bash -x install.sh
