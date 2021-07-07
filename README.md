@@ -37,7 +37,7 @@ git clone --recursive https://github.com/horsicq/XAPKDetector.git
 
 cd XAPKDetector
 
-**docker build .**
+docker build .
 
 How to build on Linux(Debian package)
 =======
@@ -65,7 +65,7 @@ How to build on Linux(Automake)
 
 Qt framework has to be installed on the system.
 
-(Ubuntu)Install Qt Framework: **sudo apt-get install --quiet --assume-yes build-essential qt5-default qtbase5-dev qttools5-dev-tools **
+(Ubuntu)Install Qt Framework: sudo apt-get install --quiet --assume-yes build-essential qt5-default qtbase5-dev qttools5-dev-tools
 
 Clone project: git clone --recursive https://github.com/horsicq/XAPKDetector.git
 
