@@ -87,7 +87,7 @@ Edit build_mac.sh ( check QMAKE_PATH variable)
 
 Run build script: bash -x build_mac.sh
 
-How to build on Windows(XP)
+How to build on Windows(XP) with Visual Studio
 =======
 
 Install Visual Studio 2013: https://github.com/horsicq/build_tools
@@ -98,11 +98,11 @@ Install 7-Zip: https://github.com/horsicq/build_tools
 
 Clone project: git clone --recursive https://github.com/horsicq/XAPKDetector.git
 
-Edit build_winxp.bat ( check VSVARS_PATH,  SEVENZIP_PATH, QMAKE_PATH variables)
+Edit build_msvc_winxp.bat ( check VSVARS_PATH, SEVENZIP_PATH, QMAKE_PATH variables)
 
-Run build_winxp.bat
+Run build_msvc_winxp.bat
 
-How to build on Windows(7-10)
+How to build on Windows(7-10) with Visual Studio
 =======
 
 Install Visual Studio 2019: https://github.com/horsicq/build_tools
@@ -113,12 +113,13 @@ Install 7-Zip: https://github.com/horsicq/build_tools
 
 Clone project: git clone --recursive https://github.com/horsicq/XAPKDetector.git
 
-Edit build_win32.bat ( check VSVARS_PATH,  SEVENZIP_PATH, QMAKE_PATH variables)
+Edit build_msvc_win32.bat ( check VSVARS_PATH, SEVENZIP_PATH, QMAKE_PATH variables)
 
-Edit build_win64.bat ( check VSVARS_PATH,  SEVENZIP_PATH, QMAKE_PATH variables)
+Edit build_msvc_win64.bat ( check VSVARS_PATH, SEVENZIP_PATH, QMAKE_PATH variables)
 
-Run build_win32.bat
+Run build_msvc_win32.bat
 
-Run build_win64.bat
+Run build_msvc_win64.bat
+
 
 ![alt text](https://github.com/horsicq/XAPKDetector/blob/master/mascots/xapkd.png "Mascot")
