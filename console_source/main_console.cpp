@@ -77,19 +77,23 @@ int main(int argc, char *argv[])
     parser.addHelpOption();
     parser.addVersionOption();
 
-    parser.addPositionalArgument("file","The file to open.");
+    parser.addPositionalArgument("target","The file or directory to open.");
 
-    QCommandLineOption clRecursiveScan(QStringList()<<"r"<<"recursivescan","Recursive scan.");
-    QCommandLineOption clDeepScan(QStringList()<<"d"<<"deepscan","Deep scan.");
-    QCommandLineOption clHeuristicScan(QStringList()<<"e"<<"heuristicscan","Heuristic scan.");
-    QCommandLineOption clResultAsXml(QStringList()<<"x"<<"xml","Result as XML.");
-    QCommandLineOption clResultAsJson(QStringList()<<"j"<<"json","Result as JSON.");
+    QCommandLineOption clRecursiveScan  (QStringList()<<    "r"<<   "recursivescan",    "Recursive scan.");
+    QCommandLineOption clDeepScan       (QStringList()<<    "d"<<   "deepscan",         "Deep scan.");
+    QCommandLineOption clHeuristicScan  (QStringList()<<    "e"<<   "heuristicscan",    "Heuristic scan.");
+    QCommandLineOption clResultAsXml    (QStringList()<<    "x"<<   "xml",              "Result as XML.");
+    QCommandLineOption clResultAsJson   (QStringList()<<    "j"<<   "json",             "Result as JSON.");
+    QCommandLineOption clResultAsCSV    (QStringList()<<    "c"<<   "csv",              "Result as CSV.");
+    QCommandLineOption clResultAsTSV    (QStringList()<<    "t"<<   "tsv",              "Result as TSV.");
 
     parser.addOption(clRecursiveScan);
     parser.addOption(clDeepScan);
     parser.addOption(clHeuristicScan);
     parser.addOption(clResultAsXml);
     parser.addOption(clResultAsJson);
+    parser.addOption(clResultAsCSV);
+    parser.addOption(clResultAsTSV);
 
     parser.process(app);
 
@@ -102,6 +106,8 @@ int main(int argc, char *argv[])
     scanOptions.bHeuristicScan=parser.isSet(clHeuristicScan);
     scanOptions.bResultAsXML=parser.isSet(clResultAsXml);
     scanOptions.bResultAsJSON=parser.isSet(clResultAsJson);
+    scanOptions.bResultAsCSV=parser.isSet(clResultAsCSV);
+    scanOptions.bResultAsTSV=parser.isSet(clResultAsTSV);
 
     if(listArgs.count())
     {
