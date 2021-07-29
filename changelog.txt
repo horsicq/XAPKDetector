@@ -1,10 +1,11 @@
 0.02
 -----------------------------------------------------------------------
-[+] Docker imahe
+[+] Docker image
 [+] Linux AppImage
 [+] Autotools build system
 [+] New detects
 [+] Many bugs have been fixed.
+[+] PKG installer for OSX
 #######################################################################
 
 0.01
