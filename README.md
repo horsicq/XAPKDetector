@@ -111,11 +111,13 @@ Install Qt 5.15.2 for VS2019: https://github.com/horsicq/build_tools
 
 Install 7-Zip: https://github.com/horsicq/build_tools
 
+Install Inno Setup: https://github.com/horsicq/build_tools
+
 Clone project: git clone --recursive https://github.com/horsicq/XAPKDetector.git
 
-Edit build_msvc_win32.bat ( check VSVARS_PATH, SEVENZIP_PATH, QMAKE_PATH variables)
+Edit build_msvc_win32.bat ( check VSVARS_PATH, SEVENZIP_PATH, INNOSETUP_PATH, QMAKE_PATH variables)
 
-Edit build_msvc_win64.bat ( check VSVARS_PATH, SEVENZIP_PATH, QMAKE_PATH variables)
+Edit build_msvc_win64.bat ( check VSVARS_PATH, SEVENZIP_PATH, INNOSETUP_PATH, QMAKE_PATH variables)
 
 Run build_msvc_win32.bat
 
