@@ -42,10 +42,10 @@ if [ -z "$X_ERROR" ]; then
         deploy_qt_plugin platforms libqminimal xapkd
         deploy_qt_plugin platforms libqoffscreen xapkd
         
-        deploy_qt_plugin imageformats qjpeg xapkd
-        deploy_qt_plugin imageformats qtiff xapkd
-        deploy_qt_plugin imageformats qico xapkd
-        deploy_qt_plugin imageformats qgif xapkd
+        deploy_qt_plugin imageformats libqjpeg xapkd
+        deploy_qt_plugin imageformats libqtiff xapkd
+        deploy_qt_plugin imageformats libqico xapkd
+        deploy_qt_plugin imageformats libqgif xapkd
 
         make_release
         make_clear
