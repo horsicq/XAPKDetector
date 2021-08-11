@@ -56,7 +56,7 @@ cd XAPKDetector
 
 Run build script: bash -x build_dpkg.sh
 
-Install deb package: sudo dpkg -i release/die_[Version].deb
+Install deb package: sudo dpkg -i release/xapkdetector_[Version].deb
 
 Run: *xapkd [FileName]* or *xapkdc [FileName]*
 
@@ -122,6 +122,5 @@ Edit build_msvc_win64.bat ( check VSVARS_PATH, SEVENZIP_PATH, INNOSETUP_PATH, QM
 Run build_msvc_win32.bat
 
 Run build_msvc_win64.bat
-
 
 ![alt text](https://github.com/horsicq/XAPKDetector/blob/master/mascots/xapkd.png "Mascot")
