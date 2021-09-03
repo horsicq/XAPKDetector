@@ -187,6 +187,11 @@ void GuiMainWindow::on_pushButtonOptions_clicked()
 void GuiMainWindow::adjust()
 {
     g_xOptions.adjustStayOnTop(this);
+
+    g_formatOptions.bIsSaveBackup=g_xOptions.isSaveBackup();
+
+    ui->widgetArchive->setOptions(g_formatOptions);
+    ui->widgetArchive->setShortcuts(&g_xShortcuts);
 }
 
 void GuiMainWindow::on_pushButtonHex_clicked()
