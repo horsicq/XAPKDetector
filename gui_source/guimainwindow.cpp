@@ -346,7 +346,7 @@ void GuiMainWindow::on_pushButtonSignature_clicked()
 
     if(sFileName!="")
     {
-        XBinary::OFFSETSIZE os=XFormats::getSignOS(sFileName);
+        XBinary::OFFSETSIZE os=XFormats::getSignOffsetSize(sFileName);
 
         if(os.nSize)
         {
