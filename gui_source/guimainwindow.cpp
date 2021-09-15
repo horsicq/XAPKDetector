@@ -188,9 +188,11 @@ void GuiMainWindow::adjust()
 {
     g_xOptions.adjustStayOnTop(this);
 
-    g_formatOptions.bIsSaveBackup=g_xOptions.isSaveBackup();
+    // TODO !!!
+//    g_formatOptions.bIsSaveBackup=g_xOptions.isSaveBackup();
 
-    ui->widgetArchive->setOptions(g_formatOptions);
+//    ui->widgetArchive->setOptions(g_formatOptions);
+
     ui->widgetArchive->setShortcuts(&g_xShortcuts);
 }
 
