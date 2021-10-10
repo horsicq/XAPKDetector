@@ -28,7 +28,7 @@ DialogAbout::DialogAbout(QWidget *pParent) :
     ui->setupUi(this);
 
     ui->labelVersion->setText(QString("<html><head/><body><p align=\"center\"><span style=\" "
-                                      "font-weight:600;\">Version:</span> %1(%2)</p></body></html>").arg(X_APPLICATIONVERSION).arg(__DATE__));
+                                      "font-weight:600;\">Version:</span> %1(%2)</p></body></html>").arg(X_APPLICATIONVERSION,__DATE__));
 }
 
 DialogAbout::~DialogAbout()
