@@ -88,7 +88,7 @@ Edit build_mac.sh ( check QMAKE_PATH variable)
 Run build script: bash -x build_mac.sh
 
 How to build on Windows(XP) with Visual Studio
-=======
+========
 
 Install Visual Studio 2013: https://github.com/horsicq/build_tools
 
@@ -103,7 +103,7 @@ Edit build_msvc_winxp.bat ( check VSVARS_PATH, SEVENZIP_PATH, QMAKE_PATH variabl
 Run build_msvc_winxp.bat
 
 How to build on Windows(7-10) with Visual Studio
-=======
+========
 
 Install Visual Studio 2019: https://github.com/horsicq/build_tools
 
