@@ -63,7 +63,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
 
     adjust();
 
-    ui->widgetArchive->setShortcuts(&g_xShortcuts);
+    ui->widgetArchive->setGlobal(&g_xShortcuts,&g_xOptions);
 
     if(QCoreApplication::arguments().count()>1)
     {
@@ -187,13 +187,6 @@ void GuiMainWindow::on_pushButtonOptions_clicked()
 void GuiMainWindow::adjust()
 {
     g_xOptions.adjustStayOnTop(this);
-
-    // TODO !!!
-//    g_formatOptions.bIsSaveBackup=g_xOptions.isSaveBackup();
-
-//    ui->widgetArchive->setOptions(g_formatOptions);
-
-    ui->widgetArchive->setShortcuts(&g_xShortcuts);
 }
 
 void GuiMainWindow::on_pushButtonHex_clicked()
@@ -208,10 +201,9 @@ void GuiMainWindow::on_pushButtonHex_clicked()
         if(XBinary::tryToOpen(&file))
         {
             XHexView::OPTIONS options={};
-            options.sSignaturesPath=g_xOptions.getSearchSignaturesPath();
 
             DialogHexView dialogHex(this,&file,options);
-            dialogHex.setShortcuts(&g_xShortcuts);
+            dialogHex.setGlobal(&g_xShortcuts,&g_xOptions);
 
             dialogHex.exec();
 
@@ -237,7 +229,7 @@ void GuiMainWindow::on_pushButtonStrings_clicked()
 
             DialogSearchStrings dialogSearchStrings(this);
             dialogSearchStrings.setData(&file,options,true);
-            dialogSearchStrings.setShortcuts(&g_xShortcuts);
+            dialogSearchStrings.setGlobal(&g_xShortcuts,&g_xOptions);
 
             dialogSearchStrings.exec();
 
@@ -259,7 +251,7 @@ void GuiMainWindow::on_pushButtonHash_clicked()
         {
             DialogHash dialogHash(this);
             dialogHash.setData(&file,XBinary::FT_UNKNOWN);
-            dialogHash.setShortcuts(&g_xShortcuts);
+            dialogHash.setGlobal(&g_xShortcuts,&g_xOptions);
 
             dialogHash.exec();
 
@@ -281,7 +273,7 @@ void GuiMainWindow::on_pushButtonEntropy_clicked()
         {
             DialogEntropy dialogEntropy(this);
             dialogEntropy.setData(&file);
-            dialogEntropy.setShortcuts(&g_xShortcuts);
+            dialogEntropy.setGlobal(&g_xShortcuts,&g_xOptions);
 
             dialogEntropy.exec();
 
@@ -330,7 +322,7 @@ void GuiMainWindow::on_pushButtonClassesDex_clicked()
                     fwOptions.sTitle="classes.dex";
 
                     DialogDEX dialogDEX(this);
-                    dialogDEX.setShortcuts(&g_xShortcuts);
+                    dialogDEX.setGlobal(&g_xShortcuts,&g_xOptions);
                     dialogDEX.setData(&file,fwOptions);
 
                     dialogDEX.exec();
@@ -362,12 +354,11 @@ void GuiMainWindow::on_pushButtonSignature_clicked()
                 if(XBinary::tryToOpen(&sd))
                 {
                     XHexView::OPTIONS options={};
-                    options.sSignaturesPath=g_xOptions.getSearchSignaturesPath();
                     options.sTitle=tr("Signature");
                     options.nStartAddress=os.nOffset;
 
                     DialogHexView dialogHex(this,&sd,options);
-                    dialogHex.setShortcuts(&g_xShortcuts);
+                    dialogHex.setGlobal(&g_xShortcuts,&g_xOptions);
 
                     dialogHex.exec();
 
