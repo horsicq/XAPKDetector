@@ -1,27 +1,28 @@
-// Copyright (c) 2020-2021 hors<horsicq@gmail.com>
-//
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to deal
-// in the Software without restriction, including without limitation the rights
-// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-// copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-
-// The above copyright notice and this permission notice shall be included in all
-// copies or substantial portions of the Software.
-
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-// SOFTWARE.
-//
+/* Copyright (c) 2020-2022 hors<horsicq@gmail.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
 #include <QCoreApplication>
 #include <QCommandLineParser>
 #include <QCommandLineOption>
-#include "staticscanitemmodel.h"
+#include "staticscan.h"
+#include "scanitemmodel.h"
 #include "../global.h"
 
 void ScanFiles(QList<QString> *pListArgs,SpecAbstract::SCAN_OPTIONS *pScanOptions)
@@ -44,7 +45,7 @@ void ScanFiles(QList<QString> *pListArgs,SpecAbstract::SCAN_OPTIONS *pScanOption
 
     bool bShowFileName=listFileNames.count()>1;
 
-    for(int i=0;i<listFileNames.count();i++)
+    for(qint32 i=0;i<listFileNames.count();i++)
     {
         QString sFileName=listFileNames.at(i);
 
@@ -54,9 +55,19 @@ void ScanFiles(QList<QString> *pListArgs,SpecAbstract::SCAN_OPTIONS *pScanOption
         }
 
         SpecAbstract::SCAN_RESULT scanResult=StaticScan::processFile(sFileName,pScanOptions);
-        StaticScanItemModel model(&scanResult.listRecords);
 
-        printf("%s\n",model.toString(pScanOptions).toLatin1().data());
+        static QList<XBinary::SCANSTRUCT> _listRecords=SpecAbstract::convert(&(scanResult.listRecords));
+
+        ScanItemModel model(&_listRecords);
+
+        XBinary::FORMATTYPE formatType=XBinary::FORMATTYPE_TEXT;
+
+        if      (pScanOptions->bResultAsCSV)    formatType=XBinary::FORMATTYPE_CSV;
+        else if (pScanOptions->bResultAsJSON)   formatType=XBinary::FORMATTYPE_JSON;
+        else if (pScanOptions->bResultAsTSV)    formatType=XBinary::FORMATTYPE_TSV;
+        else if (pScanOptions->bResultAsXML)    formatType=XBinary::FORMATTYPE_XML;
+
+        printf("%s\n",model.toString(formatType).toLatin1().data());
     }
 }
 
@@ -72,7 +83,7 @@ int main(int argc, char *argv[])
     QCommandLineParser parser;
     QString sDescription;
     sDescription.append(QString("%1 v%2\n").arg(X_APPLICATIONDISPLAYNAME).arg(X_APPLICATIONVERSION));
-    sDescription.append(QString("%1\n").arg("Copyright(C) 2020-2021 hors<horsicq@gmail.com> Web: http://ntinfo.biz"));
+    sDescription.append(QString("%1\n").arg("Copyright(C) 2020-2022 hors<horsicq@gmail.com> Web: http://ntinfo.biz"));
     parser.setApplicationDescription(sDescription);
     parser.addHelpOption();
     parser.addVersionOption();
@@ -82,6 +93,7 @@ int main(int argc, char *argv[])
     QCommandLineOption clRecursiveScan  (QStringList()<<    "r"<<   "recursivescan",    "Recursive scan.");
     QCommandLineOption clDeepScan       (QStringList()<<    "d"<<   "deepscan",         "Deep scan.");
     QCommandLineOption clHeuristicScan  (QStringList()<<    "e"<<   "heuristicscan",    "Heuristic scan.");
+    QCommandLineOption clAllTypesScan   (QStringList()<<    "a"<<   "alltypes",         "Scan all types.");
     QCommandLineOption clResultAsXml    (QStringList()<<    "x"<<   "xml",              "Result as XML.");
     QCommandLineOption clResultAsJson   (QStringList()<<    "j"<<   "json",             "Result as JSON.");
     QCommandLineOption clResultAsCSV    (QStringList()<<    "c"<<   "csv",              "Result as CSV.");
@@ -90,6 +102,7 @@ int main(int argc, char *argv[])
     parser.addOption(clRecursiveScan);
     parser.addOption(clDeepScan);
     parser.addOption(clHeuristicScan);
+    parser.addOption(clAllTypesScan);
     parser.addOption(clResultAsXml);
     parser.addOption(clResultAsJson);
     parser.addOption(clResultAsCSV);
@@ -104,6 +117,7 @@ int main(int argc, char *argv[])
     scanOptions.bRecursiveScan=parser.isSet(clRecursiveScan);
     scanOptions.bDeepScan=parser.isSet(clDeepScan);
     scanOptions.bHeuristicScan=parser.isSet(clHeuristicScan);
+    scanOptions.bAllTypesScan=parser.isSet(clAllTypesScan);
     scanOptions.bResultAsXML=parser.isSet(clResultAsXml);
     scanOptions.bResultAsJSON=parser.isSet(clResultAsJson);
     scanOptions.bResultAsCSV=parser.isSet(clResultAsCSV);
