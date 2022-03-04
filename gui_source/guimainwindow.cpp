@@ -27,7 +27,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
 {
     ui->setupUi(this);
 
-    setWindowTitle(QString("%1 v%2").arg(X_APPLICATIONDISPLAYNAME).arg(X_APPLICATIONVERSION));
+    setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME,X_APPLICATIONVERSION));
 
     setAcceptDrops(true);
 
@@ -61,7 +61,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
     g_xShortcuts.addGroup(XShortcuts::ID_ARCHIVE);
     g_xShortcuts.load();
 
-    adjust();
+    adjustWindow();
 
     ui->widgetArchive->setGlobal(&g_xShortcuts,&g_xOptions);
 
@@ -143,7 +143,7 @@ void GuiMainWindow::on_pushButtonShortcuts_clicked()
 
     dialogShortcuts.exec();
 
-    adjust();
+    adjustWindow();
 }
 
 void GuiMainWindow::dragEnterEvent(QDragEnterEvent *pEvent)
@@ -181,11 +181,13 @@ void GuiMainWindow::on_pushButtonOptions_clicked()
 
     dialogOptions.exec();
 
-    adjust();
+    adjustWindow();
 }
 
-void GuiMainWindow::adjust()
+void GuiMainWindow::adjustWindow()
 {
+//    ui->widgetViewer->adjustView();
+
     g_xOptions.adjustStayOnTop(this);
 }
 

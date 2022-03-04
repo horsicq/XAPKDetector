@@ -3,6 +3,11 @@ QT       += core gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = xapkd
+
+macx {
+    TARGET = XAPKD
+}
+
 TEMPLATE = app
 
 include(../build.pri)
@@ -54,6 +59,8 @@ win32 {
 
 macx {
     ICON = ../icons/main.icns
+    CONFIG -= embed_manifest_exe
+    QMAKE_MANIFEST = windows.manifest.xml
 }
 
 RESOURCES += \

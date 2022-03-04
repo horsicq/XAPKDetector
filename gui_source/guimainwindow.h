@@ -53,7 +53,7 @@ private slots:
     void on_pushButtonAbout_clicked();
     void on_pushButtonShortcuts_clicked();
     void on_pushButtonOptions_clicked();
-    void adjust();
+    void adjustWindow();
     void on_pushButtonHex_clicked();
     void on_pushButtonStrings_clicked();
     void on_pushButtonHash_clicked();
