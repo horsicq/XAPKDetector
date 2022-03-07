@@ -18,12 +18,12 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-#include <QCoreApplication>
-#include <QCommandLineParser>
 #include <QCommandLineOption>
-#include "staticscan.h"
-#include "scanitemmodel.h"
+#include <QCommandLineParser>
+#include <QCoreApplication>
 #include "../global.h"
+#include "scanitemmodel.h"
+#include "staticscan.h"
 
 void ScanFiles(QList<QString> *pListArgs,SpecAbstract::SCAN_OPTIONS *pScanOptions)
 {

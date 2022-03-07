@@ -21,15 +21,15 @@
 #ifndef GUIMAINWINDOW_H
 #define GUIMAINWINDOW_H
 
-#include "../global.h"
-#include <QMainWindow>
-#include <QFileDialog>
 #include <QDragEnterEvent>
+#include <QFileDialog>
+#include <QMainWindow>
 #include <QMimeData>
+#include "../global.h"
+#include "archive_widget.h"
 #include "dialogabout.h"
 #include "dialogoptions.h"
 #include "dialogshortcuts.h"
-#include "archive_widget.h"
 #include "xoptions.h"
 
 namespace Ui
@@ -61,6 +61,8 @@ private slots:
     void scanFile(QString sFileName);
     void on_pushButtonClassesDex_clicked();
     void on_pushButtonSignature_clicked();
+    void on_pushButtonDEX_clicked();
+    void on_pushButtonELF_clicked();
 
 protected:
     void dragEnterEvent(QDragEnterEvent *pEvent) override;
@@ -71,7 +73,7 @@ private:
     Ui::GuiMainWindow *ui;
     XOptions g_xOptions;
     XShortcuts g_xShortcuts;
-    FW_DEF::OPTIONS fwOptions;
+    FW_DEF::OPTIONS g_fwOptions;
 };
 
 #endif // GUIMAINWINDOW_H

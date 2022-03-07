@@ -17,19 +17,29 @@ if [ -z "$X_ERROR" ]; then
     cd "$X_SOURCE_PATH"
 
     check_file "$X_SOURCE_PATH/build/release/xapkd"
-    check_file "$X_SOURCE_PATH/build/release/xapkd"
+    check_file "$X_SOURCE_PATH/build/release/xapkdc"
     if [ -z "$X_ERROR" ]; then
         create_deb_app_dir xapkd
         
-        #cp -f $X_SOURCE_PATH/LICENSE                                        $X_SOURCE_PATH/release/$X_BUILD_NAME/
-        cp -f $X_SOURCE_PATH/DEBIAN/control                                 $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/
-        sed -i "s/#VERSION#/$X_RELEASE_VERSION/"                            $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/control
-        sed -i "s/#ARCH#/$X_ARCHITECTURE/"                                  $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/control
+        export X_PACKAGENAME='xapkdetector'
+        export X_MAINTAINER='hors <horsicq@gmail.com>'
+        
+        export X_HOMEPAGE='http://ntinfo.biz'
+        export X_DESCRIPTION='XAPKDetector shows an information about build tools, libraries and protection of APK/DEX files'
+        
+        if [ "$X_DEBIAN_VERSION" -ge "11" ]; then
+            export X_DEPENDS='libqt5core5a, libqt5svg5, libqt5gui5, libqt5widgets5, libqt5opengl5, libqt5dbus5, libqt5network5'
+        else
+            export X_DEPENDS='qt5-default, libqt5core5a, libqt5svg5, libqt5gui5, libqt5widgets5, libqt5opengl5, libqt5dbus5, libqt5network5'
+        fi
+        
+        create_deb_control $X_SOURCE_PATH/release/$X_BUILD_NAME/DEBIAN/control
+        
         cp -f $X_SOURCE_PATH/build/release/xapkd                              $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/bin/
         cp -f $X_SOURCE_PATH/build/release/xapkdc                             $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/bin/
-        cp -f $X_SOURCE_PATH/DEBIAN/xapkd.desktop                             $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/applications/
+        cp -f $X_SOURCE_PATH/LINUX/xapkd.desktop                             $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/applications/
         sed -i "s/#VERSION#/$X_RELEASE_VERSION/"                            $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/applications/xapkd.desktop
-        cp -Rf $X_SOURCE_PATH/DEBIAN/hicolor/                               $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/icons/
+        cp -Rf $X_SOURCE_PATH/LINUX/hicolor/                               $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/share/icons/
         cp -Rf $X_SOURCE_PATH/XStyles/qss/                                  $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/xapkd/
         mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/xapkd/lang/
         cp -f $X_SOURCE_PATH/gui_source/translation/*.qm                    $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/xapkd/lang/

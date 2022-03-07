@@ -31,35 +31,42 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
 
     setAcceptDrops(true);
 
-    fwOptions={};
+    g_fwOptions={};
 
-    ui->pushButtonClassesDex->setEnabled(false);
+//    ui->pushButtonClassesDex->setEnabled(false);
     ui->pushButtonSignature->setEnabled(false);
 
     g_xOptions.setName(X_OPTIONSFILE);
 
-    QList<XOptions::ID> listIDs;
+    g_xOptions.addID(XOptions::ID_VIEW_STYLE,"Fusion");
+    g_xOptions.addID(XOptions::ID_VIEW_QSS,"");
+    g_xOptions.addID(XOptions::ID_VIEW_LANG,"System");
+    g_xOptions.addID(XOptions::ID_VIEW_STAYONTOP,false);
+    g_xOptions.addID(XOptions::ID_FILE_SAVELASTDIRECTORY,true);
+    g_xOptions.addID(XOptions::ID_FILE_SAVEBACKUP,true);
 
-    listIDs.append(XOptions::ID_STYLE);
-    listIDs.append(XOptions::ID_QSS);
-    listIDs.append(XOptions::ID_LANG);
-    listIDs.append(XOptions::ID_SCANAFTEROPEN);
-    listIDs.append(XOptions::ID_STAYONTOP);
-    listIDs.append(XOptions::ID_SAVELASTDIRECTORY);
-    listIDs.append(XOptions::ID_SEARCHSIGNATURESPATH);
+#ifdef Q_OS_WIN
+    g_xOptions.addID(XOptions::ID_FILE_CONTEXT,"*");
+#endif
 
-    g_xOptions.setValueIDs(listIDs);
+    StaticScanOptionsWidget::setDefaultValues(&g_xOptions);
+    SearchSignaturesOptionsWidget::setDefaultValues(&g_xOptions);
+    XHexViewOptionsWidget::setDefaultValues(&g_xOptions);
+    XDisasmViewOptionsWidget::setDefaultValues(&g_xOptions);
+
     g_xOptions.load();
 
     g_xShortcuts.setName(X_SHORTCUTSFILE);
-    g_xShortcuts.setNative(g_xOptions.isNative());
 
-    g_xShortcuts.addGroup(XShortcuts::ID_STRINGS);
-    g_xShortcuts.addGroup(XShortcuts::ID_SIGNATURES);
-    g_xShortcuts.addGroup(XShortcuts::ID_HEX);
-    g_xShortcuts.addGroup(XShortcuts::ID_DISASM);
-    g_xShortcuts.addGroup(XShortcuts::ID_ARCHIVE);
+    g_xShortcuts.addGroup(XShortcuts::GROUPID_STRINGS);
+    g_xShortcuts.addGroup(XShortcuts::GROUPID_SIGNATURES);
+    g_xShortcuts.addGroup(XShortcuts::GROUPID_HEX);
+    g_xShortcuts.addGroup(XShortcuts::GROUPID_DISASM);
+    g_xShortcuts.addGroup(XShortcuts::GROUPID_ARCHIVE);
+
     g_xShortcuts.load();
+
+    ui->widgetArchive->setGlobal(&g_xShortcuts,&g_xOptions);
 
     adjustWindow();
 
@@ -87,9 +94,9 @@ void GuiMainWindow::handleFile(QString sFileName)
     {
         ui->lineEditFileName->setText(sFileName);
         
-        ui->widgetArchive->setFileName(sFileName,fwOptions,QSet<XBinary::FT>(),this);
+        ui->widgetArchive->setFileName(sFileName,g_fwOptions,QSet<XBinary::FT>(),this);
 
-        ui->pushButtonClassesDex->setEnabled(XArchives::isArchiveRecordPresent(sFileName,"classes.dex"));
+//        ui->pushButtonClassesDex->setEnabled(XArchives::isArchiveRecordPresent(sFileName,"classes.dex"));
         ui->pushButtonSignature->setEnabled(XFormats::isSigned(sFileName));
 
         if(g_xOptions.isScanAfterOpen())
@@ -320,12 +327,12 @@ void GuiMainWindow::on_pushButtonClassesDex_clicked()
 
                 if(file.open(QIODevice::ReadOnly))
                 {
-                    fwOptions.nStartType=SDEX::TYPE_HEADER;
-                    fwOptions.sTitle="classes.dex";
+                    g_fwOptions.nStartType=SDEX::TYPE_HEADER;
+                    g_fwOptions.sTitle="classes.dex";
 
                     DialogDEX dialogDEX(this);
                     dialogDEX.setGlobal(&g_xShortcuts,&g_xOptions);
-                    dialogDEX.setData(&file,fwOptions);
+                    dialogDEX.setData(&file,g_fwOptions);
 
                     dialogDEX.exec();
 
@@ -371,4 +378,14 @@ void GuiMainWindow::on_pushButtonSignature_clicked()
             }
         }
     }
+}
+
+void GuiMainWindow::on_pushButtonDEX_clicked()
+{
+
+}
+
+void GuiMainWindow::on_pushButtonELF_clicked()
+{
+
 }

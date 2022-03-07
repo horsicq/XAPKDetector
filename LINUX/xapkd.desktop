@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=#VERSION#
+Type=Application
+Name=XAPKDetector
+Comment=XAPKDetector shows an information about build tools, libraries and protection of APK/DEX files
+TryExec=xapkd
+Exec=xapkd %F
+Icon=xapkd
+Terminal=false
+Categories=Development;
+MimeType=application/octet-stream;

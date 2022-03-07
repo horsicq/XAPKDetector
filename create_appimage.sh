@@ -9,9 +9,9 @@ create_image_app_dir xapkd
 
 cp -f $X_SOURCE_PATH/build/release/xapkd                            $X_SOURCE_PATH/release/appDir/usr/bin/
 cp -f $X_SOURCE_PATH/build/release/xapkdc                           $X_SOURCE_PATH/release/appDir/usr/bin/
-cp -f $X_SOURCE_PATH/DEBIAN/xapkd.desktop                           $X_SOURCE_PATH/release/appDir/usr/share/applications/
+cp -f $X_SOURCE_PATH/LINUX/xapkd.desktop                           $X_SOURCE_PATH/release/appDir/usr/share/applications/
 sed -i "s/#VERSION#/1.0/"                                           $X_SOURCE_PATH/release/appDir/usr/share/applications/xapkd.desktop
-cp -Rf $X_SOURCE_PATH/DEBIAN/hicolor/                               $X_SOURCE_PATH/release/appDir/usr/share/icons/
+cp -Rf $X_SOURCE_PATH/LINUX/hicolor/                               $X_SOURCE_PATH/release/appDir/usr/share/icons/
 cp -Rf $X_SOURCE_PATH/XStyles/qss/                                  $X_SOURCE_PATH/release/appDir/usr/lib/xapkd/
 mkdir -p $X_SOURCE_PATH/release/appDir/usr/lib/xapkd/signatures
 cp -f $X_SOURCE_PATH/signatures/crypto.db                           $X_SOURCE_PATH/release/appDir/usr/lib/xapkd/signatures/

@@ -1,0 +1,7 @@
+Package: xapkdetector
+Version: #VERSION#
+Architecture: #ARCH#
+Maintainer: hors <horsicq@gmail.com>
+Depends: qt5-default, libqt5core5a, libqt5svg5, libqt5gui5, libqt5widgets5, libqt5opengl5, libqt5dbus5
+Homepage: http://ntinfo.biz
+Description: XAPKDetector shows an information about build tools, libraries and protection of APK/DEX files

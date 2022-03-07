@@ -38,21 +38,6 @@ FORMS    += \
     include(../archive_widget/archive_widget.pri)
 }
 
-!contains(XCONFIG, formresult) {
-    XCONFIG += formresult
-    include(../StaticScan/formresult.pri)
-}
-
-!contains(XCONFIG, allformatwidgets) {
-    XCONFIG += allformatwidgets
-    include(../FormatWidgets/allformatwidgets.pri)
-}
-
-!contains(XCONFIG, xoptions) {
-    XCONFIG += xoptions
-    include(../XOptions/xoptions.pri)
-}
-
 win32 {
     RC_ICONS = ../icons/main.ico
 }

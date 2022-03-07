@@ -1,3 +1,11 @@
+0.03
+-----------------------------------------------------------------------
+[+] Source code qt6 compatibility
+[+] CMAKE build system
+[+] More than 200 new detects
+[+] New "All types" mode.
+[+] Many bugs have been fixed.
+
 0.02
 -----------------------------------------------------------------------
 [+] Docker image

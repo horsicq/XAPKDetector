@@ -22,13 +22,17 @@
 #define DIALOGOPTIONS_H
 
 #include <QDialog>
-#include <QSettings>
-#include <QMessageBox>
-#include <QFileDialog>
 #include <QDir>
-#include "xbinary.h"
-#include "xoptions.h"
+#include <QFileDialog>
+#include <QMessageBox>
+#include <QSettings>
 #include "../global.h"
+#include "searchsignaturesoptionswidget.h"
+#include "staticscanoptionswidget.h"
+#include "xbinary.h"
+#include "xdisasmviewoptionswidget.h"
+#include "xhexviewoptionswidget.h"
+#include "xoptions.h"
 
 namespace Ui {
 class DialogOptions;
@@ -38,13 +42,6 @@ class DialogOptions : public QDialog
 {
     Q_OBJECT
 
-    enum OPTION_PAGES
-    {
-        OP_SCAN=0,
-        OP_APPEARANCE,
-        OP_CONTEXT
-    };
-
 public:
     explicit DialogOptions(QWidget *pParent,XOptions *pOptions);
     ~DialogOptions();
@@ -52,10 +49,13 @@ public:
 private slots:
     void on_pushButtonOK_clicked();
     void on_pushButtonCancel_clicked();
-    void on_toolButtonSearchSignatures_clicked();
 
 private:
     Ui::DialogOptions *ui;
+    StaticScanOptionsWidget *g_pStaticScanOptionsWidget;
+    SearchSignaturesOptionsWidget *g_pSearchSignaturesOptionsWidget;
+    XHexViewOptionsWidget *g_pXHexViewOptionsWidget;
+    XDisasmViewOptionsWidget *g_pXDisasmViewOptionsWidget;
     XOptions *g_pOptions;
 };
 
