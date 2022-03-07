@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>641</width>
-    <height>359</height>
+    <width>671</width>
+    <height>488</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -60,14 +60,40 @@
     </item>
     <item>
      <layout class="QGridLayout" name="gridLayout">
-      <item row="2" column="2">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="pushButtonScan">
+        <property name="font">
+         <font>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Scan</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="pushButtonDEX">
+        <property name="text">
+         <string notr="true">DEX</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
        <widget class="QPushButton" name="pushButtonELF">
         <property name="text">
          <string notr="true">ELF</string>
         </property>
        </widget>
       </item>
-      <item row="0" column="3" rowspan="2">
+      <item row="0" column="3">
+       <widget class="QPushButton" name="pushButtonSignature">
+        <property name="text">
+         <string>Signature</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
        <spacer name="horizontalSpacer">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -81,69 +107,30 @@
        </spacer>
       </item>
       <item row="0" column="5">
-       <widget class="QPushButton" name="pushButtonHash">
-        <property name="text">
-         <string>Hash</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="4">
        <widget class="QPushButton" name="pushButtonStrings">
         <property name="text">
          <string>Strings</string>
         </property>
        </widget>
       </item>
-      <item row="1" column="5" rowspan="2">
-       <widget class="QPushButton" name="pushButtonEntropy">
+      <item row="0" column="6">
+       <widget class="QPushButton" name="pushButtonHash">
         <property name="text">
-         <string>Entropy</string>
+         <string>Hash</string>
         </property>
        </widget>
       </item>
-      <item row="0" column="0" rowspan="2">
-       <widget class="QPushButton" name="pushButtonScan">
-        <property name="font">
-         <font>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Scan</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="2" rowspan="2">
-       <widget class="QPushButton" name="pushButtonDEX">
-        <property name="text">
-         <string notr="true">DEX</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="4" rowspan="2">
+      <item row="1" column="5">
        <widget class="QPushButton" name="pushButtonHex">
         <property name="text">
          <string notr="true">Hex</string>
         </property>
        </widget>
       </item>
-      <item row="2" column="3">
-       <spacer name="horizontalSpacer_4">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="2" column="0">
-       <widget class="QPushButton" name="pushButtonSignature">
+      <item row="1" column="6">
+       <widget class="QPushButton" name="pushButtonEntropy">
         <property name="text">
-         <string>Signature</string>
+         <string>Entropy</string>
         </property>
        </widget>
       </item>

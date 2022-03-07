@@ -23,6 +23,7 @@
 
 #include <QDialog>
 #include <QDate>
+#include "xoptions.h"
 #include "../global.h"
 
 namespace Ui {
