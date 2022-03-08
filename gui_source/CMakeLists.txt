@@ -27,6 +27,7 @@ find_package(Qt5 COMPONENTS Svg REQUIRED)
 find_package(Qt5 COMPONENTS Network REQUIRED)
 
 add_definitions(-DUSE_DEX)
+add_definitions(-DUSE_PDF)
 add_definitions(-DUSE_ARCHIVE)
 
 include(${PROJECT_SOURCE_DIR}/../archive_widget/archive_widget.cmake)
