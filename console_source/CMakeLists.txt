@@ -58,7 +58,6 @@ target_link_libraries(${PROJECT_NAME} capstone_x86)
 
 target_link_libraries(${PROJECT_NAME} Qt5::Core)
 target_link_libraries(${PROJECT_NAME} Qt5::Concurrent)
-target_link_libraries(${PROJECT_NAME} Qt5::Script)
 
 if(WIN32)
     target_link_libraries(${PROJECT_NAME} Wintrust)
