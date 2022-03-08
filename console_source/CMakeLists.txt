@@ -25,15 +25,11 @@ add_definitions(-DUSE_DEX)
 add_definitions(-DUSE_PDF)
 add_definitions(-DUSE_ARCHIVE)
 
-include(${PROJECT_SOURCE_DIR}/../XOptions/xoptions.cmake)
-include(${PROJECT_SOURCE_DIR}/../XEntropyWidget/entropyprocess.cmake)
-include(${PROJECT_SOURCE_DIR}/../XFileInfo/xfileinfo.cmake)
+include(${PROJECT_SOURCE_DIR}/../StaticScan/staticscan.cmake)
 
 set(PROJECT_SOURCES
-            ${XOPTIONS_SOURCES}
-            ${ENTROPYPROCESS_SOURCES}
-            ${XFILEINFO_SOURCES}
-            main_console.cpp
+    ${STATICSCAN_SOURCES}
+    main_console.cpp
 )
 
 if(APPLE)

@@ -18,3 +18,6 @@ SOURCES += \
     XCONFIG += staticscan
     include(../StaticScan/staticscan.pri)
 }
+
+DISTFILES += \
+    CMakeLists.txt
