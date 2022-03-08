@@ -59,10 +59,12 @@ private slots:
     void on_pushButtonHash_clicked();
     void on_pushButtonEntropy_clicked();
     void scanFile(QString sFileName);
-    void on_pushButtonClassesDex_clicked();
     void on_pushButtonSignature_clicked();
     void on_pushButtonDEX_clicked();
     void on_pushButtonELF_clicked();
+    void on_pushButtonManifestMF_clicked();
+    void on_pushButtonAndroidManifest_clicked();
+    void openFile(QString sRecordName,XBinary::FT fileType);
 
 protected:
     void dragEnterEvent(QDragEnterEvent *pEvent) override;
@@ -74,6 +76,8 @@ private:
     XOptions g_xOptions;
     XShortcuts g_xShortcuts;
     FW_DEF::OPTIONS g_fwOptions;
+    QList<QString> g_listDEX;
+    QList<QString> g_listELF;
 };
 
 #endif // GUIMAINWINDOW_H

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>671</width>
-    <height>488</height>
+    <width>688</width>
+    <height>484</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -73,6 +73,20 @@
        </widget>
       </item>
       <item>
+       <widget class="QPushButton" name="pushButtonDEX">
+        <property name="text">
+         <string notr="true">DEX</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonELF">
+        <property name="text">
+         <string notr="true">ELF</string>
+        </property>
+       </widget>
+      </item>
+      <item>
        <spacer name="horizontalSpacer_3">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -118,9 +132,16 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QPushButton" name="pushButtonSignature">
+       <widget class="QPushButton" name="pushButtonManifestMF">
         <property name="text">
-         <string>Signature</string>
+         <string notr="true">MANIFEST.MF</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonAndroidManifest">
+        <property name="text">
+         <string notr="true">AndroidManifest.xml</string>
         </property>
        </widget>
       </item>
@@ -138,30 +159,9 @@
        </spacer>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButtonDEX">
+       <widget class="QPushButton" name="pushButtonSignature">
         <property name="text">
-         <string notr="true">DEX</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButtonELF">
-        <property name="text">
-         <string notr="true">ELF</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton">
-        <property name="text">
-         <string notr="true">MANIFEST.MF</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_2">
-        <property name="text">
-         <string notr="true">AndroidManifest.xml</string>
+         <string>Signature</string>
         </property>
        </widget>
       </item>

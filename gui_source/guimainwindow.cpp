@@ -33,7 +33,10 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) :
 
     g_fwOptions={};
 
-//    ui->pushButtonClassesDex->setEnabled(false);
+    ui->pushButtonDEX->setEnabled(false);
+    ui->pushButtonELF->setEnabled(false);
+    ui->pushButtonManifestMF->setEnabled(false);
+    ui->pushButtonAndroidManifest->setEnabled(false);
     ui->pushButtonSignature->setEnabled(false);
 
     g_xOptions.setName(X_OPTIONSFILE);
@@ -96,7 +99,13 @@ void GuiMainWindow::handleFile(QString sFileName)
         
         ui->widgetArchive->setFileName(sFileName,g_fwOptions,QSet<XBinary::FT>(),this);
 
-//        ui->pushButtonClassesDex->setEnabled(XArchives::isArchiveRecordPresent(sFileName,"classes.dex"));
+        g_listDEX=ui->widgetArchive->getRecordsByFileType(XBinary::FT_DEX);
+        g_listELF=ui->widgetArchive->getRecordsByFileType(XBinary::FT_ELF);
+
+        ui->pushButtonDEX->setEnabled(g_listDEX.count());
+        ui->pushButtonELF->setEnabled(g_listELF.count());
+        ui->pushButtonManifestMF->setEnabled(XArchives::isArchiveRecordPresent(sFileName,"META-INF/MANIFEST.MF"));
+        ui->pushButtonAndroidManifest->setEnabled(XArchives::isArchiveRecordPresent(sFileName,"AndroidManifest.xml"));
         ui->pushButtonSignature->setEnabled(XFormats::isSigned(sFileName));
 
         if(g_xOptions.isScanAfterOpen())
@@ -308,41 +317,6 @@ void GuiMainWindow::scanFile(QString sFileName)
     }
 }
 
-void GuiMainWindow::on_pushButtonClassesDex_clicked()
-{
-    QString sFileName=ui->lineEditFileName->text().trimmed();
-
-    if(sFileName!="")
-    {
-        QTemporaryFile fileTemp;
-
-        if(fileTemp.open())
-        {
-            QString sTempFileName=fileTemp.fileName();
-
-            if(XArchives::decompressToFile(sFileName,"classes.dex",sTempFileName))
-            {
-                QFile file;
-                file.setFileName(sTempFileName);
-
-                if(file.open(QIODevice::ReadOnly))
-                {
-                    g_fwOptions.nStartType=SDEX::TYPE_HEADER;
-                    g_fwOptions.sTitle="classes.dex";
-
-                    DialogDEX dialogDEX(this);
-                    dialogDEX.setGlobal(&g_xShortcuts,&g_xOptions);
-                    dialogDEX.setData(&file,g_fwOptions);
-
-                    dialogDEX.exec();
-
-                    file.close();
-                }
-            }
-        }
-    }
-}
-
 void GuiMainWindow::on_pushButtonSignature_clicked()
 {
     QString sFileName=ui->lineEditFileName->text().trimmed();
@@ -382,10 +356,112 @@ void GuiMainWindow::on_pushButtonSignature_clicked()
 
 void GuiMainWindow::on_pushButtonDEX_clicked()
 {
+    if(g_listDEX.count()==1)
+    {
+        openFile(g_listDEX.at(0),XBinary::FT_DEX);
+    }
+    else
+    {
 
+    }
 }
 
 void GuiMainWindow::on_pushButtonELF_clicked()
 {
+    if(g_listELF.count()==1)
+    {
+        openFile(g_listELF.at(0),XBinary::FT_ELF);
+    }
+    else
+    {
 
+    }
+}
+
+void GuiMainWindow::on_pushButtonManifestMF_clicked()
+{
+    openFile("META-INF/MANIFEST.MF",XBinary::FT_PLAINTEXT);
+}
+
+void GuiMainWindow::on_pushButtonAndroidManifest_clicked()
+{
+    openFile("AndroidManifest.xml",XBinary::FT_ANDROIDXML);
+}
+
+void GuiMainWindow::openFile(QString sRecordName, XBinary::FT fileType)
+{
+    QString sFileName=ui->lineEditFileName->text().trimmed();
+
+    if(sFileName!="")
+    {
+        QTemporaryFile fileTemp;
+
+        if(fileTemp.open())
+        {
+            QString sTempFileName=fileTemp.fileName();
+
+            if(XArchives::decompressToFile(sFileName,sRecordName,sTempFileName))
+            {
+                if(fileType==XBinary::FT_DEX)
+                {
+                    QFile file;
+                    file.setFileName(sTempFileName);
+
+                    if(file.open(QIODevice::ReadOnly))
+                    {
+                        g_fwOptions.nStartType=SDEX::TYPE_HEADER;
+                        g_fwOptions.sTitle=sRecordName;
+
+                        DialogDEX dialogDEX(this);
+                        dialogDEX.setGlobal(&g_xShortcuts,&g_xOptions);
+                        dialogDEX.setData(&file,g_fwOptions);
+
+                        dialogDEX.exec();
+
+                        file.close();
+                    }
+                }
+                else if(fileType==XBinary::FT_ELF)
+                {
+                    QFile file;
+                    file.setFileName(sTempFileName);
+
+                    if(file.open(QIODevice::ReadOnly))
+                    {
+                        g_fwOptions.nStartType=SELF::TYPE_Elf_Ehdr;
+                        g_fwOptions.sTitle=sRecordName;
+
+                        DialogELF dialogELF(this);
+                        dialogELF.setGlobal(&g_xShortcuts,&g_xOptions);
+                        dialogELF.setData(&file,g_fwOptions);
+
+                        dialogELF.exec();
+
+                        file.close();
+                    }
+                }
+                else if(fileType==XBinary::FT_ANDROIDXML)
+                {
+                    QString sString=XAndroidBinary::getDecoded(sTempFileName);
+
+                    DialogTextInfo dialogTextInfo(this);
+                    dialogTextInfo.setTitle(sRecordName);
+                    dialogTextInfo.setWrap(false);
+
+                    dialogTextInfo.setText(sString);
+
+                    dialogTextInfo.exec();
+                }
+                else if(fileType==XBinary::FT_PLAINTEXT)
+                {
+                    DialogTextInfo dialogTextInfo(this);
+                    dialogTextInfo.setTitle(sRecordName);
+
+                    dialogTextInfo.setFile(sTempFileName);
+
+                    dialogTextInfo.exec();
+                }
+            }
+        }
+    }
 }
