@@ -65,6 +65,10 @@ private slots:
     void on_pushButtonManifestMF_clicked();
     void on_pushButtonAndroidManifest_clicked();
     void openFile(QString sRecordName,XBinary::FT fileType);
+    void openFile();
+
+private:
+    void _handleList(QList<QString> *pList,XBinary::FT fileType);
 
 protected:
     void dragEnterEvent(QDragEnterEvent *pEvent) override;
@@ -78,6 +82,7 @@ private:
     FW_DEF::OPTIONS g_fwOptions;
     QList<QString> g_listDEX;
     QList<QString> g_listELF;
+    QList<QAction *> g_listActions;
 };
 
 #endif // GUIMAINWINDOW_H

@@ -16,38 +16,17 @@ if [ -z "$X_ERROR" ]; then
     make_translate "gui_source_tr.pro" xapkd
     cd "$X_SOURCE_PATH"
 
-    check_file "$X_SOURCE_PATH/build/release/xapkdc"
-    check_file "$X_SOURCE_PATH/build/release/xapkd.app/Contents/MacOS/xapkd"
+    check_file "$X_SOURCE_PATH/build/release/XAPKD.app/Contents/MacOS/XAPKD"
     if [ -z "$X_ERROR" ]; then
-        cp -R "$X_SOURCE_PATH/build/release/xapkd.app"    "$X_SOURCE_PATH/release/$X_BUILD_NAME"
-        cp -R "$X_SOURCE_PATH/build/release/xapkdc"       "$X_SOURCE_PATH/release/$X_BUILD_NAME/xapkd.app/Contents/MacOS/"
+        cp -R "$X_SOURCE_PATH/build/release/XAPKD.app"    "$X_SOURCE_PATH/release/$X_BUILD_NAME"
 
         mkdir -p $X_SOURCE_PATH/release/$X_BUILD_NAME/xapkd.app/Contents/Resources/signatures
-        cp -R $X_SOURCE_PATH/signatures/crypto.db       $X_SOURCE_PATH/release/$X_BUILD_NAME/xapkd.app/Contents/Resources/signatures
-        cp -Rf $X_SOURCE_PATH/XStyles/qss               $X_SOURCE_PATH/release/$X_BUILD_NAME/xapkd.app/Contents/Resources/
+        cp -R $X_SOURCE_PATH/signatures/crypto.db       $X_SOURCE_PATH/release/$X_BUILD_NAME/XAPKD.app/Contents/Resources/signatures
+        cp -Rf $X_SOURCE_PATH/XStyles/qss               $X_SOURCE_PATH/release/$X_BUILD_NAME/XAPKD.app/Contents/Resources/
 
-        fiximport "$X_SOURCE_PATH/build/release/xapkd.app/Contents/MacOS/xapkd"
-        fiximport "$X_SOURCE_PATH/build/release/xapkd.app/Contents/MacOS/xapkdc"
+        deploy_qt XAPKD
 
-        deploy_qt_library QtWidgets xapkd
-        deploy_qt_library QtGui xapkd
-        deploy_qt_library QtCore xapkd
-        deploy_qt_library QtDBus xapkd
-        deploy_qt_library QtPrintSupport xapkd
-        deploy_qt_library QtSvg xapkd
-        deploy_qt_library QtOpenGL xapkd
-        deploy_qt_library QtConcurrent xapkd
-
-        deploy_qt_plugin platforms libqcocoa xapkd
-        deploy_qt_plugin platforms libqminimal xapkd
-        deploy_qt_plugin platforms libqoffscreen xapkd
-        
-        deploy_qt_plugin imageformats libqjpeg xapkd
-        deploy_qt_plugin imageformats libqtiff xapkd
-        deploy_qt_plugin imageformats libqico xapkd
-        deploy_qt_plugin imageformats libqgif xapkd
-
-        make_release
+        make_release XAPKD
         make_clear
     fi
 fi

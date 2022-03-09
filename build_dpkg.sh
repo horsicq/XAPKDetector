@@ -25,7 +25,7 @@ if [ -z "$X_ERROR" ]; then
         export X_MAINTAINER='hors <horsicq@gmail.com>'
         
         export X_HOMEPAGE='http://ntinfo.biz'
-        export X_DESCRIPTION='XAPKDetector shows an information about build tools, libraries and protection of APK/DEX files'
+        export X_DESCRIPTION='XAPKDetector shows an information about build tools, libraries and protection of Android/APK/DEX files'
         
         if [ "$X_DEBIAN_VERSION" -ge "11" ]; then
             export X_DEPENDS='libqt5core5a, libqt5svg5, libqt5gui5, libqt5widgets5, libqt5opengl5, libqt5dbus5, libqt5network5'
@@ -47,7 +47,7 @@ if [ -z "$X_ERROR" ]; then
         cp -f $X_SOURCE_PATH/signatures/crypto.db                           $X_SOURCE_PATH/release/$X_BUILD_NAME/usr/lib/xapkd/signatures/
 
         make_deb
-        mv $X_SOURCE_PATH/release/$X_BUILD_NAME.deb $X_SOURCE_PATH/release/xapkdetector_${X_RELEASE_VERSION}-${X_REVISION}_${X_ARCHITECTURE}.deb
+        mv $X_SOURCE_PATH/release/$X_BUILD_NAME.deb $X_SOURCE_PATH/release/die_${X_RELEASE_VERSION}_${X_OS_VERSION}_${X_ARCHITECTURE}.deb
         make_clear
     fi
 fi

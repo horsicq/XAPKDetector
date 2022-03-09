@@ -1,5 +1,5 @@
 #define MyAppName "XAPKDetector"
-#define MyAppVersion "0.02"
+#define MyAppVersion "0.03"
 #define MyAppPublisher "NTInfo"
 #define MyAppURL "ntinfo.biz"
 #define MyAppExeName "xapkd.exe"

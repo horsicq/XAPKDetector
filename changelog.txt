@@ -1,10 +1,13 @@
 0.03
 -----------------------------------------------------------------------
 [+] Source code qt6 compatibility
+[+] APKS support
+[+] OSX Bundle for M1 apple processor
 [+] CMAKE build system
 [+] More than 200 new detects
-[+] New "All types" mode.
-[+] Many bugs have been fixed.
+[+] New "All types" mode
+[+] New translations
+[+] Many bugs have been fixed
 
 0.02
 -----------------------------------------------------------------------
@@ -12,7 +15,7 @@
 [+] Linux AppImage
 [+] Autotools build system
 [+] New detects
-[+] Many bugs have been fixed.
+[+] Many bugs have been fixed
 [+] PKG installer for OSX
 #######################################################################
 

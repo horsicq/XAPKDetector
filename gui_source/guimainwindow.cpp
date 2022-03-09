@@ -356,26 +356,12 @@ void GuiMainWindow::on_pushButtonSignature_clicked()
 
 void GuiMainWindow::on_pushButtonDEX_clicked()
 {
-    if(g_listDEX.count()==1)
-    {
-        openFile(g_listDEX.at(0),XBinary::FT_DEX);
-    }
-    else
-    {
-
-    }
+    _handleList(&g_listDEX,XBinary::FT_DEX);
 }
 
 void GuiMainWindow::on_pushButtonELF_clicked()
 {
-    if(g_listELF.count()==1)
-    {
-        openFile(g_listELF.at(0),XBinary::FT_ELF);
-    }
-    else
-    {
-
-    }
+    _handleList(&g_listELF,XBinary::FT_ELF);
 }
 
 void GuiMainWindow::on_pushButtonManifestMF_clicked()
@@ -463,5 +449,55 @@ void GuiMainWindow::openFile(QString sRecordName, XBinary::FT fileType)
                 }
             }
         }
+    }
+}
+
+void GuiMainWindow::openFile()
+{
+    QAction *pAction=qobject_cast<QAction *>(sender());
+
+    if(pAction)
+    {
+        XBinary::FT fileType=(XBinary::FT)(pAction->property("FT").toInt());
+        QString sFileName=pAction->property("FileName").toString();
+
+        openFile(sFileName,fileType);
+    }
+}
+
+void GuiMainWindow::_handleList(QList<QString> *pList, XBinary::FT fileType)
+{
+    qint32 nNumberOfRecords=pList->count();
+
+    if(nNumberOfRecords==1)
+    {
+        openFile(pList->at(0),fileType);
+    }
+    else if(nNumberOfRecords>1)
+    {
+        QMenu contextMenu(this);
+
+        qint32 nNumberOfActions=g_listActions.count();
+
+        for(qint32 i=0;i<nNumberOfActions;i++)
+        {
+            delete g_listActions.at(i);
+        }
+
+        g_listActions.clear();
+
+        for(qint32 i=0;i<nNumberOfRecords;i++)
+        {
+            QAction *pAction=new QAction(pList->at(i),this);
+            pAction->setProperty("FT",fileType);
+            pAction->setProperty("FileName",pList->at(i));
+            connect(pAction,SIGNAL(triggered()),this,SLOT(openFile()));
+
+            contextMenu.addAction(pAction);
+
+            g_listActions.append(pAction);
+        }
+
+        contextMenu.exec(QCursor::pos());
     }
 }
