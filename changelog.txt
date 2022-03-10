@@ -6,6 +6,8 @@
 [+] CMAKE build system
 [+] More than 200 new detects
 [+] New "All types" mode
+[+] New console feautures
+[+] Colored output for console
 [+] New translations
 [+] Many bugs have been fixed
 
@@ -17,9 +19,4 @@
 [+] New detects
 [+] Many bugs have been fixed
 [+] PKG installer for OSX
-#######################################################################
-
-0.01
------------------------------------------------------------------------
-[+] Init
 #######################################################################

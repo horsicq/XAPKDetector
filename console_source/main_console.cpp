@@ -67,7 +67,15 @@ void ScanFiles(QList<QString> *pListArgs,SpecAbstract::SCAN_OPTIONS *pScanOption
         else if (pScanOptions->bResultAsTSV)    formatType=XBinary::FORMATTYPE_TSV;
         else if (pScanOptions->bResultAsXML)    formatType=XBinary::FORMATTYPE_XML;
 
-        printf("%s\n",model.toString(formatType).toLatin1().data());
+        if(formatType!=XBinary::FORMATTYPE_TEXT)
+        {
+            printf("%s\n",model.toString(formatType).toLatin1().data());
+        }
+        else
+        {
+            // Colored text
+            model.coloredOutput();
+        }
     }
 }
 
