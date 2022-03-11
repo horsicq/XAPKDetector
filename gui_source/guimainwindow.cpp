@@ -101,11 +101,12 @@ void GuiMainWindow::handleFile(QString sFileName)
 
         g_listDEX=ui->widgetArchive->getRecordsByFileType(XBinary::FT_DEX);
         g_listELF=ui->widgetArchive->getRecordsByFileType(XBinary::FT_ELF);
+//        g_listAndroidXML=ui->widgetArchive->getRecordsByFileType(XBinary::FT_ANDROIDXML);
 
         ui->pushButtonDEX->setEnabled(g_listDEX.count());
         ui->pushButtonELF->setEnabled(g_listELF.count());
-        ui->pushButtonManifestMF->setEnabled(XArchives::isArchiveRecordPresent(sFileName,"META-INF/MANIFEST.MF"));
         ui->pushButtonAndroidManifest->setEnabled(XArchives::isArchiveRecordPresent(sFileName,"AndroidManifest.xml"));
+        ui->pushButtonManifestMF->setEnabled(XArchives::isArchiveRecordPresent(sFileName,"META-INF/MANIFEST.MF"));
         ui->pushButtonSignature->setEnabled(XFormats::isSigned(sFileName));
 
         if(g_xOptions.isScanAfterOpen())
@@ -356,99 +357,120 @@ void GuiMainWindow::on_pushButtonSignature_clicked()
 
 void GuiMainWindow::on_pushButtonDEX_clicked()
 {
-    _handleList(&g_listDEX,XBinary::FT_DEX);
+    _handleList(&g_listDEX);
 }
 
 void GuiMainWindow::on_pushButtonELF_clicked()
 {
-    _handleList(&g_listELF,XBinary::FT_ELF);
+    _handleList(&g_listELF);
 }
 
 void GuiMainWindow::on_pushButtonManifestMF_clicked()
 {
-    openFile("META-INF/MANIFEST.MF",XBinary::FT_PLAINTEXT);
+    openFile("META-INF/MANIFEST.MF",XBinary::FT_PLAINTEXT,true);
 }
 
 void GuiMainWindow::on_pushButtonAndroidManifest_clicked()
 {
-    openFile("AndroidManifest.xml",XBinary::FT_ANDROIDXML);
+    openFile("AndroidManifest.xml",XBinary::FT_ANDROIDXML,true);
 }
 
-void GuiMainWindow::openFile(QString sRecordName, XBinary::FT fileType)
+void GuiMainWindow::openFile(QString sRecordName, XBinary::FT fileType, bool bIsVirtual)
 {
-    QString sFileName=ui->lineEditFileName->text().trimmed();
+    QString sFileName;
 
-    if(sFileName!="")
+    QTemporaryFile *pFileTemp=nullptr;
+
+    if(bIsVirtual)
     {
-        QTemporaryFile fileTemp;
+        QString _sFileName=ui->lineEditFileName->text().trimmed();
 
-        if(fileTemp.open())
+        if(_sFileName!="")
         {
-            QString sTempFileName=fileTemp.fileName();
+            pFileTemp=new QTemporaryFile;
 
-            if(XArchives::decompressToFile(sFileName,sRecordName,sTempFileName))
+            if(pFileTemp->open())
             {
-                if(fileType==XBinary::FT_DEX)
+                QString sTempFileName=pFileTemp->fileName();
+
+                if(XArchives::decompressToFile(_sFileName,sRecordName,sTempFileName))
                 {
-                    QFile file;
-                    file.setFileName(sTempFileName);
-
-                    if(file.open(QIODevice::ReadOnly))
-                    {
-                        g_fwOptions.nStartType=SDEX::TYPE_HEADER;
-                        g_fwOptions.sTitle=sRecordName;
-
-                        DialogDEX dialogDEX(this);
-                        dialogDEX.setGlobal(&g_xShortcuts,&g_xOptions);
-                        dialogDEX.setData(&file,g_fwOptions);
-
-                        dialogDEX.exec();
-
-                        file.close();
-                    }
-                }
-                else if(fileType==XBinary::FT_ELF)
-                {
-                    QFile file;
-                    file.setFileName(sTempFileName);
-
-                    if(file.open(QIODevice::ReadOnly))
-                    {
-                        g_fwOptions.nStartType=SELF::TYPE_Elf_Ehdr;
-                        g_fwOptions.sTitle=sRecordName;
-
-                        DialogELF dialogELF(this);
-                        dialogELF.setGlobal(&g_xShortcuts,&g_xOptions);
-                        dialogELF.setData(&file,g_fwOptions);
-
-                        dialogELF.exec();
-
-                        file.close();
-                    }
-                }
-                else if(fileType==XBinary::FT_ANDROIDXML)
-                {
-                    QString sString=XAndroidBinary::getDecoded(sTempFileName);
-
-                    DialogTextInfo dialogTextInfo(this);
-                    dialogTextInfo.setTitle(sRecordName);
-                    dialogTextInfo.setWrap(false);
-
-                    dialogTextInfo.setText(sString);
-
-                    dialogTextInfo.exec();
-                }
-                else if(fileType==XBinary::FT_PLAINTEXT)
-                {
-                    DialogTextInfo dialogTextInfo(this);
-                    dialogTextInfo.setTitle(sRecordName);
-
-                    dialogTextInfo.setFile(sTempFileName);
-
-                    dialogTextInfo.exec();
+                    sFileName=sTempFileName;
                 }
             }
         }
+    }
+    else
+    {
+        sFileName=sRecordName;
+    }
+
+    if(sFileName!="")
+    {
+        if(XBinary::checkFileType(XBinary::FT_DEX,fileType))
+        {
+            QFile file;
+            file.setFileName(sFileName);
+
+            if(file.open(QIODevice::ReadOnly))
+            {
+                g_fwOptions.nStartType=SDEX::TYPE_HEADER;
+                g_fwOptions.sTitle=sRecordName;
+
+                DialogDEX dialogDEX(this);
+                dialogDEX.setGlobal(&g_xShortcuts,&g_xOptions);
+                dialogDEX.setData(&file,g_fwOptions);
+
+                dialogDEX.exec();
+
+                file.close();
+            }
+        }
+        else if(XBinary::checkFileType(XBinary::FT_ELF,fileType))
+        {
+            QFile file;
+            file.setFileName(sFileName);
+
+            if(file.open(QIODevice::ReadOnly))
+            {
+                g_fwOptions.nStartType=SELF::TYPE_Elf_Ehdr;
+                g_fwOptions.sTitle=sRecordName;
+
+                DialogELF dialogELF(this);
+                dialogELF.setGlobal(&g_xShortcuts,&g_xOptions);
+                dialogELF.setData(&file,g_fwOptions);
+
+                dialogELF.exec();
+
+                file.close();
+            }
+        }
+        else if(XBinary::checkFileType(XBinary::FT_ANDROIDXML,fileType))
+        {
+            QString sString=XAndroidBinary::getDecoded(sFileName);
+
+            DialogTextInfo dialogTextInfo(this);
+            dialogTextInfo.setTitle(sRecordName);
+            dialogTextInfo.setWrap(false);
+
+            dialogTextInfo.setText(sString);
+
+            dialogTextInfo.exec();
+        }
+        else if(XBinary::checkFileType(XBinary::FT_PLAINTEXT,fileType))
+        {
+            DialogTextInfo dialogTextInfo(this);
+            dialogTextInfo.setTitle(sRecordName);
+
+            dialogTextInfo.setFile(sFileName);
+
+            dialogTextInfo.exec();
+        }
+    }
+
+    if(pFileTemp)
+    {
+        delete pFileTemp;
     }
 }
 
@@ -460,18 +482,19 @@ void GuiMainWindow::openFile()
     {
         XBinary::FT fileType=(XBinary::FT)(pAction->property("FT").toInt());
         QString sFileName=pAction->property("FileName").toString();
+        bool bIsVirtual=pAction->property("IsVirtual").toBool();
 
-        openFile(sFileName,fileType);
+        openFile(sFileName,fileType,bIsVirtual);
     }
 }
 
-void GuiMainWindow::_handleList(QList<QString> *pList, XBinary::FT fileType)
+void GuiMainWindow::_handleList(QList<CreateViewModelProcess::RECORD> *pList)
 {
     qint32 nNumberOfRecords=pList->count();
 
     if(nNumberOfRecords==1)
     {
-        openFile(pList->at(0),fileType);
+        openFile(pList->at(0).sRecordName,pList->at(0).ft,pList->at(0).bIsVirtual);
     }
     else if(nNumberOfRecords>1)
     {
@@ -488,9 +511,10 @@ void GuiMainWindow::_handleList(QList<QString> *pList, XBinary::FT fileType)
 
         for(qint32 i=0;i<nNumberOfRecords;i++)
         {
-            QAction *pAction=new QAction(pList->at(i),this);
-            pAction->setProperty("FT",fileType);
-            pAction->setProperty("FileName",pList->at(i));
+            QAction *pAction=new QAction(pList->at(i).sRecordName,this);
+            pAction->setProperty("FT",pList->at(i).ft);
+            pAction->setProperty("FileName",pList->at(i).sRecordName);
+            pAction->setProperty("IsVirtual",pList->at(i).bIsVirtual);
             connect(pAction,SIGNAL(triggered()),this,SLOT(openFile()));
 
             contextMenu.addAction(pAction);

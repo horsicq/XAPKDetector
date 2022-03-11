@@ -64,11 +64,11 @@ private slots:
     void on_pushButtonELF_clicked();
     void on_pushButtonManifestMF_clicked();
     void on_pushButtonAndroidManifest_clicked();
-    void openFile(QString sRecordName,XBinary::FT fileType);
+    void openFile(QString sRecordName,XBinary::FT fileType,bool bIsVirtual);
     void openFile();
 
 private:
-    void _handleList(QList<QString> *pList,XBinary::FT fileType);
+    void _handleList(QList<CreateViewModelProcess::RECORD> *pList);
 
 protected:
     void dragEnterEvent(QDragEnterEvent *pEvent) override;
@@ -80,8 +80,9 @@ private:
     XOptions g_xOptions;
     XShortcuts g_xShortcuts;
     FW_DEF::OPTIONS g_fwOptions;
-    QList<QString> g_listDEX;
-    QList<QString> g_listELF;
+    QList<CreateViewModelProcess::RECORD> g_listDEX;
+    QList<CreateViewModelProcess::RECORD> g_listELF;
+//    QList<CreateViewModelProcess::RECORD> g_listAndroidXML;
     QList<QAction *> g_listActions;
 };
 
