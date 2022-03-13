@@ -7,20 +7,12 @@
 
 **XAPKDetector** shows an information about build tools, libraries and protection of APK/DEX files
 
-- Heuristic scan
-- String viewer
-- Hex viewer
-- Entropy viewer
-- Hash viewer
-- ELF viewer
-- DEX raw viewer
-
-![alt text](https://github.com/horsicq/XAPKDetector/blob/master/mascots/version.png "Mascot")
-
 * Download: https://github.com/horsicq/XAPKDetector/releases
 * How to run: https://github.com/horsicq/XAPKDetector/blob/master/docs/RUN.md
 * How to build: https://github.com/horsicq/XAPKDetector/blob/master/docs/BUILD.md
 * Changelog: https://github.com/horsicq/XAPKDetector/blob/master/changelog.txt
+
+![alt text](https://github.com/horsicq/XAPKDetector/blob/master/mascots/version.png "Mascot")
 
 ![alt text](https://github.com/horsicq/XAPKDetector/blob/master/docs/1.png "1")
 ![alt text](https://github.com/horsicq/XAPKDetector/blob/master/docs/2.png "2")
