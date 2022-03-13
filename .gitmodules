@@ -25,9 +25,6 @@
 [submodule "XHashWidget"]
 	path = XHashWidget
 	url = https://github.com/horsicq/XHashWidget.git
-[submodule "XDisasm"]
-	path = XDisasm
-	url = https://github.com/horsicq/XDisasm.git
 [submodule "XCapstone"]
 	path = XCapstone
 	url = https://github.com/horsicq/XCapstone.git
@@ -40,9 +37,6 @@
 [submodule "FormatWidgets"]
 	path = FormatWidgets
 	url = https://github.com/horsicq/FormatWidgets.git
-[submodule "QHexView"]
-	path = QHexView
-	url = https://github.com/horsicq/QHexView.git
 [submodule "XEntropyWidget"]
 	path = XEntropyWidget
 	url = https://github.com/horsicq/XEntropyWidget.git
