@@ -5,228 +5,228 @@
     <name>Archive_widget</name>
     <message>
         <source>Form</source>
-        <translation>형태</translation>
+        <translation>Membentuk</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>유형</translation>
+        <translation>Tipe</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>필터</translation>
+        <translation>Filter</translation>
     </message>
     <message>
         <source>Tree</source>
-        <translation>나무</translation>
+        <translation>Pohon</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation>테이블</translation>
+        <translation>Meja</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>열기</translation>
+        <translation>Buka</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>검색</translation>
+        <translation>Pindai</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>마녀</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>엔트로피</translation>
+        <translation>Entropi</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>해시</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>복사</translation>
+        <translation>Salin</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation>파일 이름</translation>
+        <translation>Nama file</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>파일로 덤프</translation>
+        <translation>Buang ke file</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation>파일 저장</translation>
+        <translation>Simpan file</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>오류</translation>
+        <translation>Kesalahan</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>파일을 저장할 수 없습니다</translation>
+        <translation>Tidak dapat menyimpan file</translation>
     </message>
 </context>
 <context>
     <name>BinaryWidget</name>
     <message>
         <source>Reload</source>
-        <translation>재호출</translation>
+        <translation>Muat ulang</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>읽기 전용</translation>
+        <translation>Hanya dibaca</translation>
     </message>
 </context>
 <context>
     <name>CreateViewModelProcess</name>
     <message>
         <source>File</source>
-        <translation>파일</translation>
+        <translation>File</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>크기</translation>
+        <translation>Ukuran</translation>
     </message>
 </context>
 <context>
     <name>DEXSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>읽기 전용</translation>
+        <translation>Hanya dibaca</translation>
     </message>
 </context>
 <context>
     <name>DEXWidget</name>
     <message>
         <source>Reload</source>
-        <translation>재호출</translation>
+        <translation>Muat ulang</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>읽기 전용</translation>
+        <translation>Hanya dibaca</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>필터</translation>
+        <translation>Filter</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>저장</translation>
+        <translation>Simpan</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>정보</translation>
+        <translation>Info</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>마녀</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>해시</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>메모리 맵</translation>
+        <translation>Peta memori</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>엔트로피</translation>
+        <translation>Entropi</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>휴리스틱 검색</translation>
+        <translation>Pemindaian Heuristik</translation>
     </message>
 </context>
 <context>
     <name>DialogAbout</name>
     <message>
         <source>About</source>
-        <translation>정보</translation>
+        <translation>Tentang</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>확인</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Bugreports</source>
-        <translation>버그 신고</translation>
+        <translation>laporan bug</translation>
     </message>
     <message>
         <source>Website</source>
-        <translation>웹사이트</translation>
+        <translation>Situs web</translation>
     </message>
     <message>
         <source>Donate</source>
-        <translation>기부</translation>
+        <translation>Donasi</translation>
     </message>
     <message>
         <source>Source code</source>
-        <translation>소스 코드</translation>
+        <translation>Sumber kode</translation>
     </message>
     <message>
         <source>Thanks</source>
-        <translation>감사</translation>
+        <translation>Terimakasih</translation>
     </message>
 </context>
 <context>
     <name>DialogArchive</name>
     <message>
         <source>Archive</source>
-        <translation>아카이브</translation>
+        <translation>Arsip</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>열기</translation>
+        <translation>Buka</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogAsmSignature</name>
     <message>
         <source>Signature</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation>공백</translation>
+        <translation>Tempat</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation>위쪽</translation>
+        <translation>Atas</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>와일드카드</translation>
+        <translation>Wildcard</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>복사</translation>
+        <translation>Salin</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>확인</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>상대적 가상 주소(RVA)</translation>
+        <translation>Alamat virtual relatif</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>주소</translation>
+        <translation>Alamat</translation>
     </message>
     <message>
         <source>Bytes</source>
@@ -234,414 +234,414 @@
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Opcode</translation>
+        <translation>Kode operasi</translation>
     </message>
 </context>
 <context>
     <name>DialogCreateViewModel</name>
     <message>
         <source>Create view model</source>
-        <translation>보기 모델 만들기</translation>
+        <translation>Buat model tampilan</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>Batal</translation>
     </message>
 </context>
 <context>
     <name>DialogDemangle</name>
     <message>
         <source>Demangle</source>
-        <translation>디망글</translation>
+        <translation>Demangle</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>확인</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
     <name>DialogDirectoryScan</name>
     <message>
         <source>Directory scan</source>
-        <translation>디렉터리 검색</translation>
+        <translation>Pemindaian Direktori</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>예배 규칙서</translation>
+        <translation>Direktori</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation>하위 디렉토리</translation>
+        <translation>Subdirektori</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>재귀적 검색</translation>
+        <translation>Pemindaian rekursif</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>정밀 검사</translation>
+        <translation>Pemindaian seksama</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>휴리스틱 검색</translation>
+        <translation>Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>검색</translation>
+        <translation>Pindai</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>지우기</translation>
+        <translation>Bersihkan</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>저장</translation>
+        <translation>Simpan</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>확인</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>디렉터리 열기</translation>
+        <translation>Buka direktori</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>msec</translation>
+        <translation>mdtk</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation>텍스트 문서</translation>
+        <translation>Dokumen teks</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation>결과 저장</translation>
+        <translation>Simpan hasil</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation>Mengulik</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasmLabels</name>
     <message>
         <source>Labels</source>
-        <translation>레이블</translation>
+        <translation>Label</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>이동</translation>
+        <translation>Pergi ke</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>Tutup</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>이름</translation>
+        <translation>Nama</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>주소</translation>
+        <translation>Alamat</translation>
     </message>
 </context>
 <context>
     <name>DialogDisasmProcess</name>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation>Mengulik</translation>
     </message>
     <message>
         <source>Opcodes</source>
-        <translation>Opcodes</translation>
+        <translation>Kode operasi</translation>
     </message>
     <message>
         <source>Calls</source>
-        <translation>호출</translation>
+        <translation>Panggil</translation>
     </message>
     <message>
         <source>Jumps</source>
-        <translation>점프</translation>
+        <translation>Lompat</translation>
     </message>
     <message>
         <source>Ref to</source>
-        <translation>다음으로 참조</translation>
+        <translation>Ref ke</translation>
     </message>
     <message>
         <source>Ref from</source>
-        <translation>다음에서 참조</translation>
+        <translation>Formulir ref</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>Batal</translation>
     </message>
 </context>
 <context>
     <name>DialogDump</name>
     <message>
         <source>Dump</source>
-        <translation>덤프</translation>
+        <translation>Buang</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>Batal</translation>
     </message>
 </context>
 <context>
     <name>DialogDumpProcess</name>
     <message>
         <source>Dump</source>
-        <translation>덤프</translation>
+        <translation>Buang</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>Batal</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>오류</translation>
+        <translation>Kesalahan</translation>
     </message>
 </context>
 <context>
     <name>DialogEntropy</name>
     <message>
         <source>Entropy</source>
-        <translation>엔트로피</translation>
+        <translation>Entropi</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogEntropyProcess</name>
     <message>
         <source>Process</source>
-        <translation>프로세스</translation>
+        <translation>Proses</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>Batal</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>오류</translation>
+        <translation>Kesalahan</translation>
     </message>
 </context>
 <context>
     <name>DialogGoToAddress</name>
     <message>
         <source>Go to address</source>
-        <translation>주소로 이동</translation>
+        <translation>Pergi ke alamat</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>주소</translation>
+        <translation>Alamat</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>마녀</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>확인</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>Batal</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>가상 주소</translation>
+        <translation>Alamat virtual</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>값</translation>
+        <translation>Nilai</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>오프셋</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>상대적 가상 주소(RVA)</translation>
+        <translation>Alamat virtual relatif</translation>
     </message>
     <message>
         <source>Invalid</source>
-        <translation>무효함</translation>
+        <translation>Tidak valid</translation>
     </message>
 </context>
 <context>
     <name>DialogHash</name>
     <message>
         <source>Hash</source>
-        <translation>해시</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogHashProcess</name>
     <message>
         <source>Process</source>
-        <translation>프로세스</translation>
+        <translation>Proses</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>Batal</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>오류</translation>
+        <translation>Kesalahan</translation>
     </message>
 </context>
 <context>
     <name>DialogHex</name>
     <message>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogHexEdit</name>
     <message>
         <source>Edit</source>
-        <translation>편집</translation>
+        <translation>Edit</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogHexSignature</name>
     <message>
         <source>Signature</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation>공백</translation>
+        <translation>Tempat</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation>위쪽</translation>
+        <translation>Atas</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>와일드카드</translation>
+        <translation>Wildcard</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>검색</translation>
+        <translation>Pindai</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>복사</translation>
+        <translation>Salin</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>확인</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
     <name>DialogHexView</name>
     <message>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogMemoryMap</name>
     <message>
         <source>Memory map</source>
-        <translation>메모리 맵</translation>
+        <translation>Peta memori</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogModelInfo</name>
     <message>
         <source>Save</source>
-        <translation>저장</translation>
+        <translation>Simpan</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>확인</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation>파일 저장</translation>
+        <translation>Simpan file</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>텍스트 파일</translation>
+        <translation>File teks</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>모든 파일</translation>
+        <translation>Semua file</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation>Mengulik</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiDisasmSignature</name>
     <message>
         <source>Signature</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Spaces</source>
-        <translation>공백</translation>
+        <translation>Tempat</translation>
     </message>
     <message>
         <source>Upper</source>
-        <translation>위쪽</translation>
+        <translation>Atas</translation>
     </message>
     <message>
         <source>Wildcard</source>
-        <translation>와일드카드</translation>
+        <translation>Wildcard</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>검색</translation>
+        <translation>Pindai</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>복사</translation>
+        <translation>Salin</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>확인</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>상대적 가상 주소(RVA)</translation>
+        <translation>Alamat virtual relatif</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>주소</translation>
+        <translation>Alamat</translation>
     </message>
     <message>
         <source>Bytes</source>
@@ -649,371 +649,371 @@
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Opcode</translation>
+        <translation>Kode operasi</translation>
     </message>
 </context>
 <context>
     <name>DialogMultiSearchProcess</name>
     <message>
         <source>Search</source>
-        <translation>검색</translation>
+        <translation>Cari</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>Batal</translation>
     </message>
     <message>
         <source>Search strings</source>
-        <translation>문자열 검색</translation>
+        <translation>Cari string</translation>
     </message>
     <message>
         <source>Search signatures</source>
-        <translation>서명 검색</translation>
+        <translation>Cari tanda tangan</translation>
     </message>
     <message>
         <source>Create view model</source>
-        <translation>보기 모델 만들기</translation>
+        <translation>Buat model tampilan</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>오류</translation>
+        <translation>Kesalahan</translation>
     </message>
 </context>
 <context>
     <name>DialogOptions</name>
     <message>
         <source>Options</source>
-        <translation>옵션</translation>
+        <translation>Pilihan</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>확인</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>Batal</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>검색</translation>
+        <translation>Pindai</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>마녀</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation>Mengulik</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>정보</translation>
+        <translation>Informasi</translation>
     </message>
     <message>
         <source>Please restart the application</source>
-        <translation>프로그램을 재시작하세요</translation>
+        <translation>Silahkan mulai ulang aplikasi</translation>
     </message>
 </context>
 <context>
     <name>DialogProcessData</name>
     <message>
         <source>Process</source>
-        <translation>프로세스</translation>
+        <translation>Proses</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>Batal</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>오류</translation>
+        <translation>Kesalahan</translation>
     </message>
 </context>
 <context>
     <name>DialogSearch</name>
     <message>
         <source>Search</source>
-        <translation>검색</translation>
+        <translation>Cari</translation>
     </message>
     <message>
         <source>Search from</source>
-        <translation>다음에서 검색</translation>
+        <translation>Cari dari</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Match case</source>
-        <translation>대소 문자 구분</translation>
+        <translation>Kecocokan kasus</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>값</translation>
+        <translation>Nilai</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>엔디언</translation>
+        <translation>Endianness</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>확인</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>Batal</translation>
     </message>
     <message>
         <source>Begin</source>
-        <translation>시작</translation>
+        <translation>Mulai</translation>
     </message>
     <message>
         <source>Cursor</source>
-        <translation>커서</translation>
+        <translation>Kursor</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchProcess</name>
     <message>
         <source>Search</source>
-        <translation>검색</translation>
+        <translation>Cari</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>Batal</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>오류</translation>
+        <translation>Kesalahan</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchSignatures</name>
     <message>
         <source>Signatures</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogSearchStrings</name>
     <message>
         <source>Strings</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogSectionHeader</name>
     <message>
         <source>Section</source>
-        <translation>섹션</translation>
+        <translation>Bagian</translation>
     </message>
 </context>
 <context>
     <name>DialogShortcuts</name>
     <message>
         <source>Shortcuts</source>
-        <translation>바로가기</translation>
+        <translation>Jalan pintas</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>필터</translation>
+        <translation>Filter</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>지우기</translation>
+        <translation>Bersihkan</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>Tutup</translation>
     </message>
     <message>
         <source>Group</source>
-        <translation>그룹</translation>
+        <translation>Kelompok</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>이름</translation>
+        <translation>Nama</translation>
     </message>
     <message>
         <source>Shortcut</source>
-        <translation>지름길</translation>
+        <translation>Jalan pintas</translation>
     </message>
     <message>
         <source>Cannot set shortcut</source>
-        <translation>바로가기를 설정할 수 없습니다</translation>
+        <translation>Tidak dapat mengatur pintasan</translation>
     </message>
 </context>
 <context>
     <name>DialogShowImage</name>
     <message>
         <source>Image</source>
-        <translation>이미지</translation>
+        <translation>Gambar</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogShowText</name>
     <message>
         <source>Text</source>
-        <translation>텍스트</translation>
+        <translation>Teks</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScan</name>
     <message>
         <source>Scan</source>
-        <translation>검색</translation>
+        <translation>Pindai</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>재귀적 검색</translation>
+        <translation>Pemindaian rekursif</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>정밀 검사</translation>
+        <translation>Pemindaian seksama</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>휴리스틱 검색</translation>
+        <translation>Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>모든 유형</translation>
+        <translation>Semua jenis</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>Tutup</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation>결과</translation>
+        <translation>Hasil</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScanDirectory</name>
     <message>
         <source>Directory scan</source>
-        <translation>디렉터리 검색</translation>
+        <translation>Pemindaian Direktori</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>예배 규칙서</translation>
+        <translation>Direktori</translation>
     </message>
     <message>
         <source>Subdirectories</source>
-        <translation>하위 디렉토리</translation>
+        <translation>Subdirektori</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>재귀적 검색</translation>
+        <translation>Pemindaian rekursif</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>정밀 검사</translation>
+        <translation>Pemindaian seksama</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>휴리스틱 검색</translation>
+        <translation>Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>모든 유형</translation>
+        <translation>Semua jenis</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>검색</translation>
+        <translation>Pindai</translation>
     </message>
     <message>
         <source>Clear</source>
-        <translation>지우기</translation>
+        <translation>Bersihkan</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>저장</translation>
+        <translation>Simpan</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>확인</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>디렉터리 열기</translation>
+        <translation>Buka direktori</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>msec</translation>
+        <translation>mdtk</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation>텍스트 문서</translation>
+        <translation>Dokumen teks</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation>결과 저장</translation>
+        <translation>Simpan hasil</translation>
     </message>
 </context>
 <context>
     <name>DialogStaticScanProcess</name>
     <message>
         <source>Scan</source>
-        <translation>검색</translation>
+        <translation>Pindai</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>Batal</translation>
     </message>
     <message>
         <source>Text documents</source>
-        <translation>텍스트 문서</translation>
+        <translation>Dokumen teks</translation>
     </message>
     <message>
         <source>Save result</source>
-        <translation>결과 저장</translation>
+        <translation>Simpan hasil</translation>
     </message>
 </context>
 <context>
     <name>DialogTextInfo</name>
     <message>
         <source>Info</source>
-        <translation>정보</translation>
+        <translation>Info</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogUnpackFile</name>
     <message>
         <source>Process</source>
-        <translation>프로세스</translation>
+        <translation>Proses</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>Batal</translation>
     </message>
 </context>
 <context>
@@ -1024,15 +1024,15 @@
     </message>
     <message>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>Batal</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>확인</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation>텍스트</translation>
+        <translation>Teks</translation>
     </message>
     <message>
         <source>Background</source>
@@ -1043,1655 +1043,1655 @@
     <name>DialogXDynStructs</name>
     <message>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogXFileInfo</name>
     <message>
         <source>Info</source>
-        <translation>정보</translation>
+        <translation>Info</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>Tutup</translation>
     </message>
 </context>
 <context>
     <name>DialogXFileInfoProcess</name>
     <message>
         <source>Process</source>
-        <translation>프로세스</translation>
+        <translation>Proses</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>취소</translation>
+        <translation>Batal</translation>
     </message>
 </context>
 <context>
     <name>ELFProcessData</name>
     <message>
         <source>Name</source>
-        <translation>이름</translation>
+        <translation>Nama</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>유형</translation>
+        <translation>Tipe</translation>
     </message>
     <message>
         <source>Bind</source>
-        <translation>묶다</translation>
+        <translation>Mengikat</translation>
     </message>
 </context>
 <context>
     <name>ELFSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>읽기 전용</translation>
+        <translation>Hanya dibaca</translation>
     </message>
 </context>
 <context>
     <name>ELFWidget</name>
     <message>
         <source>Reload</source>
-        <translation>재호출</translation>
+        <translation>Muat ulang</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation>Mengulik</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>메모리 맵</translation>
+        <translation>Peta memori</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>엔트로피</translation>
+        <translation>Entropi</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>휴리스틱 검색</translation>
+        <translation>Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>읽기 전용</translation>
+        <translation>Hanya dibaca</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>저장</translation>
+        <translation>Simpan</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>정보</translation>
+        <translation>Info</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>마녀</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>해시</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>섹션</translation>
+        <translation>Bagian</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>편집</translation>
+        <translation>Edit</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>디망글</translation>
+        <translation>Demangle</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>알 수 없음</translation>
+        <translation>Tidak diketahui</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>헤더</translation>
+        <translation>Tajuk</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>파일로 덤프</translation>
+        <translation>Buang ke file</translation>
     </message>
 </context>
 <context>
     <name>EntropyProcess</name>
     <message>
         <source>packed</source>
-        <translation>패킹됨</translation>
+        <translation>dikemas</translation>
     </message>
     <message>
         <source>not packed</source>
-        <translation>패킹 안됨</translation>
+        <translation>tidak dikemas</translation>
     </message>
 </context>
 <context>
     <name>FormResult</name>
     <message>
         <source>Clear</source>
-        <translation>지우기</translation>
+        <translation>Bersihkan</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>저장</translation>
+        <translation>Simpan</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>msec</translation>
+        <translation>mdtk</translation>
     </message>
 </context>
 <context>
     <name>FormStaticScan</name>
     <message>
         <source>Recursive</source>
-        <translation>재귀적</translation>
+        <translation>Rekursif</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>정밀 검사</translation>
+        <translation>Pemindaian seksama</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>검색</translation>
+        <translation>Pindai</translation>
     </message>
 </context>
 <context>
     <name>FormatWidget</name>
     <message>
         <source>Error</source>
-        <translation>오류</translation>
+        <translation>Kesalahan</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>파일을 저장할 수 없습니다</translation>
+        <translation>Tidak dapat menyimpan file</translation>
     </message>
     <message>
         <source>Dump</source>
-        <translation>덤프</translation>
+        <translation>Buang</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>덤프 저장</translation>
+        <translation>Simpan sampah</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>로우 데이터</translation>
+        <translation>Data mentah</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>이름</translation>
+        <translation>Nama</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>오프셋</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>유형</translation>
+        <translation>Tipe</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>값</translation>
+        <translation>Nilai</translation>
     </message>
 </context>
 <context>
     <name>FormatsWidget</name>
     <message>
         <source>File type</source>
-        <translation>파일 유형</translation>
+        <translation>Jenis file</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>진입 지점</translation>
+        <translation>Titik masuk</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation>Mengulik</translation>
     </message>
     <message>
         <source>Base address</source>
-        <translation>기준 주소</translation>
+        <translation>Alamat dasar</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>메모리 맵</translation>
+        <translation>Peta memori</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>오버레이</translation>
+        <translation>Overlay</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>내보내기</translation>
+        <translation>Ekspor</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>가져오기</translation>
+        <translation>Impor</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>리소스</translation>
+        <translation>Sumber</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>섹션</translation>
+        <translation>Bagian</translation>
     </message>
     <message>
         <source>Time date stamp</source>
-        <translation>시간 날짜 스탬프</translation>
+        <translation>Stempel tanggal waktu</translation>
     </message>
     <message>
         <source>Size of image</source>
-        <translation>이미지 크기</translation>
+        <translation>Ukuran gambar</translation>
     </message>
     <message>
         <source>Manifest</source>
-        <translation>Manifest</translation>
+        <translation>Daftar</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>버전</translation>
+        <translation>Versi</translation>
     </message>
     <message>
         <source>Programs</source>
-        <translation>프로그램들</translation>
+        <translation>Program</translation>
     </message>
     <message>
         <source>Commands</source>
-        <translation>주석</translation>
+        <translation>Perintah</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>세그먼트</translation>
+        <translation>Segmen</translation>
     </message>
     <message>
         <source>Libraries</source>
-        <translation>라이브러리</translation>
+        <translation>Pustaka</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>검색</translation>
+        <translation>Pindai</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>엔디언</translation>
+        <translation>Endianness</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>모드</translation>
+        <translation>Mode</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation>아키텍처</translation>
+        <translation>Arsitektur</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>유형</translation>
+        <translation>Tipe</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation>자동적 인</translation>
+        <translation>Otomatis</translation>
     </message>
 </context>
 <context>
     <name>GuiMainWindow</name>
     <message>
         <source>File</source>
-        <translation>파일</translation>
+        <translation>File</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>검색</translation>
+        <translation>Pindai</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>엔트로피</translation>
+        <translation>Entropi</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>해시</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Shortcuts</source>
-        <translation>바로가기</translation>
+        <translation>Jalan pintas</translation>
     </message>
     <message>
         <source>Options</source>
-        <translation>옵션</translation>
+        <translation>Pilihan</translation>
     </message>
     <message>
         <source>About</source>
-        <translation>정보</translation>
+        <translation>Tentang</translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>끝내기</translation>
+        <translation>Keluar</translation>
     </message>
     <message>
         <source>Open file</source>
-        <translation>파일 열기</translation>
+        <translation>Buka file</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>모든 파일</translation>
+        <translation>Semua file</translation>
     </message>
 </context>
 <context>
     <name>HashProcess</name>
     <message>
         <source>Import</source>
-        <translation>가져오기</translation>
+        <translation>Impor</translation>
     </message>
 </context>
 <context>
     <name>HeurWidget</name>
     <message>
         <source>Scan</source>
-        <translation>검색</translation>
+        <translation>Pindai</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>재귀적 검색</translation>
+        <translation>Pemindaian rekursif</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>정밀 검사</translation>
+        <translation>Pemindaian seksama</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>휴리스틱 검색</translation>
+        <translation>Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>모든 유형</translation>
+        <translation>Semua jenis</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>저장</translation>
+        <translation>Simpan</translation>
     </message>
     <message>
         <source>Heuristic</source>
-        <translation>휴리스틱</translation>
+        <translation>Heuristik</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation>결과</translation>
+        <translation>Hasil</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>유형</translation>
+        <translation>Tipe</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>이름</translation>
+        <translation>Nama</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>값</translation>
+        <translation>Nilai</translation>
     </message>
 </context>
 <context>
     <name>InvWidget</name>
     <message>
         <source>Hex</source>
-        <translation>마녀</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation>Mengulik</translation>
     </message>
 </context>
 <context>
     <name>LESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>읽기 전용</translation>
+        <translation>Hanya dibaca</translation>
     </message>
 </context>
 <context>
     <name>LEWidget</name>
     <message>
         <source>Reload</source>
-        <translation>재호출</translation>
+        <translation>Muat ulang</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>마녀</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation>Mengulik</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>메모리 맵</translation>
+        <translation>Peta memori</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>엔트로피</translation>
+        <translation>Entropi</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>휴리스틱 검색</translation>
+        <translation>Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>읽기 전용</translation>
+        <translation>Hanya dibaca</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>정보</translation>
+        <translation>Info</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>해시</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>오버레이</translation>
+        <translation>Overlay</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>편집</translation>
+        <translation>Edit</translation>
     </message>
 </context>
 <context>
     <name>MACHOFATWidget</name>
     <message>
         <source>Form</source>
-        <translation>형태</translation>
+        <translation>Membentuk</translation>
     </message>
 </context>
 <context>
     <name>MACHProcessData</name>
     <message>
         <source>Name</source>
-        <translation>이름</translation>
+        <translation>Nama</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>오프셋</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>주소</translation>
+        <translation>Alamat</translation>
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Opcode</translation>
+        <translation>Kode operasi</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>값</translation>
+        <translation>Nilai</translation>
     </message>
 </context>
 <context>
     <name>MACHSectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>읽기 전용</translation>
+        <translation>Hanya dibaca</translation>
     </message>
 </context>
 <context>
     <name>MACHWidget</name>
     <message>
         <source>Reload</source>
-        <translation>재호출</translation>
+        <translation>Muat ulang</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>마녀</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation>Mengulik</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>메모리 맵</translation>
+        <translation>Peta memori</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>엔트로피</translation>
+        <translation>Entropi</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>휴리스틱 검색</translation>
+        <translation>Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>읽기 전용</translation>
+        <translation>Hanya dibaca</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>정보</translation>
+        <translation>Info</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>해시</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Commands</source>
-        <translation>주석</translation>
+        <translation>Perintah</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>세그먼트</translation>
+        <translation>Segmen</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>섹션</translation>
+        <translation>Bagian</translation>
     </message>
     <message>
         <source>Rebase</source>
-        <translation>리베이스</translation>
+        <translation>rebase</translation>
     </message>
     <message>
         <source>Binding</source>
-        <translation>제본</translation>
+        <translation>Mengikat</translation>
     </message>
     <message>
         <source>Weak binding</source>
-        <translation>약한 바인딩</translation>
+        <translation>Ikatan lemah</translation>
     </message>
     <message>
         <source>Lazy binding</source>
-        <translation>지연 바인딩</translation>
+        <translation>Pengikatan malas</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>내보내기</translation>
+        <translation>Ekspor</translation>
     </message>
     <message>
         <source>String table</source>
-        <translation>문자열 테이블</translation>
+        <translation>tabel string</translation>
     </message>
     <message>
         <source>Symbol table</source>
-        <translation>기호 테이블</translation>
+        <translation>Tabel simbol</translation>
     </message>
     <message>
         <source>Table of contents</source>
-        <translation>목차</translation>
+        <translation>Daftar Isi</translation>
     </message>
     <message>
         <source>Modules</source>
-        <translation>모듈</translation>
+        <translation>Modul</translation>
     </message>
     <message>
         <source>External references</source>
-        <translation>외부 참조</translation>
+        <translation>Referensi eksternal</translation>
     </message>
     <message>
         <source>Indirect symbols</source>
-        <translation>간접 기호</translation>
+        <translation>Simbol tidak langsung</translation>
     </message>
     <message>
         <source>Local relocation</source>
-        <translation>지역 이전</translation>
+        <translation>relokasi lokal</translation>
     </message>
     <message>
         <source>Functions</source>
-        <translation>기능</translation>
+        <translation>Fungsi</translation>
     </message>
     <message>
         <source>Data in code</source>
-        <translation>코드의 데이터</translation>
+        <translation>Data dalam kode</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>알 수 없음</translation>
+        <translation>Tidak diketahui</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>헤더</translation>
+        <translation>Tajuk</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>편집</translation>
+        <translation>Edit</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>디망글</translation>
+        <translation>Demangle</translation>
     </message>
 </context>
 <context>
     <name>MSDOSWidget</name>
     <message>
         <source>Reload</source>
-        <translation>재호출</translation>
+        <translation>Muat ulang</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>마녀</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation>Mengulik</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>메모리 맵</translation>
+        <translation>Peta memori</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>엔트로피</translation>
+        <translation>Entropi</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>휴리스틱 검색</translation>
+        <translation>Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>읽기 전용</translation>
+        <translation>Hanya dibaca</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>정보</translation>
+        <translation>Info</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>해시</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>오버레이</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
     <name>MultiSearch</name>
     <message>
         <source>Address</source>
-        <translation>주소</translation>
+        <translation>Alamat</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>오프셋</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>크기</translation>
+        <translation>Ukuran</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>유형</translation>
+        <translation>Tipe</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>이름</translation>
+        <translation>Nama</translation>
     </message>
 </context>
 <context>
     <name>NESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>읽기 전용</translation>
+        <translation>Hanya dibaca</translation>
     </message>
 </context>
 <context>
     <name>NEWidget</name>
     <message>
         <source>Reload</source>
-        <translation>재호출</translation>
+        <translation>Muat ulang</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>마녀</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation>Mengulik</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>메모리 맵</translation>
+        <translation>Peta memori</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>엔트로피</translation>
+        <translation>Entropi</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>휴리스틱 검색</translation>
+        <translation>Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>읽기 전용</translation>
+        <translation>Hanya dibaca</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>정보</translation>
+        <translation>Info</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>해시</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Segments</source>
-        <translation>세그먼트</translation>
+        <translation>Segmen</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>오버레이</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
     <name>NFD_Widget</name>
     <message>
         <source>Recursive scan</source>
-        <translation>재귀적 검색</translation>
+        <translation>Pemindaian rekursif</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>정밀 검사</translation>
+        <translation>Pemindaian seksama</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>휴리스틱 검색</translation>
+        <translation>Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>모든 유형</translation>
+        <translation>Semua jenis</translation>
     </message>
     <message>
         <source>Directory</source>
-        <translation>예배 규칙서</translation>
+        <translation>Direktori</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>검색</translation>
+        <translation>Pindai</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation>중지</translation>
+        <translation>Berhenti</translation>
     </message>
     <message>
         <source>msec</source>
-        <translation>msec</translation>
+        <translation>mdtk</translation>
     </message>
 </context>
 <context>
     <name>PDFWidget</name>
     <message>
         <source>Reload</source>
-        <translation>재호출</translation>
+        <translation>Muat ulang</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>마녀</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>메모리 맵</translation>
+        <translation>Peta memori</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>엔트로피</translation>
+        <translation>Entropi</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>휴리스틱 검색</translation>
+        <translation>Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>읽기 전용</translation>
+        <translation>Hanya dibaca</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>정보</translation>
+        <translation>Info</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>해시</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
 </context>
 <context>
     <name>PEProcessData</name>
     <message>
         <source>Section</source>
-        <translation>섹션</translation>
+        <translation>Bagian</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>유형</translation>
+        <translation>Tipe</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>주소</translation>
+        <translation>Alamat</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>해시</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>이름</translation>
+        <translation>Nama</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>리소스</translation>
+        <translation>Sumber</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>오프셋</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>크기</translation>
+        <translation>Ukuran</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation>인증서</translation>
+        <translation>Sertifikat</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation>상태</translation>
+        <translation>Status</translation>
     </message>
     <message>
         <source>Program name</source>
-        <translation>프로그램 이름</translation>
+        <translation>Nama program</translation>
     </message>
     <message>
         <source>Publisher</source>
-        <translation>발행자</translation>
+        <translation>Penerbit</translation>
     </message>
     <message>
         <source>More info</source>
-        <translation>더 많은 정보</translation>
+        <translation>Info lebih lanjut</translation>
     </message>
     <message>
         <source>Serial number</source>
-        <translation>일련 번호</translation>
+        <translation>Nomor seri</translation>
     </message>
     <message>
         <source>Issuer</source>
-        <translation>발급사</translation>
+        <translation>Penerbit</translation>
     </message>
     <message>
         <source>Subject</source>
-        <translation>주제</translation>
+        <translation>Subjek</translation>
     </message>
     <message>
         <source>Algorithm</source>
-        <translation>연산</translation>
+        <translation>algoritma</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>버전</translation>
+        <translation>Versi</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation>카운트</translation>
+        <translation>Hitung</translation>
     </message>
 </context>
 <context>
     <name>PESectionHeaderWidget</name>
     <message>
         <source>Readonly</source>
-        <translation>읽기 전용</translation>
+        <translation>Hanya dibaca</translation>
     </message>
 </context>
 <context>
     <name>PEWidget</name>
     <message>
         <source>Reload</source>
-        <translation>재호출</translation>
+        <translation>Muat ulang</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>마녀</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation>Mengulik</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>메모리 맵</translation>
+        <translation>Peta memori</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>엔트로피</translation>
+        <translation>Entropi</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>휴리스틱 검색</translation>
+        <translation>Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>읽기 전용</translation>
+        <translation>Hanya dibaca</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>저장</translation>
+        <translation>Simpan</translation>
     </message>
     <message>
         <source>Show valid</source>
-        <translation>유효한 표시</translation>
+        <translation>Tampilkan yang valid</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation>테이블</translation>
+        <translation>Meja</translation>
     </message>
     <message>
         <source>Tree</source>
-        <translation>나무</translation>
+        <translation>Pohon</translation>
     </message>
     <message>
         <source>Format</source>
-        <translation>형식</translation>
+        <translation>Format</translation>
     </message>
     <message>
         <source>Check</source>
-        <translation>확인하다</translation>
+        <translation>Memeriksa</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>해시</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>정보</translation>
+        <translation>Info</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Sections</source>
-        <translation>섹션</translation>
+        <translation>Bagian</translation>
     </message>
     <message>
         <source>Export</source>
-        <translation>내보내기</translation>
+        <translation>Ekspor</translation>
     </message>
     <message>
         <source>Import</source>
-        <translation>가져오기</translation>
+        <translation>Impor</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>리소스</translation>
+        <translation>Sumber</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>버전</translation>
+        <translation>Versi</translation>
     </message>
     <message>
         <source>Manifest</source>
-        <translation>Manifest</translation>
+        <translation>Daftar</translation>
     </message>
     <message>
         <source>Exceptions</source>
-        <translation>예외</translation>
+        <translation>Pengecualian</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation>인증서</translation>
+        <translation>Sertifikat</translation>
     </message>
     <message>
         <source>Relocs</source>
-        <translation>재록</translation>
+        <translation>relokasi</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>디버그</translation>
+        <translation>Debug</translation>
     </message>
     <message>
         <source>Callbacks</source>
-        <translation>콜백</translation>
+        <translation>Panggilan balik</translation>
     </message>
     <message>
         <source>Load config</source>
-        <translation>구성 로드</translation>
+        <translation>Muat konfigurasi</translation>
     </message>
     <message>
         <source>Bound import</source>
-        <translation>바인딩된 가져오기</translation>
+        <translation>Impor terikat</translation>
     </message>
     <message>
         <source>Delay import</source>
-        <translation>가져오기 지연</translation>
+        <translation>Tunda impor</translation>
     </message>
     <message>
         <source>Metadata</source>
-        <translation>메타데이터</translation>
+        <translation>Metadata</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>오버레이</translation>
+        <translation>Overlay</translation>
     </message>
     <message>
         <source>Calculate</source>
-        <translation>계산</translation>
+        <translation>Hitung</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>편집</translation>
+        <translation>Edit</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>파일로 덤프</translation>
+        <translation>Buang ke file</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>알 수 없음</translation>
+        <translation>Tidak diketahui</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>헤더</translation>
+        <translation>Tajuk</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>디망글</translation>
+        <translation>Demangle</translation>
     </message>
 </context>
 <context>
     <name>QHexView</name>
     <message>
         <source>Cannot save file</source>
-        <translation>파일을 저장할 수 없습니다</translation>
+        <translation>Tidak dapat menyimpan file</translation>
     </message>
 </context>
 <context>
     <name>QHexViewWidget</name>
     <message>
         <source>Go to address</source>
-        <translation>주소로 이동</translation>
+        <translation>Pergi ke alamat</translation>
     </message>
     <message>
         <source>Cursor</source>
-        <translation>커서</translation>
+        <translation>Kursor</translation>
     </message>
     <message>
         <source>Selection</source>
-        <translation>선택</translation>
+        <translation>Pilihan</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>크기</translation>
+        <translation>Ukuran</translation>
     </message>
     <message>
         <source>Readonly</source>
-        <translation>읽기 전용</translation>
+        <translation>Hanya dibaca</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>로우 데이터</translation>
+        <translation>Data mentah</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>덤프 저장</translation>
+        <translation>Simpan sampah</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>오류</translation>
+        <translation>Kesalahan</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Type</source>
-        <translation>유형</translation>
+        <translation>Tipe</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation>카운트</translation>
+        <translation>Hitung</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>오프셋</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Library name</source>
-        <translation>라이브러리 이름</translation>
+        <translation>Nama perpustakaan</translation>
     </message>
     <message>
         <source>Interpreter</source>
-        <translation>통역사</translation>
+        <translation>Penerjemah</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>이름</translation>
+        <translation>Nama</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>버전</translation>
+        <translation>Versi</translation>
     </message>
     <message>
         <source>Length</source>
-        <translation>길이</translation>
+        <translation>Panjang</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>값</translation>
+        <translation>Nilai</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>주소</translation>
+        <translation>Alamat</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>크기</translation>
+        <translation>Ukuran</translation>
     </message>
     <message>
         <source>Read error</source>
-        <translation>읽기 오류</translation>
+        <translation>Kesalahan baca</translation>
     </message>
     <message>
         <source>Write error</source>
-        <translation>쓰기 오류</translation>
+        <translation>Kesalahan penulisan</translation>
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation>파일을 열 수 없습니다</translation>
+        <translation>Tidak dapat membuka file</translation>
     </message>
 </context>
 <context>
     <name>QwtPlotRenderer</name>
     <message>
         <source>Documents</source>
-        <translation>문서</translation>
+        <translation>Dokumen</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation>이미지</translation>
+        <translation>Gambar</translation>
     </message>
     <message>
         <source>Export File Name</source>
-        <translation>내보내기 파일 이름</translation>
+        <translation>Ekspor Nama File</translation>
     </message>
 </context>
 <context>
     <name>QwtPolarRenderer</name>
     <message>
         <source>Documents</source>
-        <translation>문서</translation>
+        <translation>Dokumen</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation>이미지</translation>
+        <translation>Gambar</translation>
     </message>
     <message>
         <source>Export File Name</source>
-        <translation>내보내기 파일 이름</translation>
+        <translation>Ekspor Nama File</translation>
     </message>
 </context>
 <context>
     <name>ScanItemModel</name>
     <message>
         <source>Result</source>
-        <translation>결과</translation>
+        <translation>Hasil</translation>
     </message>
 </context>
 <context>
     <name>SearchSignaturesOptionsWidget</name>
     <message>
         <source>Form</source>
-        <translation>형태</translation>
+        <translation>Membentuk</translation>
     </message>
     <message>
         <source>Search signatures</source>
-        <translation>서명 검색</translation>
+        <translation>Cari tanda tangan</translation>
     </message>
     <message>
         <source>Open directory</source>
-        <translation>디렉터리 열기</translation>
+        <translation>Buka direktori</translation>
     </message>
 </context>
 <context>
     <name>SearchSignaturesWidget</name>
     <message>
         <source>Type</source>
-        <translation>유형</translation>
+        <translation>Tipe</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>엔디언</translation>
+        <translation>Endianness</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>파일</translation>
+        <translation>File</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>저장</translation>
+        <translation>Simpan</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>검색</translation>
+        <translation>Cari</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Copy name</source>
-        <translation>이름 복사</translation>
+        <translation>Salin nama</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>서명 복사</translation>
+        <translation>Salin tanda tangan</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>주소 복사</translation>
+        <translation>Salin alamat</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>오프셋 복사</translation>
+        <translation>Salin offset</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>마녀</translation>
+        <translation>Hex</translation>
     </message>
 </context>
 <context>
     <name>SearchStringsWidget</name>
     <message>
         <source>Filter</source>
-        <translation>필터</translation>
+        <translation>Filter</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>저장</translation>
+        <translation>Simpan</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>검색</translation>
+        <translation>Cari</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>복사</translation>
+        <translation>Salin</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>주소</translation>
+        <translation>Alamat</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>오프셋</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>크기</translation>
+        <translation>Ukuran</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>마녀</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>디망글</translation>
+        <translation>Demangle</translation>
     </message>
 </context>
 <context>
     <name>SpecAbstract</name>
     <message>
         <source>Unknown</source>
-        <translation>알 수 없음</translation>
+        <translation>Tidak diketahui</translation>
     </message>
     <message>
         <source>obfuscator</source>
-        <translation>난독화기</translation>
+        <translation>obfuscator</translation>
     </message>
     <message>
         <source>Tool</source>
-        <translation>도구</translation>
+        <translation>Alat</translation>
     </message>
     <message>
         <source>Certificate</source>
-        <translation>인증서</translation>
+        <translation>Sertifikat</translation>
     </message>
     <message>
         <source>Compiler</source>
-        <translation>컴파일러</translation>
+        <translation>Penyusun</translation>
     </message>
     <message>
         <source>Converter</source>
-        <translation>변환기</translation>
+        <translation>Konverter</translation>
     </message>
     <message>
         <source>Cryptor</source>
-        <translation>크립터</translation>
+        <translation>Kriptor</translation>
     </message>
     <message>
         <source>Database</source>
-        <translation>데이터베이스</translation>
+        <translation>Basis data</translation>
     </message>
     <message>
         <source>Debug data</source>
-        <translation>디버그 데이터</translation>
+        <translation>Debug data</translation>
     </message>
     <message>
         <source>protection</source>
-        <translation>보호</translation>
+        <translation>proteksi</translation>
     </message>
     <message>
         <source>extender</source>
-        <translation>확장기</translation>
+        <translation>pemanjang</translation>
     </message>
     <message>
         <source>Format</source>
-        <translation>형식</translation>
+        <translation>Format</translation>
     </message>
     <message>
         <source>Generic</source>
-        <translation>일반</translation>
+        <translation>Generik</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation>이미지</translation>
+        <translation>Gambar</translation>
     </message>
     <message>
         <source>Installer</source>
-        <translation>인스톨러</translation>
+        <translation>Pemasang</translation>
     </message>
     <message>
         <source>Installer data</source>
-        <translation>인스톨러 데이터</translation>
+        <translation>Data penginstal</translation>
     </message>
     <message>
         <source>Joiner</source>
-        <translation>병합기</translation>
+        <translation>Penggabung</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation>언어</translation>
+        <translation>Bahasa</translation>
     </message>
     <message>
         <source>Library</source>
-        <translation>라이브러리</translation>
+        <translation>Pustaka</translation>
     </message>
     <message>
         <source>Linker</source>
-        <translation>링커</translation>
+        <translation>Penghubung</translation>
     </message>
     <message>
         <source>compressor</source>
-        <translation>압축기</translation>
+        <translation>Kompresor</translation>
     </message>
     <message>
         <source>Operation system</source>
-        <translation>운영 시스템</translation>
+        <translation>Sistem operasi</translation>
     </message>
     <message>
         <source>Packer</source>
-        <translation>패커</translation>
+        <translation>Pengepak</translation>
     </message>
     <message>
         <source>Protector</source>
-        <translation>프로텍터</translation>
+        <translation>Pelindung</translation>
     </message>
     <message>
         <source>Protector data</source>
-        <translation>프로텍터 데이터</translation>
+        <translation>Pelindung data</translation>
     </message>
     <message>
         <source>data</source>
-        <translation>데이터</translation>
+        <translation>data</translation>
     </message>
     <message>
         <source>Sign tool</source>
-        <translation>서명 도구</translation>
+        <translation>Alat penanda</translation>
     </message>
     <message>
         <source>Source code</source>
-        <translation>소스 코드</translation>
+        <translation>Sumber kode</translation>
     </message>
     <message>
         <source>Stub</source>
-        <translation>스텁</translation>
+        <translation>Potongan</translation>
     </message>
     <message>
         <source>Virtual machine</source>
-        <translation>가상 기기</translation>
+        <translation>Mesin virtual</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>헤더</translation>
+        <translation>Tajuk</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>오버레이</translation>
+        <translation>Overlay</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>진입 지점</translation>
+        <translation>Titik masuk</translation>
     </message>
     <message>
         <source>Section name</source>
-        <translation>섹션 이름</translation>
+        <translation>Nama bagian</translation>
     </message>
     <message>
         <source>Import hash</source>
-        <translation>해시 가져오기</translation>
+        <translation>Impor hash</translation>
     </message>
     <message>
         <source>Code section</source>
-        <translation>코드 섹션</translation>
+        <translation>Bagian Kode</translation>
     </message>
     <message>
         <source>Entry point section</source>
-        <translation>진입 지점 섹션</translation>
+        <translation>Bagian titik masuk</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>아카이브</translation>
+        <translation>Arsip</translation>
     </message>
     <message>
         <source>Resources</source>
-        <translation>리소스</translation>
+        <translation>Sumber</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>유형</translation>
+        <translation>Tipe</translation>
     </message>
 </context>
 <context>
     <name>StaticScan</name>
     <message>
         <source>File scan</source>
-        <translation>파일 검색</translation>
+        <translation>Pindai file</translation>
     </message>
     <message>
         <source>Device scan</source>
-        <translation>장치 검색</translation>
+        <translation>Pemindaian perangkat</translation>
     </message>
     <message>
         <source>Memory scan</source>
-        <translation>메모리 스캔</translation>
+        <translation>Pemindaian memori</translation>
     </message>
     <message>
         <source>Directory scan</source>
-        <translation>디렉터리 검색</translation>
+        <translation>Pemindaian Direktori</translation>
     </message>
 </context>
 <context>
     <name>StaticScanItemModel</name>
     <message>
         <source>Result</source>
-        <translation>결과</translation>
+        <translation>Hasil</translation>
     </message>
 </context>
 <context>
     <name>StaticScanOptionsWidget</name>
     <message>
         <source>Scan after open</source>
-        <translation>열기 후 검색</translation>
+        <translation>Pindai setelah buka</translation>
     </message>
     <message>
         <source>Recursive scan</source>
-        <translation>재귀적 검색</translation>
+        <translation>Pemindaian rekursif</translation>
     </message>
     <message>
         <source>Deep scan</source>
-        <translation>정밀 검사</translation>
+        <translation>Pemindaian seksama</translation>
     </message>
     <message>
         <source>Heuristic scan</source>
-        <translation>휴리스틱 검색</translation>
+        <translation>Pemindaian Heuristik</translation>
     </message>
     <message>
         <source>All types</source>
-        <translation>모든 유형</translation>
+        <translation>Semua jenis</translation>
     </message>
 </context>
 <context>
     <name>ToolsWidget</name>
     <message>
         <source>Strings</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
 </context>
 <context>
     <name>XBinary</name>
     <message>
         <source>Unknown</source>
-        <translation>알 수 없음</translation>
+        <translation>Tidak diketahui</translation>
     </message>
     <message>
         <source>8-bit</source>
-        <translation>8비트</translation>
+        <translation>8-bit</translation>
     </message>
     <message>
         <source>16-bit</source>
-        <translation>16비트</translation>
+        <translation>16-bit</translation>
     </message>
     <message>
         <source>32-bit</source>
-        <translation>32비트</translation>
+        <translation>32-bit</translation>
     </message>
     <message>
         <source>64-bit</source>
-        <translation>64비트</translation>
+        <translation>64-bit</translation>
     </message>
     <message>
         <source>128-bit</source>
-        <translation>128비트</translation>
+        <translation>128-bit</translation>
     </message>
     <message>
         <source>Region</source>
-        <translation>지역</translation>
+        <translation>Wilayah</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>아카이브</translation>
+        <translation>Arsip</translation>
     </message>
     <message>
         <source>Document</source>
-        <translation>문서</translation>
+        <translation>Dokumen</translation>
     </message>
     <message>
         <source>Image</source>
-        <translation>이미지</translation>
+        <translation>Gambar</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation>텍스트</translation>
+        <translation>Teks</translation>
     </message>
     <message>
         <source>Read error</source>
-        <translation>읽기 오류</translation>
+        <translation>Kesalahan baca</translation>
     </message>
     <message>
         <source>Maximum</source>
-        <translation>최대</translation>
+        <translation>Maksimum</translation>
     </message>
     <message>
         <source>Write error</source>
-        <translation>쓰기 오류</translation>
+        <translation>Kesalahan penulisan</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation>기본</translation>
+        <translation>Bawaan</translation>
     </message>
     <message>
         <source>Bytes</source>
@@ -2699,11 +2699,11 @@
     </message>
     <message>
         <source>kB</source>
-        <translation>KB</translation>
+        <translation>kB</translation>
     </message>
     <message>
         <source>MB</source>
-        <translation>메가바이트</translation>
+        <translation>MB</translation>
     </message>
     <message>
         <source>GB</source>
@@ -2711,100 +2711,100 @@
     </message>
     <message>
         <source>Header</source>
-        <translation>헤더</translation>
+        <translation>Tajuk</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>오버레이</translation>
+        <translation>Overlay</translation>
     </message>
     <message>
         <source>Archive record</source>
-        <translation>아카이브 레코드</translation>
+        <translation>Catatan arsip</translation>
     </message>
     <message>
         <source>Resource</source>
-        <translation>자원</translation>
+        <translation>Sumber</translation>
     </message>
 </context>
 <context>
     <name>XCOM</name>
     <message>
         <source>Unknown</source>
-        <translation>알 수 없음</translation>
+        <translation>Tidak diketahui</translation>
     </message>
 </context>
 <context>
     <name>XComboBoxEx</name>
     <message>
         <source>Flags</source>
-        <translation>Flags</translation>
+        <translation>Tandai</translation>
     </message>
 </context>
 <context>
     <name>XDEX</name>
     <message>
         <source>Unknown</source>
-        <translation>알 수 없음</translation>
+        <translation>Tidak diketahui</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>헤더</translation>
+        <translation>Tajuk</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>오버레이</translation>
+        <translation>Overlay</translation>
     </message>
 </context>
 <context>
     <name>XDemangle</name>
     <message>
         <source>Unknown</source>
-        <translation>알 수 없음</translation>
+        <translation>Tidak diketahui</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation>자동적 인</translation>
+        <translation>Otomatis</translation>
     </message>
 </context>
 <context>
     <name>XDemangleWidget</name>
     <message>
         <source>Mode</source>
-        <translation>모드</translation>
+        <translation>Mode</translation>
     </message>
 </context>
 <context>
     <name>XDeviceTableView</name>
     <message>
         <source>Dump</source>
-        <translation>덤프</translation>
+        <translation>Buang</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>덤프 저장</translation>
+        <translation>Simpan sampah</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>로우 데이터</translation>
+        <translation>Data mentah</translation>
     </message>
     <message>
         <source>Nothing found</source>
-        <translation>아무것도 찾을 수 없음</translation>
+        <translation>Tidak ada yang ditemukan</translation>
     </message>
 </context>
 <context>
     <name>XDisasmModel</name>
     <message>
         <source>Address</source>
-        <translation>주소</translation>
+        <translation>Alamat</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>오프셋</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Label</source>
-        <translation>레이블</translation>
+        <translation>Label</translation>
     </message>
     <message>
         <source>Bytes</source>
@@ -2812,14 +2812,14 @@
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Opcode</translation>
+        <translation>Kode operasi</translation>
     </message>
 </context>
 <context>
     <name>XDisasmView</name>
     <message>
         <source>Address</source>
-        <translation>주소</translation>
+        <translation>Alamat</translation>
     </message>
     <message>
         <source>Bytes</source>
@@ -2827,94 +2827,94 @@
     </message>
     <message>
         <source>Opcode</source>
-        <translation>Opcode</translation>
+        <translation>Kode operasi</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation>논평</translation>
+        <translation>Komentar</translation>
     </message>
     <message>
         <source>Invalid opcode</source>
-        <translation>유효하지 않은 opcode</translation>
+        <translation>opcode tidak valid</translation>
     </message>
     <message>
         <source>Go to address</source>
-        <translation>주소로 이동</translation>
+        <translation>Pergi ke alamat</translation>
     </message>
     <message>
         <source>Go to offset</source>
-        <translation>오프셋으로 이동</translation>
+        <translation>Pergi ke offset</translation>
     </message>
     <message>
         <source>Go to entry point</source>
-        <translation>진입점으로 이동</translation>
+        <translation>Pergi ke titik masuk</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>파일로 덤프</translation>
+        <translation>Buang ke file</translation>
     </message>
     <message>
         <source>Hex signature</source>
-        <translation>16진수 서명</translation>
+        <translation>Tanda tangan heksagonal</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>찾기</translation>
+        <translation>Temukan</translation>
     </message>
     <message>
         <source>Find next</source>
-        <translation>다음 찾기</translation>
+        <translation>Temukan selanjutnya</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>모두 선택</translation>
+        <translation>Pilih semua</translation>
     </message>
     <message>
         <source>Copy as hex</source>
-        <translation>헥사로 복사</translation>
+        <translation>Salin sebagai hex</translation>
     </message>
     <message>
         <source>Copy cursor offset</source>
-        <translation>커서 오프셋 복사</translation>
+        <translation>Salin offset kursor</translation>
     </message>
     <message>
         <source>Copy cursor address</source>
-        <translation>커서 주소 복사</translation>
+        <translation>Salin alamat kursor</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>마녀</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>이동</translation>
+        <translation>Pergi ke</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation>선택</translation>
+        <translation>Pilih</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>복사</translation>
+        <translation>Salin</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>오프셋</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation>상대 주소</translation>
+        <translation>Alamat relatif</translation>
     </message>
 </context>
 <context>
     <name>XDisasmViewOptionsWidget</name>
     <message>
         <source>Font</source>
-        <translation>폰트</translation>
+        <translation>jenis huruf</translation>
     </message>
     <message>
         <source>Colors</source>
@@ -2925,191 +2925,191 @@
     <name>XDisasmWidget</name>
     <message>
         <source>Type</source>
-        <translation>유형</translation>
+        <translation>Tipe</translation>
     </message>
     <message>
         <source>Analyze</source>
-        <translation>분석</translation>
+        <translation>Analisa</translation>
     </message>
     <message>
         <source>Labels</source>
-        <translation>레이블</translation>
+        <translation>Label</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>오버레이</translation>
+        <translation>Overlay</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>이동</translation>
+        <translation>Pergi ke</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>진입 지점</translation>
+        <translation>Titik masuk</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>가상 주소</translation>
+        <translation>Alamat virtual</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>상대적 가상 주소(RVA)</translation>
+        <translation>Alamat virtual relatif</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation>파일 오프셋</translation>
+        <translation>Offset file</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>복사</translation>
+        <translation>Salin</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>파일로 덤프</translation>
+        <translation>Buang ke file</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation>Mengulik</translation>
     </message>
     <message>
         <source>To data</source>
-        <translation>데이터로 변환</translation>
+        <translation>Ke data</translation>
     </message>
     <message>
         <source>Raw data</source>
-        <translation>로우 데이터</translation>
+        <translation>Data mentah</translation>
     </message>
     <message>
         <source>Save dump</source>
-        <translation>덤프 저장</translation>
+        <translation>Simpan sampah</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>오류</translation>
+        <translation>Kesalahan</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsEngine</name>
     <message>
         <source>Value</source>
-        <translation>값</translation>
+        <translation>Nilai</translation>
     </message>
     <message>
         <source>Cannot load file</source>
-        <translation>파일을 로드할 수 없습니다</translation>
+        <translation>Tidak dapat memuat file</translation>
     </message>
 </context>
 <context>
     <name>XDynStructsWidget</name>
     <message>
         <source>Reload</source>
-        <translation>재호출</translation>
+        <translation>Muat ulang</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>마녀</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation>Mengulik</translation>
     </message>
     <message>
         <source>Prototype</source>
-        <translation>원기</translation>
+        <translation>Prototipe</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>저장</translation>
+        <translation>Simpan</translation>
     </message>
     <message>
         <source>Array</source>
-        <translation>정렬</translation>
+        <translation>Himpunan</translation>
     </message>
     <message>
         <source>Variable</source>
-        <translation>변하기 쉬운</translation>
+        <translation>Variabel</translation>
     </message>
     <message>
         <source>Pointer</source>
-        <translation>바늘</translation>
+        <translation>penunjuk</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>오류</translation>
+        <translation>Kesalahan</translation>
     </message>
     <message>
         <source>Cannot read memory at address</source>
-        <translation>주소에서 메모리를 읽을 수 없습니다.</translation>
+        <translation>Tidak dapat membaca memori di alamat</translation>
     </message>
     <message>
         <source>Result</source>
-        <translation>결과</translation>
+        <translation>Hasil</translation>
     </message>
     <message>
         <source>Files</source>
-        <translation>파일</translation>
+        <translation>File</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>모든 파일</translation>
+        <translation>Semua file</translation>
     </message>
 </context>
 <context>
     <name>XELF</name>
     <message>
         <source>Unknown</source>
-        <translation>알 수 없음</translation>
+        <translation>Tidak diketahui</translation>
     </message>
 </context>
 <context>
     <name>XEntropyWidget</name>
     <message>
         <source>Type</source>
-        <translation>유형</translation>
+        <translation>Tipe</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>오프셋</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>크기</translation>
+        <translation>Ukuran</translation>
     </message>
     <message>
         <source>Count</source>
-        <translation>카운트</translation>
+        <translation>Hitung</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation>재호출</translation>
+        <translation>Muat ulang</translation>
     </message>
     <message>
         <source>Total</source>
-        <translation>전체</translation>
+        <translation>Total</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation>상태</translation>
+        <translation>Status</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>저장</translation>
+        <translation>Simpan</translation>
     </message>
     <message>
         <source>Save diagram</source>
-        <translation>도표 저장</translation>
+        <translation>Simpan diagram</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>엔트로피</translation>
+        <translation>Entropi</translation>
     </message>
     <message>
         <source>Regions</source>
-        <translation>영역</translation>
+        <translation>Region</translation>
     </message>
     <message>
         <source>Bytes</source>
@@ -3121,82 +3121,82 @@
     </message>
     <message>
         <source>Name</source>
-        <translation>이름</translation>
+        <translation>Nama</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Images</source>
-        <translation>이미지</translation>
+        <translation>Gambar</translation>
     </message>
     <message>
         <source>Documents</source>
-        <translation>문서</translation>
+        <translation>Dokumen</translation>
     </message>
 </context>
 <context>
     <name>XFileInfo</name>
     <message>
         <source>Operation system</source>
-        <translation>운영 시스템</translation>
+        <translation>Sistem operasi</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation>아키텍처</translation>
+        <translation>Arsitektur</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>모드</translation>
+        <translation>Mode</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>유형</translation>
+        <translation>Tipe</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>엔디언</translation>
+        <translation>Endianness</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation>파일 이름</translation>
+        <translation>Nama file</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>크기</translation>
+        <translation>Ukuran</translation>
     </message>
     <message>
         <source>packed</source>
-        <translation>패킹됨</translation>
+        <translation>dikemas</translation>
     </message>
     <message>
         <source>not packed</source>
-        <translation>패킹 안됨</translation>
+        <translation>tidak dikemas</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>엔트로피</translation>
+        <translation>Entropi</translation>
     </message>
     <message>
         <source>File type</source>
-        <translation>파일 유형</translation>
+        <translation>Jenis file</translation>
     </message>
     <message>
         <source>Entry point</source>
-        <translation>진입 지점</translation>
+        <translation>Titik masuk</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>주소</translation>
+        <translation>Alamat</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>오프셋</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Relative address</source>
-        <translation>상대 주소</translation>
+        <translation>Alamat relatif</translation>
     </message>
     <message>
         <source>Bytes</source>
@@ -3204,151 +3204,151 @@
     </message>
     <message>
         <source>Signature</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>버전</translation>
+        <translation>Versi</translation>
     </message>
 </context>
 <context>
     <name>XFileInfoWidget</name>
     <message>
         <source>Form</source>
-        <translation>형태</translation>
+        <translation>Membentuk</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>유형</translation>
+        <translation>Tipe</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>오프셋</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>크기</translation>
+        <translation>Ukuran</translation>
     </message>
     <message>
         <source>Comment</source>
-        <translation>논평</translation>
+        <translation>Komentar</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>저장</translation>
+        <translation>Simpan</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation>재호출</translation>
+        <translation>Muat ulang</translation>
     </message>
     <message>
         <source>Info</source>
-        <translation>정보</translation>
+        <translation>Info</translation>
     </message>
     <message>
         <source>Save file</source>
-        <translation>파일 저장</translation>
+        <translation>Simpan file</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>텍스트 파일</translation>
+        <translation>File teks</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>모든 파일</translation>
+        <translation>Semua file</translation>
     </message>
 </context>
 <context>
     <name>XHashWidget</name>
     <message>
         <source>Type</source>
-        <translation>유형</translation>
+        <translation>Tipe</translation>
     </message>
     <message>
         <source>Method</source>
-        <translation>방식</translation>
+        <translation>Metode</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>오프셋</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>크기</translation>
+        <translation>Ukuran</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>저장</translation>
+        <translation>Simpan</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation>재호출</translation>
+        <translation>Muat ulang</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>해시</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>이름</translation>
+        <translation>Nama</translation>
     </message>
 </context>
 <context>
     <name>XHexEdit</name>
     <message>
         <source>Offset</source>
-        <translation>오프셋</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>마녀</translation>
+        <translation>Hex</translation>
     </message>
 </context>
 <context>
     <name>XHexView</name>
     <message>
         <source>Address</source>
-        <translation>주소</translation>
+        <translation>Alamat</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>마녀</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Symbols</source>
-        <translation>기호</translation>
+        <translation>Simbol</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>오프셋</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Go to offset</source>
-        <translation>오프셋으로 이동</translation>
+        <translation>Pergi ke offset</translation>
     </message>
     <message>
         <source>Go to address</source>
-        <translation>주소로 이동</translation>
+        <translation>Pergi ke alamat</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>파일로 덤프</translation>
+        <translation>Buang ke file</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>찾기</translation>
+        <translation>Temukan</translation>
     </message>
     <message>
         <source>Find next</source>
-        <translation>다음 찾기</translation>
+        <translation>Temukan selanjutnya</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>모두 선택</translation>
+        <translation>Pilih semua</translation>
     </message>
     <message>
         <source>Data as hex</source>
@@ -3356,476 +3356,476 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation>Mengulik</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>메모리 맵</translation>
+        <translation>Peta memori</translation>
     </message>
     <message>
         <source>Go to</source>
-        <translation>이동</translation>
+        <translation>Pergi ke</translation>
     </message>
     <message>
         <source>Select</source>
-        <translation>선택</translation>
+        <translation>Pilih</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>복사</translation>
+        <translation>Salin</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>편집</translation>
+        <translation>Edit</translation>
     </message>
 </context>
 <context>
     <name>XHexViewOptionsWidget</name>
     <message>
         <source>Font</source>
-        <translation>폰트</translation>
+        <translation>jenis huruf</translation>
     </message>
 </context>
 <context>
     <name>XHexViewWidget</name>
     <message>
         <source>Form</source>
-        <translation>형태</translation>
+        <translation>Membentuk</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>마녀</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>오류</translation>
+        <translation>Kesalahan</translation>
     </message>
 </context>
 <context>
     <name>XLE</name>
     <message>
         <source>Header</source>
-        <translation>헤더</translation>
+        <translation>Tajuk</translation>
     </message>
     <message>
         <source>Object</source>
-        <translation>물체</translation>
+        <translation>Obyek</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>오버레이</translation>
+        <translation>Overlay</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>알 수 없음</translation>
+        <translation>Tidak diketahui</translation>
     </message>
 </context>
 <context>
     <name>XLineEditHEX</name>
     <message>
         <source>Copy</source>
-        <translation>복사</translation>
+        <translation>Salin</translation>
     </message>
 </context>
 <context>
     <name>XMACH</name>
     <message>
         <source>Segment</source>
-        <translation>세그먼트</translation>
+        <translation>Segmen</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>알 수 없음</translation>
+        <translation>Tidak diketahui</translation>
     </message>
 </context>
 <context>
     <name>XMACHOFat</name>
     <message>
         <source>Unknown</source>
-        <translation>알 수 없음</translation>
+        <translation>Tidak diketahui</translation>
     </message>
 </context>
 <context>
     <name>XMSDOS</name>
     <message>
         <source>Header</source>
-        <translation>헤더</translation>
+        <translation>Tajuk</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>오버레이</translation>
+        <translation>Overlay</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>알 수 없음</translation>
+        <translation>Tidak diketahui</translation>
     </message>
 </context>
 <context>
     <name>XMemoryMapWidget</name>
     <message>
         <source>Save</source>
-        <translation>저장</translation>
+        <translation>Simpan</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>유형</translation>
+        <translation>Tipe</translation>
     </message>
     <message>
         <source>File offset</source>
-        <translation>파일 오프셋</translation>
+        <translation>Offset file</translation>
     </message>
     <message>
         <source>Virtual address</source>
-        <translation>가상 주소</translation>
+        <translation>Alamat virtual</translation>
     </message>
     <message>
         <source>Relative virtual address</source>
-        <translation>상대적 가상 주소(RVA)</translation>
+        <translation>Alamat virtual relatif</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>모드</translation>
+        <translation>Mode</translation>
     </message>
     <message>
         <source>Endianness</source>
-        <translation>엔디언</translation>
+        <translation>Endianness</translation>
     </message>
     <message>
         <source>Architecture</source>
-        <translation>아키텍처</translation>
+        <translation>Arsitektur</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>메모리 맵</translation>
+        <translation>Peta memori</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>오프셋</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Address</source>
-        <translation>주소</translation>
+        <translation>Alamat</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>크기</translation>
+        <translation>Ukuran</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>이름</translation>
+        <translation>Nama</translation>
     </message>
 </context>
 <context>
     <name>XMultiDisasmWidget</name>
     <message>
         <source>Form</source>
-        <translation>형태</translation>
+        <translation>Membentuk</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>유형</translation>
+        <translation>Tipe</translation>
     </message>
     <message>
         <source>Mode</source>
-        <translation>모드</translation>
+        <translation>Mode</translation>
     </message>
     <message>
         <source>Syntax</source>
-        <translation>통사론</translation>
+        <translation>Sintaksis</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>오류</translation>
+        <translation>Kesalahan</translation>
     </message>
 </context>
 <context>
     <name>XNE</name>
     <message>
         <source>Unknown</source>
-        <translation>알 수 없음</translation>
+        <translation>Tidak diketahui</translation>
     </message>
 </context>
 <context>
     <name>XOptions</name>
     <message>
         <source>Automatic</source>
-        <translation>자동적 인</translation>
+        <translation>Otomatis</translation>
     </message>
 </context>
 <context>
     <name>XOptionsWidget</name>
     <message>
         <source>Stay on top</source>
-        <translation>항상 위에 놓기</translation>
+        <translation>Tetap diatas</translation>
     </message>
     <message>
         <source>Single application</source>
-        <translation>단일 애플리케이션</translation>
+        <translation>Aplikasi tunggal</translation>
     </message>
     <message>
         <source>Style</source>
-        <translation>스타일</translation>
+        <translation>Gaya</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation>언어</translation>
+        <translation>Bahasa</translation>
     </message>
     <message>
         <source>Show logo</source>
-        <translation>로고 표시</translation>
+        <translation>Tampilkan logo</translation>
     </message>
     <message>
         <source>Save last directory</source>
-        <translation>마지막 디렉터리 저장</translation>
+        <translation>Simpan direktori terakhir</translation>
     </message>
     <message>
         <source>Save backup</source>
-        <translation>백업 저장</translation>
+        <translation>Simpan cadangan</translation>
     </message>
     <message>
         <source>Add to context menu</source>
-        <translation>컨텍스트 메뉴에 추가</translation>
+        <translation>Tambahkan ke menu konteks</translation>
     </message>
     <message>
         <source>Appearance</source>
-        <translation>모양</translation>
+        <translation>Penampilan</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>파일</translation>
+        <translation>File</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>오류</translation>
+        <translation>Kesalahan</translation>
     </message>
     <message>
         <source>Please run the program as an administrator</source>
-        <translation>프로그램을 관리자로 실행하십시오</translation>
+        <translation>Silakan jalankan program sebagai administrator</translation>
     </message>
 </context>
 <context>
     <name>XPE</name>
     <message>
         <source>Unknown</source>
-        <translation>알 수 없음</translation>
+        <translation>Tidak diketahui</translation>
     </message>
     <message>
         <source>Application</source>
-        <translation>애플리케이션</translation>
+        <translation>Aplikasi</translation>
     </message>
     <message>
         <source>Console</source>
-        <translation>콘솔</translation>
+        <translation>Menghibur</translation>
     </message>
     <message>
         <source>Driver</source>
-        <translation>운전사</translation>
+        <translation>Pengemudi</translation>
     </message>
     <message>
         <source>Boot application</source>
-        <translation>부팅 응용 프로그램</translation>
+        <translation>Aplikasi booting</translation>
     </message>
     <message>
         <source>Runtime driver</source>
-        <translation>런타임 드라이버</translation>
+        <translation>Pengemudi runtime</translation>
     </message>
     <message>
         <source>Boot service driver</source>
-        <translation>부팅 서비스 드라이버</translation>
+        <translation>Driver layanan boot</translation>
     </message>
     <message>
         <source>Header</source>
-        <translation>헤더</translation>
+        <translation>Tajuk</translation>
     </message>
     <message>
         <source>Section</source>
-        <translation>섹션</translation>
+        <translation>Bagian</translation>
     </message>
     <message>
         <source>Overlay</source>
-        <translation>오버레이</translation>
+        <translation>Overlay</translation>
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation>파일을 열 수 없습니다</translation>
+        <translation>Tidak dapat membuka file</translation>
     </message>
     <message>
         <source>The file is signed and the signature was verified</source>
-        <translation>파일이 서명되고 서명이 확인되었습니다.</translation>
+        <translation>File ditandatangani dan tanda tangan diverifikasi</translation>
     </message>
     <message>
         <source>The file is not signed</source>
-        <translation>파일이 서명되지 않았습니다.</translation>
+        <translation>File tidak ditandatangani</translation>
     </message>
     <message>
         <source>The signature is present, but specifically disallowed</source>
-        <translation>서명이 있지만 특별히 허용되지 않음</translation>
+        <translation>Tanda tangan ada, tetapi secara khusus tidak diizinkan</translation>
     </message>
     <message>
         <source>The signature is present, but not trusted</source>
-        <translation>서명이 있지만 신뢰할 수 없음</translation>
+        <translation>Tanda tangan ada, tapi tidak dipercaya</translation>
     </message>
     <message>
         <source>The signature error</source>
-        <translation>서명 오류</translation>
+        <translation>Kesalahan tanda tangan</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>오류</translation>
+        <translation>Kesalahan</translation>
     </message>
 </context>
 <context>
     <name>XSevenZip</name>
     <message>
         <source>Unknown</source>
-        <translation>알 수 없음</translation>
+        <translation>Tidak diketahui</translation>
     </message>
 </context>
 <context>
     <name>XShortcuts</name>
     <message>
         <source>Unknown</source>
-        <translation>알 수 없음</translation>
+        <translation>Tidak diketahui</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>열기</translation>
+        <translation>Buka</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>저장</translation>
+        <translation>Simpan</translation>
     </message>
     <message>
         <source>Save As</source>
-        <translation>다른 이름으로 저장</translation>
+        <translation>Simpan Sebagai</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>닫기</translation>
+        <translation>Tutup</translation>
     </message>
     <message>
         <source>Print</source>
-        <translation>인쇄</translation>
+        <translation>Mencetak</translation>
     </message>
     <message>
         <source>Exit</source>
-        <translation>끝내기</translation>
+        <translation>Keluar</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>복사</translation>
+        <translation>Salin</translation>
     </message>
     <message>
         <source>Show</source>
-        <translation>보여 주다</translation>
+        <translation>Menunjukkan</translation>
     </message>
     <message>
         <source>String</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Offset</source>
-        <translation>오프셋</translation>
+        <translation>Offset</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>크기</translation>
+        <translation>Ukuran</translation>
     </message>
     <message>
         <source>Hex</source>
-        <translation>마녀</translation>
+        <translation>Hex</translation>
     </message>
     <message>
         <source>Demangle</source>
-        <translation>디망글</translation>
+        <translation>Demangle</translation>
     </message>
     <message>
         <source>Copy name</source>
-        <translation>이름 복사</translation>
+        <translation>Salin nama</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>서명 복사</translation>
+        <translation>Salin tanda tangan</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>주소 복사</translation>
+        <translation>Salin alamat</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>오프셋 복사</translation>
+        <translation>Salin offset</translation>
     </message>
     <message>
         <source>Copy size</source>
-        <translation>크기 복사</translation>
+        <translation>Salin ukuran</translation>
     </message>
     <message>
         <source>Dump to file</source>
-        <translation>파일로 덤프</translation>
+        <translation>Buang ke file</translation>
     </message>
     <message>
         <source>Go to address</source>
-        <translation>주소로 이동</translation>
+        <translation>Pergi ke alamat</translation>
     </message>
     <message>
         <source>Go to offset</source>
-        <translation>오프셋으로 이동</translation>
+        <translation>Pergi ke offset</translation>
     </message>
     <message>
         <source>Signature</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>서명</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <source>Find</source>
-        <translation>찾기</translation>
+        <translation>Temukan</translation>
     </message>
     <message>
         <source>Find next</source>
-        <translation>다음 찾기</translation>
+        <translation>Temukan selanjutnya</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>모두 선택</translation>
+        <translation>Pilih semua</translation>
     </message>
     <message>
         <source>Copy as hex</source>
-        <translation>헥사로 복사</translation>
+        <translation>Salin sebagai hex</translation>
     </message>
     <message>
         <source>Copy cursor offset</source>
-        <translation>커서 오프셋 복사</translation>
+        <translation>Salin offset kursor</translation>
     </message>
     <message>
         <source>Copy cursor address</source>
-        <translation>커서 주소 복사</translation>
+        <translation>Salin alamat kursor</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Disasm</translation>
+        <translation>Mengulik</translation>
     </message>
     <message>
         <source>Memory map</source>
-        <translation>메모리 맵</translation>
+        <translation>Peta memori</translation>
     </message>
     <message>
         <source>Go to entry point</source>
-        <translation>진입점으로 이동</translation>
+        <translation>Pergi ke titik masuk</translation>
     </message>
     <message>
         <source>Hex signature</source>
-        <translation>16진수 서명</translation>
+        <translation>Tanda tangan heksagonal</translation>
     </message>
     <message>
         <source>Attach</source>
-        <translation>붙이다</translation>
+        <translation>Menempel</translation>
     </message>
     <message>
         <source>Detach</source>
-        <translation>분리하다</translation>
+        <translation>Melepaskan</translation>
     </message>
     <message>
         <source>CPU</source>
@@ -3833,158 +3833,158 @@
     </message>
     <message>
         <source>Actions</source>
-        <translation>행위</translation>
+        <translation>tindakan</translation>
     </message>
     <message>
         <source>Log</source>
-        <translation>로그</translation>
+        <translation>Log</translation>
     </message>
     <message>
         <source>Breakpoints</source>
-        <translation>중단점</translation>
+        <translation>Breakpoint</translation>
     </message>
     <message>
         <source>Call stack</source>
-        <translation>호출 스택</translation>
+        <translation>Tumpukan panggilan</translation>
     </message>
     <message>
         <source>Threads</source>
-        <translation>스레드</translation>
+        <translation>Utas</translation>
     </message>
     <message>
         <source>Handles</source>
-        <translation>핸들</translation>
+        <translation>Menangani</translation>
     </message>
     <message>
         <source>Run</source>
-        <translation>운영</translation>
+        <translation>Lari</translation>
     </message>
     <message>
         <source>Pause</source>
-        <translation>정지시키다</translation>
+        <translation>Berhenti sebentar</translation>
     </message>
     <message>
         <source>Step into</source>
-        <translation>들어가다</translation>
+        <translation>Melangkah ke</translation>
     </message>
     <message>
         <source>Step over</source>
-        <translation>넘어가다</translation>
+        <translation>Langkah selesai</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation>중지</translation>
+        <translation>Berhenti</translation>
     </message>
     <message>
         <source>Restart</source>
-        <translation>재시작</translation>
+        <translation>Mengulang kembali</translation>
     </message>
     <message>
         <source>Toggle</source>
-        <translation>비녀장</translation>
+        <translation>Beralih</translation>
     </message>
     <message>
         <source>File name</source>
-        <translation>파일 이름</translation>
+        <translation>Nama file</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>이름</translation>
+        <translation>Nama</translation>
     </message>
     <message>
         <source>Entropy</source>
-        <translation>엔트로피</translation>
+        <translation>Entropi</translation>
     </message>
     <message>
         <source>Hash</source>
-        <translation>해시</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Scan</source>
-        <translation>검색</translation>
+        <translation>Pindai</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>문자열</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Structs</source>
-        <translation>구조체</translation>
+        <translation>Struktur</translation>
     </message>
     <message>
         <source>Viewer</source>
-        <translation>뷰어</translation>
+        <translation>Penonton</translation>
     </message>
     <message>
         <source>Modules</source>
-        <translation>모듈</translation>
+        <translation>Modul</translation>
     </message>
     <message>
         <source>Action</source>
-        <translation>동작</translation>
+        <translation>Tindakan</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>파일</translation>
+        <translation>File</translation>
     </message>
     <message>
         <source>View</source>
-        <translation>보다</translation>
+        <translation>Melihat</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>디버그</translation>
+        <translation>Debug</translation>
     </message>
     <message>
         <source>Debugger</source>
-        <translation>디버거</translation>
+        <translation>Debugger</translation>
     </message>
     <message>
         <source>Registers</source>
-        <translation>레지스터</translation>
+        <translation>Daftar</translation>
     </message>
     <message>
         <source>Stack</source>
-        <translation>스택</translation>
+        <translation>Tumpukan</translation>
     </message>
     <message>
         <source>Archive</source>
-        <translation>아카이브</translation>
+        <translation>Arsip</translation>
     </message>
     <message>
         <source>Table</source>
-        <translation>테이블</translation>
+        <translation>Meja</translation>
     </message>
     <message>
         <source>Process</source>
-        <translation>프로세스</translation>
+        <translation>Proses</translation>
     </message>
     <message>
         <source>Memory</source>
-        <translation>메모리</translation>
+        <translation>Penyimpanan</translation>
     </message>
 </context>
 <context>
     <name>XShortcutsWidget</name>
     <message>
         <source>Save</source>
-        <translation>저장</translation>
+        <translation>Simpan</translation>
     </message>
     <message>
         <source>Text files</source>
-        <translation>텍스트 파일</translation>
+        <translation>File teks</translation>
     </message>
     <message>
         <source>All files</source>
-        <translation>모든 파일</translation>
+        <translation>Semua file</translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>오류</translation>
+        <translation>Kesalahan</translation>
     </message>
     <message>
         <source>Cannot save file</source>
-        <translation>파일을 저장할 수 없습니다</translation>
+        <translation>Tidak dapat menyimpan file</translation>
     </message>
 </context>
 </TS>
