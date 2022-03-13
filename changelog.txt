@@ -2,7 +2,6 @@
 -----------------------------------------------------------------------
 [+] Source code qt6 compatibility
 [+] APKS support
-[+] OSX Bundle for M1 apple processor
 [+] CMAKE build system
 [+] More than 100 new detects
 [+] New "All types" mode
