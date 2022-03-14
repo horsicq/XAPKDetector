@@ -1,6 +1,7 @@
 0.03
 -----------------------------------------------------------------------
 [+] Source code qt6 compatibility
+[+] Bundle for Apple M1 processor
 [+] APKS support
 [+] CMAKE build system
 [+] More than 100 new detects
