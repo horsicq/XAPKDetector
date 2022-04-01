@@ -2342,19 +2342,19 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>Skopiuj nazwę</translation>
+        <translation>Kopiuj jako</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>Kopiuj podpis</translation>
+        <translation>Podpis szesnastkowy</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Skopiuj adres</translation>
+        <translation>Skopiuj adres kursora</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>Kopiuj przesunięcie</translation>
+        <translation>Skopiuj przesunięcie kursora</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3741,23 +3741,23 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>Skopiuj nazwę</translation>
+        <translation>Kopiuj jako</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>Kopiuj podpis</translation>
+        <translation>Podpis szesnastkowy</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Skopiuj adres</translation>
+        <translation>Skopiuj adres kursora</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>Kopiuj przesunięcie</translation>
+        <translation>Skopiuj przesunięcie kursora</translation>
     </message>
     <message>
         <source>Copy size</source>
-        <translation>Rozmiar kopii</translation>
+        <translation>Kopiuj jako</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -3833,7 +3833,7 @@
     </message>
     <message>
         <source>Actions</source>
-        <translation>działania</translation>
+        <translation>Akcja</translation>
     </message>
     <message>
         <source>Log</source>

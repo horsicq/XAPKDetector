@@ -2342,19 +2342,19 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>이름 복사</translation>
+        <translation>다른 이름으로 복사</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>서명 복사</translation>
+        <translation>16진수 서명</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>주소 복사</translation>
+        <translation>커서 주소 복사</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>오프셋 복사</translation>
+        <translation>커서 오프셋 복사</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3741,23 +3741,23 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>이름 복사</translation>
+        <translation>다른 이름으로 복사</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>서명 복사</translation>
+        <translation>16진수 서명</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>주소 복사</translation>
+        <translation>커서 주소 복사</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>오프셋 복사</translation>
+        <translation>커서 오프셋 복사</translation>
     </message>
     <message>
         <source>Copy size</source>
-        <translation>크기 복사</translation>
+        <translation>다른 이름으로 복사</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -3833,7 +3833,7 @@
     </message>
     <message>
         <source>Actions</source>
-        <translation>행위</translation>
+        <translation>동작</translation>
     </message>
     <message>
         <source>Log</source>

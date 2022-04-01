@@ -2342,19 +2342,19 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>Копіювати ім&apos;я</translation>
+        <translation>Копіювати як</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>Копіювати сігнатуру</translation>
+        <translation>16-кова сігнатура</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Копіювати адресу</translation>
+        <translation>Копіювати поточну адресу</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>Копіювати зміщення</translation>
+        <translation>Копіювати поточне зміщення</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3741,23 +3741,23 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>Копіювати ім&apos;я</translation>
+        <translation>Копіювати як</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>Копіювати сігнатуру</translation>
+        <translation>16-кова сігнатура</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Копіювати адресу</translation>
+        <translation>Копіювати поточну адресу</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>Копіювати зміщення</translation>
+        <translation>Копіювати поточне зміщення</translation>
     </message>
     <message>
         <source>Copy size</source>
-        <translation>Копіювати розмір</translation>
+        <translation>Копіювати як</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -3833,7 +3833,7 @@
     </message>
     <message>
         <source>Actions</source>
-        <translation>Дії</translation>
+        <translation>Дія</translation>
     </message>
     <message>
         <source>Log</source>

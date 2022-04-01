@@ -2342,19 +2342,19 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>Adı kopyala</translation>
+        <translation>Farklı kopyala</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>İmzayı kopyala</translation>
+        <translation>altıgen imza</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Adres kopyala</translation>
+        <translation>İmleç adresini kopyala</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>Ofset kopyala</translation>
+        <translation>İmleç ofsetini kopyala</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3741,23 +3741,23 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>Adı kopyala</translation>
+        <translation>Farklı kopyala</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>İmzayı kopyala</translation>
+        <translation>altıgen imza</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Adres kopyala</translation>
+        <translation>İmleç adresini kopyala</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>Ofset kopyala</translation>
+        <translation>İmleç ofsetini kopyala</translation>
     </message>
     <message>
         <source>Copy size</source>
-        <translation>Boyut kopyala</translation>
+        <translation>Farklı kopyala</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -3833,7 +3833,7 @@
     </message>
     <message>
         <source>Actions</source>
-        <translation>Hareketler</translation>
+        <translation>Eylem</translation>
     </message>
     <message>
         <source>Log</source>

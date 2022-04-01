@@ -2342,19 +2342,19 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>复制名称</translation>
+        <translation>复制为</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>复制签名</translation>
+        <translation>十六进制签名</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>复制地址</translation>
+        <translation>复制光标地址</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>复制偏移</translation>
+        <translation>复制光标偏移</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3741,23 +3741,23 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>复制名称</translation>
+        <translation>复制为</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>复制签名</translation>
+        <translation>十六进制签名</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>复制地址</translation>
+        <translation>复制光标地址</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>复制偏移</translation>
+        <translation>复制光标偏移</translation>
     </message>
     <message>
         <source>Copy size</source>
-        <translation>复制大小</translation>
+        <translation>复制为</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -3833,7 +3833,7 @@
     </message>
     <message>
         <source>Actions</source>
-        <translation>行动</translation>
+        <translation>处理</translation>
     </message>
     <message>
         <source>Log</source>

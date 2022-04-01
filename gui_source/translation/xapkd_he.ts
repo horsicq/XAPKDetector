@@ -2342,19 +2342,19 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>העתק שם</translation>
+        <translation>העתק בשם</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>העתק חתימה</translation>
+        <translation>חתימה משושה</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>העתק כתובת</translation>
+        <translation>העתק את כתובת הסמן</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>העתק היסט כתובת </translation>
+        <translation>קיזוז סמן העתק</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3741,23 +3741,23 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>העתק שם</translation>
+        <translation>העתק בשם</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>העתק חתימה</translation>
+        <translation>חתימה משושה</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>העתק כתובת</translation>
+        <translation>העתק את כתובת הסמן</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>העתק היסט כתובת </translation>
+        <translation>קיזוז סמן העתק</translation>
     </message>
     <message>
         <source>Copy size</source>
-        <translation>העתק גודל</translation>
+        <translation>העתק בשם</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -3833,7 +3833,7 @@
     </message>
     <message>
         <source>Actions</source>
-        <translation>פעולות</translation>
+        <translation>פעולה</translation>
     </message>
     <message>
         <source>Log</source>

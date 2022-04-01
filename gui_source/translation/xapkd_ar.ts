@@ -2342,19 +2342,19 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>نسخ الاسم</translation>
+        <translation>نسخ بتنسيق</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>نسخة التوقيع</translation>
+        <translation>التوقيع السداسي</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>نسخ العنوان</translation>
+        <translation>نسخ عنوان المؤشر</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>نسخة الإزاحة</translation>
+        <translation>نسخ إزاحة المؤشر</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3741,23 +3741,23 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>نسخ الاسم</translation>
+        <translation>نسخ بتنسيق</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>نسخة التوقيع</translation>
+        <translation>التوقيع السداسي</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>نسخ العنوان</translation>
+        <translation>نسخ عنوان المؤشر</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>نسخة الإزاحة</translation>
+        <translation>نسخ إزاحة المؤشر</translation>
     </message>
     <message>
         <source>Copy size</source>
-        <translation>حجم النسخ</translation>
+        <translation>نسخ بتنسيق</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -3833,7 +3833,7 @@
     </message>
     <message>
         <source>Actions</source>
-        <translation>أجراءات</translation>
+        <translation>عمل</translation>
     </message>
     <message>
         <source>Log</source>

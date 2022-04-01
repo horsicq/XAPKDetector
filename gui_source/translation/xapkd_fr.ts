@@ -2342,19 +2342,19 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>Copier le nom</translation>
+        <translation>Copier en tant que</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>Copier la signature</translation>
+        <translation>Signature hexadécimale</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Copier l&apos;adresse</translation>
+        <translation>Copier l&apos;adresse du curseur</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>Copier le décalage</translation>
+        <translation>Copier le décalage du curseur</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3741,23 +3741,23 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>Copier le nom</translation>
+        <translation>Copier en tant que</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>Copier la signature</translation>
+        <translation>Signature hexadécimale</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Copier l&apos;adresse</translation>
+        <translation>Copier l&apos;adresse du curseur</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>Copier le décalage</translation>
+        <translation>Copier le décalage du curseur</translation>
     </message>
     <message>
         <source>Copy size</source>
-        <translation>Copier la taille</translation>
+        <translation>Copier en tant que</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -3833,7 +3833,7 @@
     </message>
     <message>
         <source>Actions</source>
-        <translation>Actions</translation>
+        <translation>Action</translation>
     </message>
     <message>
         <source>Log</source>

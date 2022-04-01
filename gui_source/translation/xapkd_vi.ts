@@ -2342,19 +2342,19 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>Sao chép tên</translation>
+        <translation>Sao chép dưới dạng</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>Sao chép chữ ký</translation>
+        <translation>Chữ ký hex</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Sao chép địa chỉ</translation>
+        <translation>Sao chép địa chỉ con trỏ</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>Sao chép độ lệch</translation>
+        <translation>Sao chép bù đắp con trỏ</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3741,23 +3741,23 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>Sao chép tên</translation>
+        <translation>Sao chép dưới dạng</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>Sao chép chữ ký</translation>
+        <translation>Chữ ký hex</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Sao chép địa chỉ</translation>
+        <translation>Sao chép địa chỉ con trỏ</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>Sao chép độ lệch</translation>
+        <translation>Sao chép bù đắp con trỏ</translation>
     </message>
     <message>
         <source>Copy size</source>
-        <translation>Sao chép kích thước</translation>
+        <translation>Sao chép dưới dạng</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -3833,7 +3833,7 @@
     </message>
     <message>
         <source>Actions</source>
-        <translation>Hành động</translation>
+        <translation>Hoạt động</translation>
     </message>
     <message>
         <source>Log</source>

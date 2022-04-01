@@ -2342,7 +2342,7 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>コピー</translation>
+        <translation>としてコピー</translation>
     </message>
     <message>
         <source>Copy signature</source>
@@ -2354,7 +2354,7 @@
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>オフセット値</translation>
+        <translation>カーソルオフセットのコピー</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3741,7 +3741,7 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>コピー</translation>
+        <translation>としてコピー</translation>
     </message>
     <message>
         <source>Copy signature</source>
@@ -3753,11 +3753,11 @@
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>オフセット値</translation>
+        <translation>カーソルオフセットのコピー</translation>
     </message>
     <message>
         <source>Copy size</source>
-        <translation>コピー</translation>
+        <translation>としてコピー</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -3833,7 +3833,7 @@
     </message>
     <message>
         <source>Actions</source>
-        <translation>行動</translation>
+        <translation>動作</translation>
     </message>
     <message>
         <source>Log</source>

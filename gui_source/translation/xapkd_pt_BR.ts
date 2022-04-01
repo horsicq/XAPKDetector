@@ -21,7 +21,7 @@
     </message>
     <message>
         <source>Table</source>
-        <translation>Mesa</translation>
+        <translation>Tabela</translation>
     </message>
     <message>
         <source>Open</source>
@@ -37,7 +37,7 @@
     </message>
     <message>
         <source>Strings</source>
-        <translation>Cordas</translation>
+        <translation>Strings</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -45,7 +45,7 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Cerquilha</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Copy</source>
@@ -129,11 +129,11 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Cerquilha</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Cordas</translation>
+        <translation>Strings</translation>
     </message>
     <message>
         <source>Memory map</source>
@@ -164,7 +164,7 @@
     </message>
     <message>
         <source>Website</source>
-        <translation>Local na rede Internet</translation>
+        <translation>Site</translation>
     </message>
     <message>
         <source>Donate</source>
@@ -202,7 +202,7 @@
     </message>
     <message>
         <source>Spaces</source>
-        <translation>Spaces</translation>
+        <translation>Espaços</translation>
     </message>
     <message>
         <source>Upper</source>
@@ -241,7 +241,7 @@
     <name>DialogCreateViewModel</name>
     <message>
         <source>Create view model</source>
-        <translation>Criar modelo de vista</translation>
+        <translation>Criar modelo de visualização</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -322,7 +322,7 @@
     <name>DialogDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation>Desastre</translation>
+        <translation>Disassemblar</translation>
     </message>
     <message>
         <source>Close</source>
@@ -356,7 +356,7 @@
     <name>DialogDisasmProcess</name>
     <message>
         <source>Disasm</source>
-        <translation>Desastre</translation>
+        <translation>Disassemblar</translation>
     </message>
     <message>
         <source>Opcodes</source>
@@ -439,7 +439,7 @@
     <name>DialogGoToAddress</name>
     <message>
         <source>Go to address</source>
-        <translation>Ir para endereço</translation>
+        <translation>Ir para o endereço</translation>
     </message>
     <message>
         <source>Address</source>
@@ -482,7 +482,7 @@
     <name>DialogHash</name>
     <message>
         <source>Hash</source>
-        <translation>Cerquilha</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Close</source>
@@ -530,7 +530,7 @@
     </message>
     <message>
         <source>Spaces</source>
-        <translation>Spaces</translation>
+        <translation>Espaços</translation>
     </message>
     <message>
         <source>Upper</source>
@@ -598,7 +598,7 @@
     <name>DialogMultiDisasm</name>
     <message>
         <source>Disasm</source>
-        <translation>Desastre</translation>
+        <translation>Disassemblar</translation>
     </message>
     <message>
         <source>Close</source>
@@ -613,7 +613,7 @@
     </message>
     <message>
         <source>Spaces</source>
-        <translation>Spaces</translation>
+        <translation>Espaços</translation>
     </message>
     <message>
         <source>Upper</source>
@@ -672,7 +672,7 @@
     </message>
     <message>
         <source>Create view model</source>
-        <translation>Criar modelo de vista</translation>
+        <translation>Criar modelo de visualização</translation>
     </message>
     <message>
         <source>Error</source>
@@ -699,7 +699,7 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Signatures</translation>
+        <translation>Assinaturas</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -707,7 +707,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Desastre</translation>
+        <translation>Disassemblar</translation>
     </message>
     <message>
         <source>Information</source>
@@ -745,7 +745,7 @@
     </message>
     <message>
         <source>String</source>
-        <translation>Fragmento</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Match case</source>
@@ -799,7 +799,7 @@
     <name>DialogSearchSignatures</name>
     <message>
         <source>Signatures</source>
-        <translation>Signatures</translation>
+        <translation>Assinaturas</translation>
     </message>
     <message>
         <source>Close</source>
@@ -810,7 +810,7 @@
     <name>DialogSearchStrings</name>
     <message>
         <source>Strings</source>
-        <translation>Cordas</translation>
+        <translation>Strings</translation>
     </message>
     <message>
         <source>Close</source>
@@ -863,7 +863,7 @@
     <name>DialogShowImage</name>
     <message>
         <source>Image</source>
-        <translation>Image</translation>
+        <translation>Imagem</translation>
     </message>
     <message>
         <source>Close</source>
@@ -1020,7 +1020,7 @@
     <name>DialogXDisasmViewColors</name>
     <message>
         <source>Colors</source>
-        <translation></translation>
+        <translation>Cores</translation>
     </message>
     <message>
         <source>Cancel</source>
@@ -1036,7 +1036,7 @@
     </message>
     <message>
         <source>Background</source>
-        <translation></translation>
+        <translation>Background</translation>
     </message>
 </context>
 <context>
@@ -1080,7 +1080,7 @@
     </message>
     <message>
         <source>Bind</source>
-        <translation>Ligar</translation>
+        <translation>Vincular</translation>
     </message>
 </context>
 <context>
@@ -1098,11 +1098,11 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Desastre</translation>
+        <translation>Disassemblar</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Cordas</translation>
+        <translation>Strings</translation>
     </message>
     <message>
         <source>Memory map</source>
@@ -1134,11 +1134,11 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Cerquilha</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Signatures</translation>
+        <translation>Assinaturas</translation>
     </message>
     <message>
         <source>Sections</source>
@@ -1226,7 +1226,7 @@
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Dados não tratados</translation>
+        <translation>Dados raw</translation>
     </message>
     <message>
         <source>Name</source>
@@ -1257,7 +1257,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Desastre</translation>
+        <translation>Disassemblar</translation>
     </message>
     <message>
         <source>Base address</source>
@@ -1356,7 +1356,7 @@
     </message>
     <message>
         <source>Strings</source>
-        <translation>Cordas</translation>
+        <translation>Strings</translation>
     </message>
     <message>
         <source>Entropy</source>
@@ -1364,7 +1364,7 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Cerquilha</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -1457,7 +1457,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Desastre</translation>
+        <translation>Disassemblar</translation>
     </message>
 </context>
 <context>
@@ -1479,11 +1479,11 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Desastre</translation>
+        <translation>Disassemblar</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Cordas</translation>
+        <translation>Strings</translation>
     </message>
     <message>
         <source>Memory map</source>
@@ -1507,11 +1507,11 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Cerquilha</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Signatures</translation>
+        <translation>Assinaturas</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -1571,11 +1571,11 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Desastre</translation>
+        <translation>Disassemblar</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Cordas</translation>
+        <translation>Strings</translation>
     </message>
     <message>
         <source>Memory map</source>
@@ -1599,11 +1599,11 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Cerquilha</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Signatures</translation>
+        <translation>Assinaturas</translation>
     </message>
     <message>
         <source>Commands</source>
@@ -1623,7 +1623,7 @@
     </message>
     <message>
         <source>Binding</source>
-        <translation>Obrigatório</translation>
+        <translation>Vinculo</translation>
     </message>
     <message>
         <source>Weak binding</source>
@@ -1639,7 +1639,7 @@
     </message>
     <message>
         <source>String table</source>
-        <translation>Mesa de cordas</translation>
+        <translation>Tabela de strings</translation>
     </message>
     <message>
         <source>Symbol table</source>
@@ -1671,7 +1671,7 @@
     </message>
     <message>
         <source>Data in code</source>
-        <translation>Dados no código</translation>
+        <translation>Dados em código</translation>
     </message>
     <message>
         <source>Unknown</source>
@@ -1702,11 +1702,11 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Desastre</translation>
+        <translation>Disassemblar</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Cordas</translation>
+        <translation>Strings</translation>
     </message>
     <message>
         <source>Memory map</source>
@@ -1730,11 +1730,11 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Cerquilha</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Signatures</translation>
+        <translation>Assinaturas</translation>
     </message>
     <message>
         <source>Overlay</source>
@@ -1761,7 +1761,7 @@
     </message>
     <message>
         <source>String</source>
-        <translation>Fragmento</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Name</source>
@@ -1787,11 +1787,11 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Desastre</translation>
+        <translation>Disassemblar</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Cordas</translation>
+        <translation>Strings</translation>
     </message>
     <message>
         <source>Memory map</source>
@@ -1815,11 +1815,11 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Cerquilha</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Signatures</translation>
+        <translation>Assinaturas</translation>
     </message>
     <message>
         <source>Segments</source>
@@ -1877,7 +1877,7 @@
     </message>
     <message>
         <source>Strings</source>
-        <translation>Cordas</translation>
+        <translation>Strings</translation>
     </message>
     <message>
         <source>Memory map</source>
@@ -1901,11 +1901,11 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Cerquilha</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Signatures</translation>
+        <translation>Assinaturas</translation>
     </message>
 </context>
 <context>
@@ -1924,7 +1924,7 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Cerquilha</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2006,11 +2006,11 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Desastre</translation>
+        <translation>Disassemblar</translation>
     </message>
     <message>
         <source>Strings</source>
-        <translation>Cordas</translation>
+        <translation>Strings</translation>
     </message>
     <message>
         <source>Memory map</source>
@@ -2038,7 +2038,7 @@
     </message>
     <message>
         <source>Table</source>
-        <translation>Mesa</translation>
+        <translation>Tabela</translation>
     </message>
     <message>
         <source>Tree</source>
@@ -2054,7 +2054,7 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Cerquilha</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Info</source>
@@ -2062,7 +2062,7 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Signatures</translation>
+        <translation>Assinaturas</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -2168,7 +2168,7 @@
     <name>QHexViewWidget</name>
     <message>
         <source>Go to address</source>
-        <translation>Ir para endereço</translation>
+        <translation>Ir para o endereço</translation>
     </message>
     <message>
         <source>Cursor</source>
@@ -2188,7 +2188,7 @@
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Dados não tratados</translation>
+        <translation>Dados raw</translation>
     </message>
     <message>
         <source>Save dump</source>
@@ -2215,7 +2215,7 @@
     </message>
     <message>
         <source>String</source>
-        <translation>Fragmento</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Library name</source>
@@ -2223,7 +2223,7 @@
     </message>
     <message>
         <source>Interpreter</source>
-        <translation>Intérprete</translation>
+        <translation>Interpretador</translation>
     </message>
     <message>
         <source>Name</source>
@@ -2255,11 +2255,11 @@
     </message>
     <message>
         <source>Write error</source>
-        <translation>Escrever erro</translation>
+        <translation>Erro de escrita</translation>
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation>Impossível abrir arquivo</translation>
+        <translation>Não foi possível abrir o arquivo</translation>
     </message>
 </context>
 <context>
@@ -2338,23 +2338,23 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Signatures</translation>
+        <translation>Assinaturas</translation>
     </message>
     <message>
         <source>Copy name</source>
-        <translation>Copiar o nome</translation>
+        <translation>Copiar como</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>Copiar assinatura</translation>
+        <translation>Assinatura hexadecimal</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Copiar endereço</translation>
+        <translation>Copiar endereço do cursor</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>Deslocamento de cópia</translation>
+        <translation>Copiar deslocamento do cursor</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -2377,7 +2377,7 @@
     </message>
     <message>
         <source>Strings</source>
-        <translation>Cordas</translation>
+        <translation>Strings</translation>
     </message>
     <message>
         <source>Copy</source>
@@ -2385,7 +2385,7 @@
     </message>
     <message>
         <source>String</source>
-        <translation>Fragmento</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Address</source>
@@ -2464,7 +2464,7 @@
     </message>
     <message>
         <source>Image</source>
-        <translation>Image</translation>
+        <translation>Imagem</translation>
     </message>
     <message>
         <source>Installer</source>
@@ -2560,7 +2560,7 @@
     </message>
     <message>
         <source>String</source>
-        <translation>Fragmento</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Archive</source>
@@ -2628,7 +2628,7 @@
     <name>ToolsWidget</name>
     <message>
         <source>Strings</source>
-        <translation>Cordas</translation>
+        <translation>Strings</translation>
     </message>
 </context>
 <context>
@@ -2671,7 +2671,7 @@
     </message>
     <message>
         <source>Image</source>
-        <translation>Image</translation>
+        <translation>Imagem</translation>
     </message>
     <message>
         <source>Text</source>
@@ -2687,11 +2687,11 @@
     </message>
     <message>
         <source>Write error</source>
-        <translation>Escrever erro</translation>
+        <translation>Erro de escrita</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation>Predefinição</translation>
+        <translation>Padrão</translation>
     </message>
     <message>
         <source>Bytes</source>
@@ -2785,7 +2785,7 @@
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Dados não tratados</translation>
+        <translation>Dados raw</translation>
     </message>
     <message>
         <source>Nothing found</source>
@@ -2839,11 +2839,11 @@
     </message>
     <message>
         <source>Go to address</source>
-        <translation>Ir para endereço</translation>
+        <translation>Ir para o endereço</translation>
     </message>
     <message>
         <source>Go to offset</source>
-        <translation>Vá para compensar</translation>
+        <translation>Vá para o deslocamento</translation>
     </message>
     <message>
         <source>Go to entry point</source>
@@ -2918,7 +2918,7 @@
     </message>
     <message>
         <source>Colors</source>
-        <translation></translation>
+        <translation>Cores</translation>
     </message>
 </context>
 <context>
@@ -2973,7 +2973,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Desastre</translation>
+        <translation>Disassemblar</translation>
     </message>
     <message>
         <source>To data</source>
@@ -2981,7 +2981,7 @@
     </message>
     <message>
         <source>Raw data</source>
-        <translation>Dados não tratados</translation>
+        <translation>Dados raw</translation>
     </message>
     <message>
         <source>Save dump</source>
@@ -3000,7 +3000,7 @@
     </message>
     <message>
         <source>Cannot load file</source>
-        <translation>Não pode carregar o arquivo</translation>
+        <translation>Não foi possível carregar o arquivo</translation>
     </message>
 </context>
 <context>
@@ -3015,7 +3015,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Desastre</translation>
+        <translation>Disassemblar</translation>
     </message>
     <message>
         <source>Prototype</source>
@@ -3027,7 +3027,7 @@
     </message>
     <message>
         <source>Array</source>
-        <translation>Variedade</translation>
+        <translation>Array</translation>
     </message>
     <message>
         <source>Variable</source>
@@ -3035,7 +3035,7 @@
     </message>
     <message>
         <source>Pointer</source>
-        <translation>Pointer</translation>
+        <translation>Ponteiro</translation>
     </message>
     <message>
         <source>Error</source>
@@ -3051,7 +3051,7 @@
     </message>
     <message>
         <source>Files</source>
-        <translation>arquivos</translation>
+        <translation>Arquivos</translation>
     </message>
     <message>
         <source>All files</source>
@@ -3125,7 +3125,7 @@
     </message>
     <message>
         <source>Strings</source>
-        <translation>Cordas</translation>
+        <translation>Strings</translation>
     </message>
     <message>
         <source>Images</source>
@@ -3286,7 +3286,7 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Cerquilha</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Name</source>
@@ -3324,11 +3324,11 @@
     </message>
     <message>
         <source>Go to offset</source>
-        <translation>Vá para compensar</translation>
+        <translation>Vá para o deslocamento</translation>
     </message>
     <message>
         <source>Go to address</source>
-        <translation>Ir para endereço</translation>
+        <translation>Ir para o endereço</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -3352,11 +3352,11 @@
     </message>
     <message>
         <source>Data as hex</source>
-        <translation></translation>
+        <translation>Dados como hexadecimal</translation>
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Desastre</translation>
+        <translation>Disassemblar</translation>
     </message>
     <message>
         <source>Memory map</source>
@@ -3619,7 +3619,7 @@
     </message>
     <message>
         <source>Driver</source>
-        <translation>Motorista</translation>
+        <translation>Driver</translation>
     </message>
     <message>
         <source>Boot application</source>
@@ -3647,7 +3647,7 @@
     </message>
     <message>
         <source>Cannot open file</source>
-        <translation>Impossível abrir arquivo</translation>
+        <translation>Não foi possível abrir o arquivo</translation>
     </message>
     <message>
         <source>The file is signed and the signature was verified</source>
@@ -3721,7 +3721,7 @@
     </message>
     <message>
         <source>String</source>
-        <translation>Fragmento</translation>
+        <translation>String</translation>
     </message>
     <message>
         <source>Offset</source>
@@ -3741,23 +3741,23 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>Copiar o nome</translation>
+        <translation>Copiar como</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>Copiar assinatura</translation>
+        <translation>Assinatura hexadecimal</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Copiar endereço</translation>
+        <translation>Copiar endereço do cursor</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>Deslocamento de cópia</translation>
+        <translation>Copiar deslocamento do cursor</translation>
     </message>
     <message>
         <source>Copy size</source>
-        <translation>Tamanho da cópia</translation>
+        <translation>Copiar como</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -3765,11 +3765,11 @@
     </message>
     <message>
         <source>Go to address</source>
-        <translation>Ir para endereço</translation>
+        <translation>Ir para o endereço</translation>
     </message>
     <message>
         <source>Go to offset</source>
-        <translation>Vá para compensar</translation>
+        <translation>Vá para o deslocamento</translation>
     </message>
     <message>
         <source>Signature</source>
@@ -3777,7 +3777,7 @@
     </message>
     <message>
         <source>Signatures</source>
-        <translation>Signatures</translation>
+        <translation>Assinaturas</translation>
     </message>
     <message>
         <source>Find</source>
@@ -3805,7 +3805,7 @@
     </message>
     <message>
         <source>Disasm</source>
-        <translation>Desastre</translation>
+        <translation>Disassemblar</translation>
     </message>
     <message>
         <source>Memory map</source>
@@ -3833,7 +3833,7 @@
     </message>
     <message>
         <source>Actions</source>
-        <translation>Ações</translation>
+        <translation>Açao</translation>
     </message>
     <message>
         <source>Log</source>
@@ -3849,7 +3849,7 @@
     </message>
     <message>
         <source>Threads</source>
-        <translation>Tópicos</translation>
+        <translation>Threads</translation>
     </message>
     <message>
         <source>Handles</source>
@@ -3897,7 +3897,7 @@
     </message>
     <message>
         <source>Hash</source>
-        <translation>Cerquilha</translation>
+        <translation>Hash</translation>
     </message>
     <message>
         <source>Scan</source>
@@ -3905,11 +3905,11 @@
     </message>
     <message>
         <source>Strings</source>
-        <translation>Cordas</translation>
+        <translation>Strings</translation>
     </message>
     <message>
         <source>Structs</source>
-        <translation>Structs</translation>
+        <translation>Estruturas</translation>
     </message>
     <message>
         <source>Viewer</source>
@@ -3953,7 +3953,7 @@
     </message>
     <message>
         <source>Table</source>
-        <translation>Mesa</translation>
+        <translation>Tabela</translation>
     </message>
     <message>
         <source>Process</source>

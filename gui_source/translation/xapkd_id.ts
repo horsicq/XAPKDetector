@@ -2342,19 +2342,19 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>Salin nama</translation>
+        <translation>Salin sebagai</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>Salin tanda tangan</translation>
+        <translation>Tanda tangan heksagonal</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Salin alamat</translation>
+        <translation>Salin alamat kursor</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>Salin offset</translation>
+        <translation>Salin offset kursor</translation>
     </message>
     <message>
         <source>Hex</source>
@@ -3741,23 +3741,23 @@
     </message>
     <message>
         <source>Copy name</source>
-        <translation>Salin nama</translation>
+        <translation>Salin sebagai</translation>
     </message>
     <message>
         <source>Copy signature</source>
-        <translation>Salin tanda tangan</translation>
+        <translation>Tanda tangan heksagonal</translation>
     </message>
     <message>
         <source>Copy address</source>
-        <translation>Salin alamat</translation>
+        <translation>Salin alamat kursor</translation>
     </message>
     <message>
         <source>Copy offset</source>
-        <translation>Salin offset</translation>
+        <translation>Salin offset kursor</translation>
     </message>
     <message>
         <source>Copy size</source>
-        <translation>Salin ukuran</translation>
+        <translation>Salin sebagai</translation>
     </message>
     <message>
         <source>Dump to file</source>
@@ -3833,7 +3833,7 @@
     </message>
     <message>
         <source>Actions</source>
-        <translation>tindakan</translation>
+        <translation>Tindakan</translation>
     </message>
     <message>
         <source>Log</source>
