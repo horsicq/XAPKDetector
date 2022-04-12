@@ -54,3 +54,8 @@ macx {
 
 RESOURCES += \
     resources.qrc
+
+DISTFILES += \
+    ../changelog.txt \
+    ../release_version.txt \
+    CMakeLists.txt
