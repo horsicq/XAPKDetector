@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
     if((argc==2)&&((QString(argv[1])=="--version")||(QString(argv[1])=="-v")))
     {
         QString sInfo=QString("%1 v%2").arg(X_APPLICATIONDISPLAYNAME,X_APPLICATIONVERSION);
-        printf("%s\n",sInfo.toLatin1().data());
+        printf("%s\n",sInfo.toUtf8().data());
 
         return 0;
     }
@@ -55,8 +55,9 @@ int main(int argc, char *argv[])
 
     xOptions.setName(X_OPTIONSFILE);
 
-    xOptions.addID(XOptions::ID_VIEW_QSS);
+    xOptions.addID(XOptions::ID_VIEW_FONT,"");
     xOptions.addID(XOptions::ID_VIEW_LANG,"System");
+    xOptions.addID(XOptions::ID_VIEW_QSS);
     xOptions.addID(XOptions::ID_VIEW_STYLE,"Fusion");
 
     xOptions.load();
