@@ -106,3 +106,6 @@
 [submodule "XOnlineTools"]
 	path = XOnlineTools
 	url = https://github.com/horsicq/XOnlineTools
+[submodule "XAboutWidget"]
+	path = XAboutWidget
+	url = https://github.com/horsicq/XAboutWidget
