@@ -109,3 +109,6 @@
 [submodule "XAboutWidget"]
 	path = XAboutWidget
 	url = https://github.com/horsicq/XAboutWidget
+[submodule "die_script"]
+	path = die_script
+	url = https://github.com/horsicq/die_script
