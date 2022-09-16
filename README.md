@@ -22,4 +22,12 @@
 ![alt text](https://github.com/horsicq/XAPKDetector/blob/master/docs/6.png "6")
 ![alt text](https://github.com/horsicq/XAPKDetector/blob/master/docs/7.png "7")
 
+## Special Thanks
+
+- [PELock Software Protection & Reverse Engineering](https://www.pelock.com)
+
 ![alt text](https://github.com/horsicq/XAPKDetector/blob/master/mascots/xapkd.png "Mascot")
+
+## Special Thanks
+
+- [PELock Software Protection & Reverse Engineering](https://www.pelock.com)
