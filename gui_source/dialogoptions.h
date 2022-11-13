@@ -26,6 +26,7 @@
 #include <QFileDialog>
 #include <QMessageBox>
 #include <QSettings>
+
 #include "../global.h"
 #include "searchsignaturesoptionswidget.h"
 #include "staticscanoptionswidget.h"
@@ -38,12 +39,11 @@ namespace Ui {
 class DialogOptions;
 }
 
-class DialogOptions : public QDialog
-{
+class DialogOptions : public QDialog {
     Q_OBJECT
 
 public:
-    explicit DialogOptions(QWidget *pParent,XOptions *pOptions);
+    explicit DialogOptions(QWidget *pParent, XOptions *pOptions);
     ~DialogOptions();
 
 private:
@@ -54,4 +54,4 @@ private:
     XDisasmViewOptionsWidget *g_pXDisasmViewOptionsWidget;
 };
 
-#endif // DIALOGOPTIONS_H
+#endif  // DIALOGOPTIONS_H

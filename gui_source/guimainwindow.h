@@ -25,6 +25,7 @@
 #include <QFileDialog>
 #include <QMainWindow>
 #include <QMimeData>
+
 #include "../global.h"
 #include "archive_widget.h"
 #include "dialogabout.h"
@@ -32,17 +33,15 @@
 #include "dialogshortcuts.h"
 #include "xoptions.h"
 
-namespace Ui
-{
+namespace Ui {
 class GuiMainWindow;
 }
 
-class GuiMainWindow : public QMainWindow
-{
+class GuiMainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
-    explicit GuiMainWindow(QWidget *pParent=nullptr);
+    explicit GuiMainWindow(QWidget *pParent = nullptr);
     ~GuiMainWindow() override;
 
 private slots:
@@ -64,7 +63,7 @@ private slots:
     void on_pushButtonELF_clicked();
     void on_pushButtonManifestMF_clicked();
     void on_pushButtonAndroidManifest_clicked();
-    void openFile(QString sRecordName,XBinary::FT fileType,bool bIsVirtual);
+    void openFile(QString sRecordName, XBinary::FT fileType, bool bIsVirtual);
     void openFile();
 
 private:
@@ -82,8 +81,8 @@ private:
     FW_DEF::OPTIONS g_fwOptions;
     QList<CreateViewModelProcess::RECORD> g_listDEX;
     QList<CreateViewModelProcess::RECORD> g_listELF;
-//    QList<CreateViewModelProcess::RECORD> g_listAndroidXML;
+    //    QList<CreateViewModelProcess::RECORD> g_listAndroidXML;
     QList<QAction *> g_listActions;
 };
 
-#endif // GUIMAINWINDOW_H
+#endif  // GUIMAINWINDOW_H

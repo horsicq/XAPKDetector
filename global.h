@@ -31,4 +31,4 @@
 #define X_OPTIONSFILE "xapkd.ini"
 #define X_SHORTCUTSFILE "shortcuts.ini"
 
-#endif // _GLOBAL_H
+#endif  // _GLOBAL_H
