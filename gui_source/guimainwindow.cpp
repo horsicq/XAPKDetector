@@ -22,7 +22,8 @@
 
 #include "ui_guimainwindow.h"
 
-GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui::GuiMainWindow) {
+GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui::GuiMainWindow)
+{
     ui->setupUi(this);
 
     setWindowTitle(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION));
@@ -78,14 +79,16 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     }
 }
 
-GuiMainWindow::~GuiMainWindow() {
+GuiMainWindow::~GuiMainWindow()
+{
     g_xOptions.save();
     g_xShortcuts.save();
 
     delete ui;
 }
 
-void GuiMainWindow::handleFile(QString sFileName) {
+void GuiMainWindow::handleFile(QString sFileName)
+{
     QFileInfo fi(sFileName);
 
     if (fi.isFile()) {
@@ -111,11 +114,13 @@ void GuiMainWindow::handleFile(QString sFileName) {
     }
 }
 
-void GuiMainWindow::on_pushButtonExit_clicked() {
+void GuiMainWindow::on_pushButtonExit_clicked()
+{
     this->close();
 }
 
-void GuiMainWindow::on_pushButtonOpenFile_clicked() {
+void GuiMainWindow::on_pushButtonOpenFile_clicked()
+{
     QString sDirectory = g_xOptions.getLastDirectory();
 
     QString sFileName = QFileDialog::getOpenFileName(this, tr("Open file") + QString("..."), sDirectory, tr("All files") + QString(" (*)"));
@@ -125,7 +130,8 @@ void GuiMainWindow::on_pushButtonOpenFile_clicked() {
     }
 }
 
-void GuiMainWindow::on_pushButtonScan_clicked() {
+void GuiMainWindow::on_pushButtonScan_clicked()
+{
     QString sFileName = ui->lineEditFileName->text().trimmed();
 
     if (sFileName != "") {
@@ -133,13 +139,15 @@ void GuiMainWindow::on_pushButtonScan_clicked() {
     }
 }
 
-void GuiMainWindow::on_pushButtonAbout_clicked() {
+void GuiMainWindow::on_pushButtonAbout_clicked()
+{
     DialogAbout di(this);
 
     di.exec();
 }
 
-void GuiMainWindow::on_pushButtonShortcuts_clicked() {
+void GuiMainWindow::on_pushButtonShortcuts_clicked()
+{
     DialogShortcuts dialogShortcuts(this);
 
     dialogShortcuts.setData(&g_xShortcuts);
@@ -149,15 +157,18 @@ void GuiMainWindow::on_pushButtonShortcuts_clicked() {
     adjustWindow();
 }
 
-void GuiMainWindow::dragEnterEvent(QDragEnterEvent *pEvent) {
+void GuiMainWindow::dragEnterEvent(QDragEnterEvent *pEvent)
+{
     pEvent->acceptProposedAction();
 }
 
-void GuiMainWindow::dragMoveEvent(QDragMoveEvent *pEvent) {
+void GuiMainWindow::dragMoveEvent(QDragMoveEvent *pEvent)
+{
     pEvent->acceptProposedAction();
 }
 
-void GuiMainWindow::dropEvent(QDropEvent *pEvent) {
+void GuiMainWindow::dropEvent(QDropEvent *pEvent)
+{
     const QMimeData *pMimeData = pEvent->mimeData();
 
     if (pMimeData->hasUrls()) {
@@ -173,7 +184,8 @@ void GuiMainWindow::dropEvent(QDropEvent *pEvent) {
     }
 }
 
-void GuiMainWindow::on_pushButtonOptions_clicked() {
+void GuiMainWindow::on_pushButtonOptions_clicked()
+{
     DialogOptions dialogOptions(this, &g_xOptions);
 
     dialogOptions.exec();
@@ -181,13 +193,15 @@ void GuiMainWindow::on_pushButtonOptions_clicked() {
     adjustWindow();
 }
 
-void GuiMainWindow::adjustWindow() {
+void GuiMainWindow::adjustWindow()
+{
     //    ui->widgetViewer->adjustView();
 
     g_xOptions.adjustStayOnTop(this);
 }
 
-void GuiMainWindow::on_pushButtonHex_clicked() {
+void GuiMainWindow::on_pushButtonHex_clicked()
+{
     QString sFileName = ui->lineEditFileName->text().trimmed();
 
     if (sFileName != "") {
@@ -207,7 +221,8 @@ void GuiMainWindow::on_pushButtonHex_clicked() {
     }
 }
 
-void GuiMainWindow::on_pushButtonStrings_clicked() {
+void GuiMainWindow::on_pushButtonStrings_clicked()
+{
     QString sFileName = ui->lineEditFileName->text().trimmed();
 
     if (sFileName != "") {
@@ -230,7 +245,8 @@ void GuiMainWindow::on_pushButtonStrings_clicked() {
     }
 }
 
-void GuiMainWindow::on_pushButtonHash_clicked() {
+void GuiMainWindow::on_pushButtonHash_clicked()
+{
     QString sFileName = ui->lineEditFileName->text().trimmed();
 
     if (sFileName != "") {
@@ -249,7 +265,8 @@ void GuiMainWindow::on_pushButtonHash_clicked() {
     }
 }
 
-void GuiMainWindow::on_pushButtonEntropy_clicked() {
+void GuiMainWindow::on_pushButtonEntropy_clicked()
+{
     QString sFileName = ui->lineEditFileName->text().trimmed();
 
     if (sFileName != "") {
@@ -268,7 +285,8 @@ void GuiMainWindow::on_pushButtonEntropy_clicked() {
     }
 }
 
-void GuiMainWindow::scanFile(QString sFileName) {
+void GuiMainWindow::scanFile(QString sFileName)
+{
     QFile file;
     file.setFileName(sFileName);
 
@@ -283,7 +301,8 @@ void GuiMainWindow::scanFile(QString sFileName) {
     }
 }
 
-void GuiMainWindow::on_pushButtonSignature_clicked() {
+void GuiMainWindow::on_pushButtonSignature_clicked()
+{
     QString sFileName = ui->lineEditFileName->text().trimmed();
 
     if (sFileName != "") {
@@ -315,23 +334,28 @@ void GuiMainWindow::on_pushButtonSignature_clicked() {
     }
 }
 
-void GuiMainWindow::on_pushButtonDEX_clicked() {
+void GuiMainWindow::on_pushButtonDEX_clicked()
+{
     _handleList(&g_listDEX);
 }
 
-void GuiMainWindow::on_pushButtonELF_clicked() {
+void GuiMainWindow::on_pushButtonELF_clicked()
+{
     _handleList(&g_listELF);
 }
 
-void GuiMainWindow::on_pushButtonManifestMF_clicked() {
+void GuiMainWindow::on_pushButtonManifestMF_clicked()
+{
     openFile("META-INF/MANIFEST.MF", XBinary::FT_PLAINTEXT, true);
 }
 
-void GuiMainWindow::on_pushButtonAndroidManifest_clicked() {
+void GuiMainWindow::on_pushButtonAndroidManifest_clicked()
+{
     openFile("AndroidManifest.xml", XBinary::FT_ANDROIDXML, true);
 }
 
-void GuiMainWindow::openFile(QString sRecordName, XBinary::FT fileType, bool bIsVirtual) {
+void GuiMainWindow::openFile(QString sRecordName, XBinary::FT fileType, bool bIsVirtual)
+{
     QString sFileName;
 
     QTemporaryFile *pFileTemp = nullptr;
@@ -412,7 +436,8 @@ void GuiMainWindow::openFile(QString sRecordName, XBinary::FT fileType, bool bIs
     }
 }
 
-void GuiMainWindow::openFile() {
+void GuiMainWindow::openFile()
+{
     QAction *pAction = qobject_cast<QAction *>(sender());
 
     if (pAction) {
@@ -424,7 +449,8 @@ void GuiMainWindow::openFile() {
     }
 }
 
-void GuiMainWindow::_handleList(QList<CreateViewModelProcess::RECORD> *pList) {
+void GuiMainWindow::_handleList(QList<CreateViewModelProcess::RECORD> *pList)
+{
     qint32 nNumberOfRecords = pList->count();
 
     if (nNumberOfRecords == 1) {

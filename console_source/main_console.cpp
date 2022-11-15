@@ -26,7 +26,8 @@
 #include "scanitemmodel.h"
 #include "staticscan.h"
 
-void ScanFiles(QList<QString> *pListArgs, SpecAbstract::SCAN_OPTIONS *pScanOptions) {
+void ScanFiles(QList<QString> *pListArgs, SpecAbstract::SCAN_OPTIONS *pScanOptions)
+{
     QList<QString> listFileNames;
 
     for (int i = 0; i < pListArgs->count(); i++) {
@@ -74,7 +75,8 @@ void ScanFiles(QList<QString> *pListArgs, SpecAbstract::SCAN_OPTIONS *pScanOptio
     }
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
     QCoreApplication::setOrganizationName(X_ORGANIZATIONNAME);
     QCoreApplication::setOrganizationDomain(X_ORGANIZATIONDOMAIN);
     QCoreApplication::setApplicationName(X_APPLICATIONNAME);

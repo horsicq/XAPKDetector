@@ -22,7 +22,8 @@
 
 #include "ui_dialogabout.h"
 
-DialogAbout::DialogAbout(QWidget *pParent) : QDialog(pParent), ui(new Ui::DialogAbout) {
+DialogAbout::DialogAbout(QWidget *pParent) : QDialog(pParent), ui(new Ui::DialogAbout)
+{
     ui->setupUi(this);
 
     ui->labelVersion->setText(QString("<span style=\" font-weight:600;\">%1</span>").arg(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION)));
@@ -63,10 +64,12 @@ DialogAbout::DialogAbout(QWidget *pParent) : QDialog(pParent), ui(new Ui::Dialog
                                  .arg(tr("Thanks")));
 }
 
-DialogAbout::~DialogAbout() {
+DialogAbout::~DialogAbout()
+{
     delete ui;
 }
 
-void DialogAbout::on_pushButtonOK_clicked() {
+void DialogAbout::on_pushButtonOK_clicked()
+{
     this->close();
 }
