@@ -28,18 +28,21 @@ DialogAbout::DialogAbout(QWidget *pParent) : QDialog(pParent), ui(new Ui::Dialog
 
     ui->labelVersion->setText(QString("<span style=\" font-weight:600;\">%1</span>").arg(XOptions::getTitle(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION)));
 
-    ui->labelBugreports->setText(QString("<html><head/><body><p><span style=\" font-weight:600;\">%1</span>: <a href=\"mailto:horsicq@gmail.com\"><span style=\" text-decoration: "
-                                         "underline; color:#ff0000;\">horsicq@gmail.com</span></a></p></body></html>")
-                                     .arg(tr("Bugreports")));
-    ui->labelWebsite->setText(QString("<html><head/><body><p><span style=\" font-weight:600;\">%1</span>: <a href=\"http://ntinfo.biz\"><span style=\" text-decoration: underline; "
-                                      "color:#ff0000;\">http://ntinfo.biz</span></a></p></body></html>")
-                                  .arg(tr("Website")));
+    ui->labelBugreports->setText(
+        QString("<html><head/><body><p><span style=\" font-weight:600;\">%1</span>: <a href=\"mailto:horsicq@gmail.com\"><span style=\" text-decoration: "
+                "underline; color:#ff0000;\">horsicq@gmail.com</span></a></p></body></html>")
+            .arg(tr("Bugreports")));
+    ui->labelWebsite->setText(
+        QString("<html><head/><body><p><span style=\" font-weight:600;\">%1</span>: <a href=\"http://ntinfo.biz\"><span style=\" text-decoration: underline; "
+                "color:#ff0000;\">http://ntinfo.biz</span></a></p></body></html>")
+            .arg(tr("Website")));
     ui->labelDonate->setText(QString("<html><head/><body><p><span style=\" font-weight:600;\">%1(Paypal): </span><a href=\"mailto:ntinfo.re@gmail.com\"><span style=\" "
                                      "text-decoration: underline; color:#ff0000;\">ntinfo.re@gmail.com</span></a></p></body></html>")
                                  .arg(tr("Donate")));
-    ui->labelSourceCode->setText(QString("<html><head/><body><p><span style=\" font-weight:600;\">%1: </span><a href=\"https://github.com/horsicq/XAPKDetector\"><span style=\" "
-                                         "text-decoration: underline; color:#ff0000;\">https://github.com/horsicq/XAPKDetector</span></a></p></body></html>")
-                                     .arg(tr("Source code")));
+    ui->labelSourceCode->setText(
+        QString("<html><head/><body><p><span style=\" font-weight:600;\">%1: </span><a href=\"https://github.com/horsicq/XAPKDetector\"><span style=\" "
+                "text-decoration: underline; color:#ff0000;\">https://github.com/horsicq/XAPKDetector</span></a></p></body></html>")
+            .arg(tr("Source code")));
     ui->labelThanks->setText(QString("<html><head/><body>"
                                      "<p align=\"center\"><span style=\" font-weight:600;\">%1:</span></p>"
                                      "<p align=\"center\">"
