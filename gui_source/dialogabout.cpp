@@ -43,28 +43,29 @@ DialogAbout::DialogAbout(QWidget *pParent) : QDialog(pParent), ui(new Ui::Dialog
         QString("<html><head/><body><p><span style=\" font-weight:600;\">%1: </span><a href=\"https://github.com/horsicq/XAPKDetector\"><span style=\" "
                 "text-decoration: underline; color:#ff0000;\">https://github.com/horsicq/XAPKDetector</span></a></p></body></html>")
             .arg(tr("Source code")));
-    ui->labelThanks->setText(QString("<html><head/><body>"
-                                     "<p align=\"center\"><span style=\" font-weight:600;\">%1:</span></p>"
-                                     "<p align=\"center\">"
-                                     "<a href=\"https://www.mentebinaria.com.br/\"><span style=\" text-decoration: underline; color:#ff0000; \">Fernando Mercês</span></a>, "
-                                     "<a href=\"http://sandsprite.com/\"><span style=\" text-decoration: underline; color:#ff0000;\">David Zimmer</span></a>, "
-                                     "<a href=\"https://github.com/miso-xyz\"><span style=\" text-decoration: underline; color:#ff0000;\">misonothx</span></a>, "
-                                     "</p>"
-                                     "<p align=\"center\">"
-                                     "<a href=\"https://twitter.com/frenchyeti\"><span style=\" text-decoration: underline; color:#ff0000;\">FrenchYeti</span></a>, "
-                                     "<a href=\"https://github.com/fr0zenbag\"><span style=\" text-decoration: underline; color:#ff0000;\">fr0zenbag</span></a>, "
-                                     "<a href=\"https://github.com/AandersonL\"><span style=\" text-decoration: underline; color:#ff0000;\">Anderson Leite</span></a>, "
-                                     "</p>"
-                                     "<p align=\"center\">"
-                                     "<a href=\"https://github.com/filipnavara\"><span style=\" text-decoration: underline; color:#ff0000;\">Filip Navara</span></a>, "
-                                     "<a href=\"https://www.ashemery.com/\"><span style=\" text-decoration: underline; color:#ff0000;\">Ali Hadi</span></a>, "
-                                     "<a href=\"http://mrexodia.re/\"><span style=\" text-decoration: underline; color:#ff0000;\">Duncan Ogilvie</span></a>, "
-                                     "</p>"
-                                     "<p align=\"center\">"
-                                     "<a href=\"https://github.com/leandrofroes\"><span style=\" text-decoration: underline; color:#ff0000;\">Leandro Fróes</span></a>"
-                                     "</p>"
-                                     "</body></html>")
-                                 .arg(tr("Thanks")));
+    ui->labelThanks->setText(
+        QString("<html><head/><body>"
+                "<p align=\"center\"><span style=\" font-weight:600;\">%1:</span></p>"
+                "<p align=\"center\">"
+                "<a href=\"https://www.mentebinaria.com.br/\"><span style=\" text-decoration: underline; color:#ff0000; \">Fernando Mercês</span></a>, "
+                "<a href=\"http://sandsprite.com/\"><span style=\" text-decoration: underline; color:#ff0000;\">David Zimmer</span></a>, "
+                "<a href=\"https://github.com/miso-xyz\"><span style=\" text-decoration: underline; color:#ff0000;\">misonothx</span></a>, "
+                "</p>"
+                "<p align=\"center\">"
+                "<a href=\"https://twitter.com/frenchyeti\"><span style=\" text-decoration: underline; color:#ff0000;\">FrenchYeti</span></a>, "
+                "<a href=\"https://github.com/fr0zenbag\"><span style=\" text-decoration: underline; color:#ff0000;\">fr0zenbag</span></a>, "
+                "<a href=\"https://github.com/AandersonL\"><span style=\" text-decoration: underline; color:#ff0000;\">Anderson Leite</span></a>, "
+                "</p>"
+                "<p align=\"center\">"
+                "<a href=\"https://github.com/filipnavara\"><span style=\" text-decoration: underline; color:#ff0000;\">Filip Navara</span></a>, "
+                "<a href=\"https://www.ashemery.com/\"><span style=\" text-decoration: underline; color:#ff0000;\">Ali Hadi</span></a>, "
+                "<a href=\"http://mrexodia.re/\"><span style=\" text-decoration: underline; color:#ff0000;\">Duncan Ogilvie</span></a>, "
+                "</p>"
+                "<p align=\"center\">"
+                "<a href=\"https://github.com/leandrofroes\"><span style=\" text-decoration: underline; color:#ff0000;\">Leandro Fróes</span></a>"
+                "</p>"
+                "</body></html>")
+            .arg(tr("Thanks")));
 }
 
 DialogAbout::~DialogAbout()
