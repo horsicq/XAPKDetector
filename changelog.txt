@@ -6,7 +6,7 @@
 [+] CMAKE build system
 [+] More than 100 new detects
 [+] New "All types" mode
-[+] New console feautures
+[+] New console features
 [+] Colored output for console
 [+] New translations
 [+] Many bugs have been fixed
