@@ -17,6 +17,7 @@ add_subdirectory(XCppfilt)
 add_subdirectory(XCapstone)
 add_subdirectory(XCapstone/x86)
 add_subdirectory(XArchive)
+add_subdirectory(XYara)
 add_subdirectory(gui_source)
 add_subdirectory(console_source)
 
