@@ -29,7 +29,7 @@
 
 #include "../global.h"
 #include "searchsignaturesoptionswidget.h"
-#include "staticscanoptionswidget.h"
+#include "dieoptionswidget.h"
 #include "xbinary.h"
 #include "xdisasmviewoptionswidget.h"
 #include "xhexviewoptionswidget.h"
@@ -48,7 +48,7 @@ public:
 
 private:
     Ui::DialogOptions *ui;
-    StaticScanOptionsWidget *g_pStaticScanOptionsWidget;
+    DIEOptionsWidget *g_pDIEOptionsWidget;
     SearchSignaturesOptionsWidget *g_pSearchSignaturesOptionsWidget;
     XHexViewOptionsWidget *g_pXHexViewOptionsWidget;
     XDisasmViewOptionsWidget *g_pXDisasmViewOptionsWidget;

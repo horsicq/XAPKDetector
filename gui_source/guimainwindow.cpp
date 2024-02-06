@@ -51,7 +51,7 @@ GuiMainWindow::GuiMainWindow(QWidget *pParent) : QMainWindow(pParent), ui(new Ui
     g_xOptions.addID(XOptions::ID_FILE_CONTEXT, "*");
 #endif
 
-    StaticScanOptionsWidget::setDefaultValues(&g_xOptions);
+    DIEOptionsWidget::setDefaultValues(&g_xOptions);
     SearchSignaturesOptionsWidget::setDefaultValues(&g_xOptions);
     XHexViewOptionsWidget::setDefaultValues(&g_xOptions);
     XDisasmViewOptionsWidget::setDefaultValues(&g_xOptions);
@@ -94,7 +94,7 @@ void GuiMainWindow::handleFile(QString sFileName)
     if (fi.isFile()) {
         ui->lineEditFileName->setText(sFileName);
 
-        ui->widgetArchive->setFileName(sFileName, g_fwOptions, QSet<XBinary::FT>(), this);
+        ui->widgetArchive->setFileName(sFileName, g_fwOptions, QSet<XBinary::FT>());
 
         g_listDEX = ui->widgetArchive->getRecordsByFileType(XBinary::FT_DEX);
         g_listELF = ui->widgetArchive->getRecordsByFileType(XBinary::FT_ELF);
@@ -211,7 +211,7 @@ void GuiMainWindow::on_pushButtonHex_clicked()
         if (XBinary::tryToOpen(&file)) {
             XHexView::OPTIONS options = {};
 
-            DialogHexView dialogHex(this, &file, options);
+            DialogHexView dialogHex(this, &file, options, nullptr);
             dialogHex.setGlobal(&g_xShortcuts, &g_xOptions);
 
             dialogHex.exec();
@@ -235,7 +235,7 @@ void GuiMainWindow::on_pushButtonStrings_clicked()
             options.bUnicode = true;
 
             DialogSearchStrings dialogSearchStrings(this);
-            dialogSearchStrings.setData(&file, options, true);
+            dialogSearchStrings.setData(&file, XBinary::FT_UNKNOWN, options, true);
             dialogSearchStrings.setGlobal(&g_xShortcuts, &g_xOptions);
 
             dialogSearchStrings.exec();
@@ -291,8 +291,8 @@ void GuiMainWindow::scanFile(QString sFileName)
     file.setFileName(sFileName);
 
     if (file.open(QIODevice::ReadOnly)) {
-        DialogStaticScan dialogStaticScan(this);
-        dialogStaticScan.setData(&file, true);
+        DialogNFDScan dialogStaticScan(this);
+        dialogStaticScan.setData(&file, true, XBinary::FT_UNKNOWN);
         // dialogStaticScan.setShortcuts(&g_xShortcuts);
 
         dialogStaticScan.exec();
@@ -320,7 +320,7 @@ void GuiMainWindow::on_pushButtonSignature_clicked()
                     options.sTitle = tr("Signature");
                     options.nStartAddress = os.nOffset;
 
-                    DialogHexView dialogHex(this, &sd, options);
+                    DialogHexView dialogHex(this, &sd, options, nullptr);
                     dialogHex.setGlobal(&g_xShortcuts, &g_xOptions);
 
                     dialogHex.exec();
@@ -425,7 +425,7 @@ void GuiMainWindow::openFile(QString sRecordName, XBinary::FT fileType, bool bIs
             DialogTextInfo dialogTextInfo(this);
             dialogTextInfo.setTitle(sRecordName);
 
-            dialogTextInfo.setFile(sFileName);
+            dialogTextInfo.setFileName(sFileName);
 
             dialogTextInfo.exec();
         }
