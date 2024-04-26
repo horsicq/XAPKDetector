@@ -50,6 +50,7 @@ int main(int argc, char *argv[])
 
     QApplication a(argc, argv);
     QApplication::setWindowIcon(QIcon(":/images/icon.png"));
+    a.setDesktopFileName("xapkd");
 
     XOptions xOptions;
 
