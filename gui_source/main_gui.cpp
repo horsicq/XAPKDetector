@@ -49,11 +49,11 @@ int main(int argc, char *argv[])
     }
 
     QApplication a(argc, argv);
-    
+
 #ifdef Q_OS_LINUX
     a.setDesktopFileName("xapkd");
 #endif
-    
+
     QApplication::setWindowIcon(QIcon(":/images/icon.png"));
 
     XOptions xOptions;
