@@ -53,7 +53,7 @@ void ScanFiles(QList<QString> *pListArgs, SpecAbstract::SCAN_OPTIONS *pScanOptio
 
         static QList<XBinary::SCANSTRUCT> _listRecords = SpecAbstract::convert(&(scanResult.listRecords));
 
-        ScanItemModel model(&_listRecords);
+        ScanItemModel model(&_listRecords, 1, false);
 
         XBinary::FORMATTYPE formatType = XBinary::FORMATTYPE_TEXT;
 

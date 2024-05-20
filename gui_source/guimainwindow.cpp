@@ -94,7 +94,7 @@ void GuiMainWindow::handleFile(QString sFileName)
     if (fi.isFile()) {
         ui->lineEditFileName->setText(sFileName);
 
-        ui->widgetArchive->setFileName(sFileName, g_fwOptions, QSet<XBinary::FT>());
+        ui->widgetArchive->setFileName(sFileName, XBinary::FT_UNKNOWN, g_fwOptions, QSet<XBinary::FT>());
 
         g_listDEX = ui->widgetArchive->getRecordsByFileType(XBinary::FT_DEX);
         g_listELF = ui->widgetArchive->getRecordsByFileType(XBinary::FT_ELF);
