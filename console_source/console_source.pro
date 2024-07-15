@@ -18,9 +18,9 @@ TEMPLATE = app
 SOURCES += \
     main_console.cpp
 
-!contains(XCONFIG, staticscan) {
-    XCONFIG += staticscan
-    include(../StaticScan/staticscan.pri)
+!contains(XCONFIG, specabstract) {
+    XCONFIG += specabstract
+    include(../../_mylibs/SpecAbstract/specabstract.pri)
 }
 
 win32 {

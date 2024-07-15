@@ -1,4 +1,4 @@
-/* Copyright (c) 2020-2023 hors<horsicq@gmail.com>
+/* Copyright (c) 2020-2024 hors<horsicq@gmail.com>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -24,7 +24,7 @@
 
 #include "../global.h"
 #include "scanitemmodel.h"
-#include "staticscan.h"
+#include "specabstract.h"
 
 void ScanFiles(QList<QString> *pListArgs, SpecAbstract::SCAN_OPTIONS *pScanOptions)
 {
@@ -49,11 +49,9 @@ void ScanFiles(QList<QString> *pListArgs, SpecAbstract::SCAN_OPTIONS *pScanOptio
             printf("%s:\n", sFileName.toLatin1().data());
         }
 
-        SpecAbstract::SCAN_RESULT scanResult = StaticScan::processFile(sFileName, pScanOptions);
+        XScanEngine::SCAN_RESULT scanResult = SpecAbstract().scanFile(sFileName, pScanOptions);
 
-        static QList<XBinary::SCANSTRUCT> _listRecords = SpecAbstract::convert(&(scanResult.listRecords));
-
-        ScanItemModel model(&_listRecords, 1, false);
+        ScanItemModel model(&(scanResult.listRecords), 1, false);
 
         XBinary::FORMATTYPE formatType = XBinary::FORMATTYPE_TEXT;
 
@@ -83,7 +81,7 @@ int main(int argc, char *argv[])
     QCommandLineParser parser;
     QString sDescription;
     sDescription.append(QString("%1 v%2\n").arg(X_APPLICATIONDISPLAYNAME, X_APPLICATIONVERSION));
-    sDescription.append(QString("%1\n").arg("Copyright(C) 2020-2023 hors<horsicq@gmail.com> Web: http://ntinfo.biz"));
+    sDescription.append(QString("%1\n").arg("Copyright(C) 2020-2024 hors<horsicq@gmail.com> Web: http://ntinfo.biz"));
     parser.setApplicationDescription(sDescription);
     parser.addHelpOption();
     parser.addVersionOption();
