@@ -51,7 +51,7 @@ void ScanFiles(QList<QString> *pListArgs, SpecAbstract::SCAN_OPTIONS *pScanOptio
 
         XScanEngine::SCAN_RESULT scanResult = SpecAbstract().scanFile(sFileName, pScanOptions);
 
-        ScanItemModel model(&(scanResult.listRecords), 1, false);
+        ScanItemModel model(pScanOptions, &(scanResult.listRecords), 1);
 
         XBinary::FORMATTYPE formatType = XBinary::FORMATTYPE_TEXT;
 
@@ -131,7 +131,7 @@ int main(int argc, char *argv[])
     scanOptions.bIsRecursiveScan = parser.isSet(clRecursiveScan);
     scanOptions.bIsDeepScan = parser.isSet(clDeepScan);
     scanOptions.bIsHeuristicScan = parser.isSet(clHeuristicScan);
-    scanOptions.bAllTypesScan = parser.isSet(clAllTypesScan);
+    scanOptions.bIsAllTypesScan = parser.isSet(clAllTypesScan);
     scanOptions.bResultAsXML = parser.isSet(clResultAsXml);
     scanOptions.bResultAsJSON = parser.isSet(clResultAsJson);
     scanOptions.bResultAsCSV = parser.isSet(clResultAsCSV);

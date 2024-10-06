@@ -209,9 +209,10 @@ void GuiMainWindow::on_pushButtonHex_clicked()
         file.setFileName(sFileName);
 
         if (XBinary::tryToOpen(&file)) {
-            XHexView::OPTIONS options = {};
+            XHexViewWidget::OPTIONS options = {};
 
-            DialogHexView dialogHex(this, &file, options, nullptr);
+            DialogHexView dialogHex(this);
+            dialogHex.setData(&file, options);
             dialogHex.setGlobal(&g_xShortcuts, &g_xOptions);
 
             dialogHex.exec();
@@ -316,11 +317,12 @@ void GuiMainWindow::on_pushButtonSignature_clicked()
                 SubDevice sd(&file, os.nOffset, os.nSize);
 
                 if (XBinary::tryToOpen(&sd)) {
-                    XHexView::OPTIONS options = {};
+                    XHexViewWidget::OPTIONS options = {};
                     options.sTitle = tr("Signature");
                     options.nStartAddress = os.nOffset;
 
-                    DialogHexView dialogHex(this, &sd, options, nullptr);
+                    DialogHexView dialogHex(this);
+                    dialogHex.setData(&sd, options);
                     dialogHex.setGlobal(&g_xShortcuts, &g_xOptions);
 
                     dialogHex.exec();
