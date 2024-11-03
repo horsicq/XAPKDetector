@@ -51,7 +51,9 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
 
 #ifdef Q_OS_LINUX
+#if QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)
     a.setDesktopFileName("xapkd");
+#endif
 #endif
 
     QApplication::setWindowIcon(QIcon(":/images/icon.png"));
