@@ -28,5 +28,9 @@ install (TARGETS xapkd)
 install (TARGETS xapkdc)
 install (FILES LINUX/xapkd.desktop DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/applications/)
 install (DIRECTORY LINUX/hicolor DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/icons)
-install (DIRECTORY XStyles/qss DESTINATION ${CMAKE_INSTALL_LIBDIR}/xapkd)
-install (FILES signatures/crypto.db DESTINATION ${CMAKE_INSTALL_LIBDIR}/xapkd/signatures)
+# The literal "lib", not CMAKE_INSTALL_LIBDIR: with -DCMAKE_INSTALL_PREFIX=/usr on
+# Debian/Ubuntu the latter is the multiarch lib/x86_64-linux-gnu, and
+# XOptions::convertPathName("$data/...") only searches /usr/lib/<app>,
+# /usr/local/lib/<app> and /app/lib/<app>.
+install (DIRECTORY XStyles/qss DESTINATION lib/xapkd)
+install (FILES signatures/crypto.db DESTINATION lib/xapkd/signatures)
