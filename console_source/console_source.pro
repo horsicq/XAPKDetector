@@ -1,8 +1,6 @@
 QT += core
 QT -= gui
 
-XCONFIG += use_archive
-
 include(../build.pri)
 
 CONFIG += c++11

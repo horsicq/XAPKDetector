@@ -12,8 +12,6 @@ TEMPLATE = app
 
 include(../build.pri)
 
-XCONFIG += use_archive
-
 CONFIG += c++11
 
 SOURCES +=\
