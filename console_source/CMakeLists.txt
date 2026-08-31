@@ -21,8 +21,6 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../release)
 find_package(QT NAMES Qt5 COMPONENTS Core REQUIRED)
 find_package(Qt5 COMPONENTS Concurrent REQUIRED)
 
-add_definitions(-DUSE_DEX)
-add_definitions(-DUSE_PDF)
 add_definitions(-DUSE_ARCHIVE)
 
 include(${PROJECT_SOURCE_DIR}/../StaticScan/staticscan.cmake)

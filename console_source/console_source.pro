@@ -1,9 +1,7 @@
 QT += core
 QT -= gui
 
-XCONFIG += use_dex
 XCONFIG += use_archive
-XCONFIG += use_pdf
 
 include(../build.pri)
 
