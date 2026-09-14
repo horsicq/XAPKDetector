@@ -55,9 +55,9 @@ else()
     )
 endif()
 
-target_link_libraries(${PROJECT_NAME} bzip2)
-target_link_libraries(${PROJECT_NAME} lzma)
-target_link_libraries(${PROJECT_NAME} zlib)
+target_link_libraries(${PROJECT_NAME})
+target_link_libraries(${PROJECT_NAME})
+target_link_libraries(${PROJECT_NAME})
 target_link_libraries(${PROJECT_NAME} capstone)
 target_link_libraries(${PROJECT_NAME} cppfilt)
 
